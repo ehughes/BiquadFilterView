@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OxyPlot Design Guidelines</title>
+    <meta name="keywords" content="OxyPlot,Design,Guidelines" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>Design guidelines</h2>
+    <p>The following guidelines are picked up mostly from the books by Edward Tufte and Stephen Few.</p>
+    <h3>General</h3>
+    <ul>
+      <li>3D projection is not recommended (particularly for bar series, ribbons, pie charts)</li>
+      <li>Pie charts are not recommended (difficult to compare values, bar charts are usually better)</li>
+      <li>Minimize the ratio ink/data</li>
+      <li>Don't use a border around legends</li>
+      <li>Use only one font</li>
+      <li>Don't use a border (box) around the plot</li>
+    </ul>
+    <h3>Grid lines</h3>
+    <ul>
+      <li>Avoid dark/heavy grid lines</li>
+    </ul>
+    <h3>Ticks</h3>
+    <ul>
+      <li>Use TickStyle = Outside</li>
+      <li>Don't use minor tick marks</li>
+    </ul>
+    <h3>Category axes</h3>
+    <ul>
+      <li>Don't use tick marks</li>
+      <li>Don't use axis line on vertical category axes</li>
+      <li>Limit the number of subdivisions (not more than 5-6 bar series)</li>
+    </ul>
+    <h3>Bar series</h3>
+    <ul>
+      <li>Use a bar width around 50%</li>
+      <li>For histograms you could use a bar width of 100%</li>
+    </ul>
+    <h3>Recommended reading</h3>
+    <ul>
+      <li>
+        <a href="http://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a> (Edward Tufte) <a href="http://books.google.com/books/about/The_visual_display_of_quantitative_infor.html?id=BHazAAAAIAAJ">google</a> <a href="http://www.amazon.com/Visual-Display-Quantitative-Information/dp/096139210X">amazon</a> <a href="https://sheffield.ac.uk/content/1/c6/06/59/35/Scope%20Tutorial%201.pdf">tutorial</a></li>
+      <li>
+        <a href="http://www.perceptualedge.com/examples.php">Perceptual edge</a> (Stephen Few)</li>
+      <li>
+        <a href="http://www.perceptualedge.com/library.php#Books">Show me the numbers</a> (Stephen Few) <a href="http://www.amazon.com/Show-Me-Numbers-Designing-Enlighten/dp/0970601999">amazon</a> <a href="http://books.google.com/books/about/Show_me_the_numbers.html?id=kaOFQgAACAAJ">google</a></li>
+    </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

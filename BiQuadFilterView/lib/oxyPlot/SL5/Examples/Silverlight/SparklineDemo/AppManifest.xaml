@@ -1,0 +1,7 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SparklineDemo" EntryPointType="SparklineDemo.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SparklineDemo" Source="SparklineDemo.dll" />
+    <AssemblyPart x:Name="OxyPlot" Source="OxyPlot.dll" />
+    <AssemblyPart x:Name="OxyPlot.Silverlight" Source="OxyPlot.Silverlight.dll" />
+  </Deployment.Parts>
+</Deployment>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ByteBitReader Class (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.ByteBitReader">ByteBitReader Class</h1>
+    <p>The byte bit reader.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="OxyPlot.BitReader.html">BitReader</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.ByteBitReader.html"><strong>ByteBitReader</strong></a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">class</span> ByteBitReader : BitReader</code></pre>
+    <h2>Constructors</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ByteBitReader(Stream)</td>
+        <td>Initializes a new instance of the <a title="ByteBitReader Class" href="OxyPlot.ByteBitReader.html">ByteBitReader</a> class.</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Close</td>
+        <td>Closes this stream and the underlying InputStream.</td>
+      </tr>
+      <tr>
+        <td>GetBitPosition</td>
+        <td>Gets the bit position.</td>
+      </tr>
+      <tr>
+        <td>Read</td>
+        <td>Reads a bit from the stream. Returns 0 or 1 if a bit is available, or -1 if the end of stream is reached. The end of stream always occurs on a byte boundary.</td>
+      </tr>
+      <tr>
+        <td>ReadBits</td>
+        <td>Reads the specified number of bits. (Inherited from <a title="BitReader Class" href="OxyPlot.BitReader.html">BitReader</a>.)</td>
+      </tr>
+      <tr>
+        <td>ReadByte</td>
+        <td>Discards the remainder of the current byte and reads the next byte from the stream.</td>
+      </tr>
+      <tr>
+        <td>ReadNoEof</td>
+        <td>Reads a bit from the stream. Returns 0 or 1 if a bit is available, or throws an EOFException if the end of stream is reached.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

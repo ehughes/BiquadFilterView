@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Plot Class (OxyPlot.Wpf)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.Wpf.Plot">Plot Class</h1>
+    <p>Represents a WPF control that displays an OxyPlot plot.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcherobject.aspx">DispatcherObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.dependencyobject.aspx">DependencyObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.media.visual.aspx">Visual</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.uielement.aspx">UIElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.aspx">FrameworkElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.control.aspx">Control</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.RenderingControl.html">RenderingControl</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.Plot.html"><strong>Plot</strong></a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.Wpf.html">OxyPlot.Wpf</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot.Wpf (in OxyPlot.Wpf.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code>[TemplatePart]
+[ContentProperty]
+<span class="keyword">public</span> <span class="keyword">class</span> Plot : RenderingControl, IPlotControl</code></pre>
+    <h2>Constructors</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Plot()</td>
+        <td>Initializes a new instance of the <a title="Plot Class" href="OxyPlot.Wpf.Plot.html">Plot</a> class.</td>
+      </tr>
+    </table>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ActualModel</td>
+        <td>Gets the actual model.</td>
+      </tr>
+      <tr>
+        <td>Annotations</td>
+        <td>Gets the annotations.</td>
+      </tr>
+      <tr>
+        <td>AutoAdjustPlotMargins</td>
+        <td>Gets or sets a value indicating whether AutoAdjustPlotMargins.</td>
+      </tr>
+      <tr>
+        <td>Axes</td>
+        <td>Gets the axes.</td>
+      </tr>
+      <tr>
+        <td>Culture</td>
+        <td>Gets or sets Culture.</td>
+      </tr>
+      <tr>
+        <td>DefaultTrackerTemplate</td>
+        <td>Gets or sets the tracker template.</td>
+      </tr>
+      <tr>
+        <td>DisconnectCanvasWhileUpdating</td>
+        <td>Gets or sets a value indicating whether to disconnect the canvas while updating.</td>
+      </tr>
+      <tr>
+        <td>IsLegendVisible</td>
+        <td>Gets or sets a value indicating whether IsLegendVisible.</td>
+      </tr>
+      <tr>
+        <td>IsMouseWheelEnabled</td>
+        <td>Gets or sets a value indicating whether the mouse wheel is enabled.</td>
+      </tr>
+      <tr>
+        <td>IsRendering</td>
+        <td>Gets or sets a value indicating whether this instance is being rendered.</td>
+      </tr>
+      <tr>
+        <td>KeyboardPanHorizontalStep</td>
+        <td>Gets or sets the keyboard pan horizontal step (fraction of plot area width).</td>
+      </tr>
+      <tr>
+        <td>KeyboardPanVerticalStep</td>
+        <td>Gets or sets the keyboard pan vertical step size (fraction of plot area height).</td>
+      </tr>
+      <tr>
+        <td>LegendBackground</td>
+        <td>Gets or sets LegendBackground.</td>
+      </tr>
+      <tr>
+        <td>LegendBorder</td>
+        <td>Gets or sets LegendBorder.</td>
+      </tr>
+      <tr>
+        <td>LegendBorderThickness</td>
+        <td>Gets or sets LegendBorderThickness.</td>
+      </tr>
+      <tr>
+        <td>LegendColumnSpacing</td>
+        <td>Gets or sets the legend column spacing.</td>
+      </tr>
+      <tr>
+        <td>LegendFont</td>
+        <td>Gets or sets LegendFont.</td>
+      </tr>
+      <tr>
+        <td>LegendFontSize</td>
+        <td>Gets or sets LegendFontSize.</td>
+      </tr>
+      <tr>
+        <td>LegendFontWeight</td>
+        <td>Gets or sets LegendFontWeight.</td>
+      </tr>
+      <tr>
+        <td>LegendItemAlignment</td>
+        <td>Gets or sets LegendItemAlignment.</td>
+      </tr>
+      <tr>
+        <td>LegendItemOrder</td>
+        <td>Gets or sets LegendItemOrder.</td>
+      </tr>
+      <tr>
+        <td>LegendItemSpacing</td>
+        <td>Gets or sets LegendItemSpacing.</td>
+      </tr>
+      <tr>
+        <td>LegendMargin</td>
+        <td>Gets or sets LegendMargin.</td>
+      </tr>
+      <tr>
+        <td>LegendMaxWidth</td>
+        <td>Gets or sets the max width of the legends.</td>
+      </tr>
+      <tr>
+        <td>LegendOrientation</td>
+        <td>Gets or sets LegendOrientation.</td>
+      </tr>
+      <tr>
+        <td>LegendPadding</td>
+        <td>Gets or sets the legend padding.</td>
+      </tr>
+      <tr>
+        <td>LegendPlacement</td>
+        <td>Gets or sets LegendPlacement.</td>
+      </tr>
+      <tr>
+        <td>LegendPosition</td>
+        <td>Gets or sets the legend position.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolLength</td>
+        <td>Gets or sets LegendSymbolLength.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolMargin</td>
+        <td>Gets or sets LegendSymbolMargin.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolPlacement</td>
+        <td>Gets or sets LegendSymbolPlacement.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFont</td>
+        <td>Gets or sets LegendTitleFont.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontSize</td>
+        <td>Gets or sets LegendTitleFontSize.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontWeight</td>
+        <td>Gets or sets LegendTitleFontWeight.</td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td>Gets or sets the model.</td>
+      </tr>
+      <tr>
+        <td>PanCursor</td>
+        <td>Gets or sets the pan cursor.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBackground</td>
+        <td>Gets or sets the background brush of the plot area.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBorderColor</td>
+        <td>Gets or sets the color of the plot area border.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBorderThickness</td>
+        <td>Gets or sets the thickness of the plot area border.</td>
+      </tr>
+      <tr>
+        <td>PlotMargins</td>
+        <td>Gets or sets the plot margins.</td>
+      </tr>
+      <tr>
+        <td>PlotType</td>
+        <td>Gets or sets PlotType.</td>
+      </tr>
+      <tr>
+        <td>RefreshFlag</td>
+        <td>Gets or sets the refresh flag (an integer value). When the flag is changed, the plot will be refreshed.</td>
+      </tr>
+      <tr>
+        <td>ResetAxesCommand</td>
+        <td>Gets the reset axes command.</td>
+      </tr>
+      <tr>
+        <td>ResetAxesGesture</td>
+        <td>Gets or sets the reset axes gesture.</td>
+      </tr>
+      <tr>
+        <td>Series</td>
+        <td>Gets the series.</td>
+      </tr>
+      <tr>
+        <td>Subtitle</td>
+        <td>Gets or sets the subtitle.</td>
+      </tr>
+      <tr>
+        <td>SubtitleFontSize</td>
+        <td>Gets or sets SubtitleFontSize.</td>
+      </tr>
+      <tr>
+        <td>SubtitleFontWeight</td>
+        <td>Gets or sets SubtitleFontWeight.</td>
+      </tr>
+      <tr>
+        <td>TextColor</td>
+        <td>Gets or sets TextColor.</td>
+      </tr>
+      <tr>
+        <td>Title</td>
+        <td>Gets or sets the title.</td>
+      </tr>
+      <tr>
+        <td>TitleFont</td>
+        <td>Gets or sets TitleFont.</td>
+      </tr>
+      <tr>
+        <td>TitleFontSize</td>
+        <td>Gets or sets TitleFontSize.</td>
+      </tr>
+      <tr>
+        <td>TitleFontWeight</td>
+        <td>Gets or sets TitleFontWeight.</td>
+      </tr>
+      <tr>
+        <td>TitlePadding</td>
+        <td>Gets or sets TitlePadding.</td>
+      </tr>
+      <tr>
+        <td>TrackerDefinitions</td>
+        <td>Gets the tracker definitions.</td>
+      </tr>
+      <tr>
+        <td>ZoomHorizontalCursor</td>
+        <td>Gets or sets the horizontal zoom cursor.</td>
+      </tr>
+      <tr>
+        <td>ZoomRectangleCursor</td>
+        <td>Gets or sets the rectangle zoom cursor.</td>
+      </tr>
+      <tr>
+        <td>ZoomRectangleTemplate</td>
+        <td>Gets or sets the zoom rectangle template.</td>
+      </tr>
+      <tr>
+        <td>ZoomVerticalCursor</td>
+        <td>Gets or sets the vertical zoom cursor.</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>HideTracker</td>
+        <td>Hides the tracker.</td>
+      </tr>
+      <tr>
+        <td>HideZoomRectangle</td>
+        <td>Hides the zoom rectangle.</td>
+      </tr>
+      <tr>
+        <td>InvalidatePlot</td>
+        <td>Invalidate the plot (not blocking the UI thread)</td>
+      </tr>
+      <tr>
+        <td>OnApplyTemplate</td>
+        <td>When overridden in a derived class, is invoked whenever application code or internal processes call System.Windows.FrameworkElement.ApplyTemplate .</td>
+      </tr>
+      <tr>
+        <td>PanAllAxes</td>
+        <td>Pans all axes.</td>
+      </tr>
+      <tr>
+        <td>RefreshPlot</td>
+        <td>Refresh the plot immediately (blocking UI thread)</td>
+      </tr>
+      <tr>
+        <td>ResetAllAxes</td>
+        <td>Resets all axes.</td>
+      </tr>
+      <tr>
+        <td>SaveBitmap</td>
+        <td>Saves the plot as a bitmap.</td>
+      </tr>
+      <tr>
+        <td>SaveXaml</td>
+        <td>Saves the plot as xaml.</td>
+      </tr>
+      <tr>
+        <td>SetCursorType</td>
+        <td>Sets the cursor type.</td>
+      </tr>
+      <tr>
+        <td>ShowTracker</td>
+        <td>Shows the tracker.</td>
+      </tr>
+      <tr>
+        <td>ShowZoomRectangle</td>
+        <td>Shows the zoom rectangle.</td>
+      </tr>
+      <tr>
+        <td>ToBitmap</td>
+        <td>Renders the plot to a bitmap.</td>
+      </tr>
+      <tr>
+        <td>ToXaml</td>
+        <td>Renders the plot to xaml.</td>
+      </tr>
+      <tr>
+        <td>ZoomAllAxes</td>
+        <td>Zooms all axes.</td>
+      </tr>
+    </table>
+    <h2>Fields</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AutoAdjustPlotMarginsProperty</td>
+        <td>The auto adjust plot margins property.</td>
+      </tr>
+      <tr>
+        <td>CultureProperty</td>
+        <td>The culture property.</td>
+      </tr>
+      <tr>
+        <td>DefaultTrackerTemplateProperty</td>
+        <td>The default tracker property.</td>
+      </tr>
+      <tr>
+        <td>IsLegendVisibleProperty</td>
+        <td>The is legend visible property.</td>
+      </tr>
+      <tr>
+        <td>IsMouseWheelEnabledProperty</td>
+        <td>The is mouse wheel enabled property.</td>
+      </tr>
+      <tr>
+        <td>KeyboardPanHorizontalStepProperty</td>
+        <td>The keyboard pan horizontal step property.</td>
+      </tr>
+      <tr>
+        <td>KeyboardPanVerticalStepProperty</td>
+        <td>The keyboard pan vertical step property.</td>
+      </tr>
+      <tr>
+        <td>LegendBackgroundProperty</td>
+        <td>The legend background property.</td>
+      </tr>
+      <tr>
+        <td>LegendBorderProperty</td>
+        <td>The legend border property.</td>
+      </tr>
+      <tr>
+        <td>LegendBorderThicknessProperty</td>
+        <td>The legend border thickness property.</td>
+      </tr>
+      <tr>
+        <td>LegendColumnSpacingProperty</td>
+        <td>The legend column spacing property.</td>
+      </tr>
+      <tr>
+        <td>LegendFontProperty</td>
+        <td>The legend font property.</td>
+      </tr>
+      <tr>
+        <td>LegendFontSizeProperty</td>
+        <td>The legend font size property.</td>
+      </tr>
+      <tr>
+        <td>LegendFontWeightProperty</td>
+        <td>The legend font weight property.</td>
+      </tr>
+      <tr>
+        <td>LegendItemAlignmentProperty</td>
+        <td>The legend item alignment property.</td>
+      </tr>
+      <tr>
+        <td>LegendItemOrderProperty</td>
+        <td>The legend item order property.</td>
+      </tr>
+      <tr>
+        <td>LegendItemSpacingProperty</td>
+        <td>The legend item spacing property.</td>
+      </tr>
+      <tr>
+        <td>LegendMarginProperty</td>
+        <td>The legend margin property.</td>
+      </tr>
+      <tr>
+        <td>LegendMaxWidthProperty</td>
+        <td>The legend max width property</td>
+      </tr>
+      <tr>
+        <td>LegendOrientationProperty</td>
+        <td>The legend orientation property.</td>
+      </tr>
+      <tr>
+        <td>LegendPaddingProperty</td>
+        <td>The legend padding property.</td>
+      </tr>
+      <tr>
+        <td>LegendPlacementProperty</td>
+        <td>The legend placement property.</td>
+      </tr>
+      <tr>
+        <td>LegendPositionProperty</td>
+        <td>The legend position property.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolLengthProperty</td>
+        <td>The legend symbol length property.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolMarginProperty</td>
+        <td>The legend symbol margin property.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolPlacementProperty</td>
+        <td>The legend symbol placement property.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontProperty</td>
+        <td>The legend title font property.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontSizeProperty</td>
+        <td>The legend title font size property.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontWeightProperty</td>
+        <td>The legend title font weight property.</td>
+      </tr>
+      <tr>
+        <td>ModelProperty</td>
+        <td>The model property.</td>
+      </tr>
+      <tr>
+        <td>OrthographicToggleGestureProperty</td>
+        <td>The orthographic toggle gesture property.</td>
+      </tr>
+      <tr>
+        <td>PanCursorProperty</td>
+        <td>The pan cursor property.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBackgroundProperty</td>
+        <td>The plot area background property.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBorderColorProperty</td>
+        <td>The plot area border color property.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBorderThicknessProperty</td>
+        <td>The plot area border thickness property.</td>
+      </tr>
+      <tr>
+        <td>PlotMarginsProperty</td>
+        <td>The plot margins property.</td>
+      </tr>
+      <tr>
+        <td>PlotTypeProperty</td>
+        <td>The plot type property.</td>
+      </tr>
+      <tr>
+        <td>RefreshFlagProperty</td>
+        <td>The refresh flag property</td>
+      </tr>
+      <tr>
+        <td>SubtitleFontSizeProperty</td>
+        <td>The subtitle font size property.</td>
+      </tr>
+      <tr>
+        <td>SubtitleFontWeightProperty</td>
+        <td>The subtitle font weight property.</td>
+      </tr>
+      <tr>
+        <td>SubtitleProperty</td>
+        <td>The subtitle property.</td>
+      </tr>
+      <tr>
+        <td>TextColorProperty</td>
+        <td>The text color property.</td>
+      </tr>
+      <tr>
+        <td>TitleFontProperty</td>
+        <td>The title font property.</td>
+      </tr>
+      <tr>
+        <td>TitleFontSizeProperty</td>
+        <td>The title font size property.</td>
+      </tr>
+      <tr>
+        <td>TitleFontWeightProperty</td>
+        <td>The title font weight property.</td>
+      </tr>
+      <tr>
+        <td>TitlePaddingProperty</td>
+        <td>The title padding property.</td>
+      </tr>
+      <tr>
+        <td>TitleProperty</td>
+        <td>The title property.</td>
+      </tr>
+      <tr>
+        <td>ZoomHorizontalCursorProperty</td>
+        <td>The zoom horizontal cursor property.</td>
+      </tr>
+      <tr>
+        <td>ZoomRectangleCursorProperty</td>
+        <td>The zoom rectangle cursor property.</td>
+      </tr>
+      <tr>
+        <td>ZoomRectangleTemplateProperty</td>
+        <td>The zoom rectangle template property.</td>
+      </tr>
+      <tr>
+        <td>ZoomVerticalCursorProperty</td>
+        <td>The zoom vertical cursor property.</td>
+      </tr>
+    </table>
+    <h2>Remarks</h2>
+    <p>This file contains dependency properties used for defining the plot in XAML. These properties are only used when Model is null. In this case an internal PlotModel is created and the dependency properties are copied from the control to the internal PlotModel.</p>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OxyPlot Series</title>
+    <meta name="keywords" content="OxyPlot,Series" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>Series</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h3>Title</h3>
+    <p>The title of the series is shown in the legend box. If you don't want the series to show up in the legend box, keep the default value <code>null</code>.</p>
+    <h3>Tracker format string</h3>
+    <p>A format string for the tracker (trackers are only implemented for WPF/Silverlight)</p>
+    <h3>LineSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/LineSeries.png" alt="" />
+      </div>
+    </p>
+    <pre><code><span class="keyword">var</span> model = <span class="keyword">new</span> PlotModel { Title = <span class="string">"LineSeries"</span> };
+<span class="keyword">var</span> lineSeries = <span class="keyword">new</span> LineSeries();
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(0, 0));
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(10, 4));
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(30, 2));
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(40, 8));
+model.Series.Add(lineSeries);</code></pre>
+    <p>Set the <code>Smooth</code> property to render a canonical spline:</p>
+    <pre><code>lineSeries.Smooth = <span class="keyword">true</span>;</code></pre>
+    <p>
+      <div class="figure">
+        <img src="Images/LineSeriesSmoothed.png" alt="" />
+      </div>
+    </p>
+    <h3>TwoColorLineSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/TwoColorLineSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ScatterSeries</h3>
+    <p>ScatterSeries shows a set of points. The points can also have a size and color value.</p>
+    <p>
+      <div class="figure">
+        <img src="Images/ScatterSeries.png" alt="" />
+      </div>
+    </p>
+    <pre><code><span class="keyword">var</span> model = <span class="keyword">new</span> PlotModel { Title = <span class="string">"ScatterSeries"</span> };
+<span class="keyword">var</span> scatterSeries = <span class="keyword">new</span> ScatterSeries { MarkerType = MarkerType.Circle };
+<span class="keyword">var</span> r = <span class="keyword">new</span> Random(314);
+<span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; 100; i++)
+{
+    <span class="keyword">var</span> x = r.NextDouble();
+    <span class="keyword">var</span> y = r.NextDouble();
+    <span class="keyword">var</span> size = r.Next(5, 15);
+    <span class="keyword">var</span> colorValue = r.Next(100, 1000);
+    scatterSeries.Points.Add(<span class="keyword">new</span> ScatterPoint(x, y, size, colorValue));
+}
+
+model.Series.Add(scatterSeries);
+model.Axes.Add(<span class="keyword">new</span> LinearColorAxis { Position = AxisPosition.Right, Palette = OxyPalettes.Jet(200) });</code></pre>
+    <h3>AreaSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/AreaSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ContourSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/ContourSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>HeatMapSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/HeatMapSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>BoxPlotSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/BoxPlotSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>StemSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/StemSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>StairStepSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/StairStepSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>HighLowSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/HighLowSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>CandleStickSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/CandleStickSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>BarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/BarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ColumnSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/ColumnSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ErrorColumnSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/ErrorColumnSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>IntervalBarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/IntervalBarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>RectangleBarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/RectangleBarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>TornadoBarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/TornadoBarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>PieSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/PieSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>Custom series</h3>
+    <p>You can create your own custom series by implementing the ISeries interface, or by deriving from one of the existing Series classes.To make the series available for the tracker, you should also implement the ITrackableSeries interface.</p>
+    <h3>Base classes</h3>
+    <ul>
+      <li>XYAxisSeries - base class for series that use X and Y axes.</li>
+      <li>DataPointSeries - base class for series that contain a collection of DataPoints.</li>
+    </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

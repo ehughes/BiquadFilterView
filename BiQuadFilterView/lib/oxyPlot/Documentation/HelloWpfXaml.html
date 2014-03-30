@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WPF Example</title>
+    <meta name="keywords" content="OxyPlot,WPF,Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>WPF Example</h2>
+    <p>This example shows how to create a WPF application where the content of the plot is defined in XAML.</p>
+    <h3>Create project</h3>
+    <p>Start Visual Studio and select "FILE -&gt; New -&gt; Project..." to create a new WPF application:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfNewProject.png" alt="" />
+      </div>
+    </p>
+    <h3>Add references</h3>
+    <p>You need references to the OxyPlot and OxyPlot.Wpf assemblies. The easiest way to add these is to right click on the "References" item in the Solution Explorer and select "Manage NuGet Packages..." (this requires that the "NuGet Package Manager" extension is installed):</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfAddReference.png" alt="" />
+      </div>
+    </p>
+    <p>In the "Manage NuGet packages" dialog, search for "OxyPlot" and select the "OxyPlot.Wpf" package:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfInstallPackage.png" alt="" />
+      </div>
+    </p>
+    <p>You can also use the <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a> to install the package:</p>
+    <pre><code>PM&gt; Install-Package OxyPlot.Wpf</code></pre>
+    <h3>Create a view model</h3>
+    <p>Then create class that defines the data to be plotted.</p>
+    <pre><code><span class="keyword">namespace</span> WpfApplication2
+{
+    <span class="keyword">using</span> System.Collections.Generic;
+
+    <span class="keyword">using</span> OxyPlot;
+
+    <span class="keyword">public</span> <span class="keyword">class</span> MainViewModel
+    {
+        <span class="keyword">public</span> MainViewModel()
+        {
+            <span class="keyword">this</span>.Title = <span class="string">"Example 2"</span>;
+            <span class="keyword">this</span>.Points = <span class="keyword">new</span> List&lt;DataPoint&gt;
+                              {
+                                  <span class="keyword">new</span> DataPoint(0, 4),
+                                  <span class="keyword">new</span> DataPoint(10, 13),
+                                  <span class="keyword">new</span> DataPoint(20, 15),
+                                  <span class="keyword">new</span> DataPoint(30, 16),
+                                  <span class="keyword">new</span> DataPoint(40, 12),
+                                  <span class="keyword">new</span> DataPoint(50, 12)
+                              };
+        }
+
+        <span class="keyword">public</span> <span class="keyword">string</span> Title { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }
+
+        <span class="keyword">public</span> IList&lt;DataPoint&gt; Points { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }
+    }
+}</code></pre>
+    <h3>Create the view</h3>
+    <p>Define the namespace in the <code>Window</code> element, set the <code>DataContext</code> and add a <a href="API/OxyPlot.Wpf.Plot.html">Plot</a> control:</p>
+    <pre><code><span class="tag">&lt;</span><span class="name">Window</span><span class="key"> x:Class</span><span class="value">="WpfApplication2.MainWindow"</span><span class="key">
+        xmlns</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span><span class="key">
+        xmlns:x</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml"</span><span class="key"> xmlns:oxy</span><span class="value">="http://oxyplot.codeplex.com"</span><span class="key">
+        xmlns:local</span><span class="value">="clr-namespace:WpfApplication2"</span><span class="key">
+        Title</span><span class="value">="Example 2 (WPF)"</span><span class="key"> Height</span><span class="value">="350"</span><span class="key"> Width</span><span class="value">="525"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Window.DataContext</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">local:MainViewModel</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Window.DataContext</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Grid</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Title</span><span class="value">="{Binding Title}"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;</span><span class="name">oxy:Plot.Series</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;</span><span class="name">oxy:LineSeries</span><span class="key"> ItemsSource</span><span class="value">="{Binding Points}"</span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/</span><span class="name">oxy:Plot.Series</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/</span><span class="name">oxy:Plot</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Grid</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">Window</span><span class="tag">&gt;</span></code></pre>
+    <p>The application should now look like this:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfExample2.png" alt="" />
+      </div>
+    </p>
+    <p>The source code can be found in <code>Documentation\Examples\WpfApplication2</code>.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

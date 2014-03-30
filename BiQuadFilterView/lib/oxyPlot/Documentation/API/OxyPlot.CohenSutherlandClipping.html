@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>CohenSutherlandClipping Class (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.CohenSutherlandClipping">CohenSutherlandClipping Class</h1>
+    <p>Provides a line clipping algorithm.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="OxyPlot.CohenSutherlandClipping.html"><strong>CohenSutherlandClipping</strong></a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">class</span> CohenSutherlandClipping</code></pre>
+    <h2>Constructors</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>CohenSutherlandClipping(double, double, double, double)</td>
+        <td>Initializes a new instance of the <a title="CohenSutherlandClipping Class" href="OxyPlot.CohenSutherlandClipping.html">CohenSutherlandClipping</a> class.</td>
+      </tr>
+      <tr>
+        <td>CohenSutherlandClipping(OxyRect)</td>
+        <td>Initializes a new instance of the <a title="CohenSutherlandClipping Class" href="OxyPlot.CohenSutherlandClipping.html">CohenSutherlandClipping</a> class.</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ClipLine(Double&amp;, Double&amp;, Double&amp;, Double&amp;)</td>
+        <td>Cohen–Sutherland clipping algorithm clips a line from
+P0 = (x0, y0) to P1 = (x1, y1) against a rectangle with
+diagonal from (xmin, ymin) to (xmax, ymax).</td>
+      </tr>
+      <tr>
+        <td>ClipLine(ScreenPoint&amp;, ScreenPoint&amp;)</td>
+        <td>Cohen–Sutherland clipping algorithm clips a line from
+P0 = (x0, y0) to P1 = (x1, y1) against a rectangle with
+diagonal from (xmin, ymin) to (xmax, ymax).</td>
+      </tr>
+      <tr>
+        <td>IsInside(double, double)</td>
+        <td>Determines whether the specified point is inside the rectangle.</td>
+      </tr>
+      <tr>
+        <td>IsInside(ScreenPoint)</td>
+        <td>Determines whether the specified point is inside the rectangle.</td>
+      </tr>
+    </table>
+    <h2>Remarks</h2>
+    <p>See http://en.wikipedia.org/wiki/Cohen%E2%80%93Sutherland</p>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

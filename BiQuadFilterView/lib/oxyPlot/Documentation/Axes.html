@@ -1,0 +1,219 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OxyPlot Axes</title>
+    <meta name="keywords" content="OxyPlot,Axes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>Axes</h2>
+    <p>
+      <em> TODO - add more info, clean text, add examples</em>
+    </p>
+    <p>OxyPlot contains the following axis types:</p>
+    <table>
+      <tr>
+        <td>LinearAxis </td>
+        <td>Represents a numerical axis with a linear scale. </td>
+      </tr>
+      <tr>
+        <td>LogarithmicAxis </td>
+        <td>Represents a numerical axis with a logarithmic scale. </td>
+      </tr>
+      <tr>
+        <td>DateTimeAxis </td>
+        <td>Represents a date/time axis based on <code>DateTime</code> values. </td>
+      </tr>
+      <tr>
+        <td>TimeSpanAxis </td>
+        <td>Represents a time axis based on <code>TimeSpan</code> values. </td>
+      </tr>
+      <tr>
+        <td>CategoryAxis </td>
+        <td>Represents an axis that displays categories (typically used for bar/column series). </td>
+      </tr>
+      <tr>
+        <td>LinearColorAxis </td>
+        <td>Represents an axis that displays a linear color scale. </td>
+      </tr>
+      <tr>
+        <td>RangeColorAxis </td>
+        <td>Represents an axis that displays a colors for specified ranges. </td>
+      </tr>
+      <tr>
+        <td>MagnitudeAxis </td>
+        <td>Represents the radial axis in polar plots </td>
+      </tr>
+      <tr>
+        <td>AngleAxis </td>
+        <td>Represents the angular axis in polar plots </td>
+      </tr>
+    </table>
+    <h3>Position</h3>
+    <p>The most important propert of the axis is the <code>Position</code>. This property determines where the axis is drawn. A standard XY plot requires a horizontal axis (bottom or top position) and a vertical axis (left or right position).</p>
+    <h3>Title</h3>
+    <p>The title is shown next to the axis. </p>
+    <p>Rotation</p>
+    <p>Unit</p>
+    <h3>Minimum/Maximum</h3>
+    <p>These properties defines the minimum and maximum values on the axis. If any of them are not specified, they will be calculated from the data. In that case, a "padding" value will be included to make sure there is some whitespace outisde the extreme values.</p>
+    <h3>Major/minor intervals</h3>
+    <p>The major intervals define the steps between the numeric labels on the axis. The minor intervals define the sub-division between the labels. </p>
+    <p>Major and minor ticks may be drawn at each interval. The style can be defined (inside, outside, crossing or none)</p>
+    <p>Grid lines can also be drawn at each interval. These will be drawn across the whole plot area. The style can be defined by color, thickness and line style. </p>
+    <h3>StartPosition/EndPosition</h3>
+    <p>The start and end position properties are used to define the relative position of the axis. The default values <a href="0,1.html">0,1</a> will fill the available plot area. This can be </p>
+    <h3>Axis keys</h3>
+    <h3>Reverse</h3>
+    <p>To reverse the direction of an axis, set <code>StartPosition = 1</code> and <code>EndPosition = 0</code></p>
+    <h3>Shared axes</h3>
+    <ul>
+      <li>using <code>AxisKey</code></li>
+    </ul>
+    <h3>DateTimeAxis</h3>
+    <p>This will show date/time values on the axis.</p>
+    <p>If you are adding <code>DataPoint</code>s to a series, the <code>DateTime</code> values should be converted to numeric values by the <code>DateTimeAxis.ToDouble</code> method.</p>
+    <pre><code>mySeries.Points.Add(<span class="keyword">new</span> DataPoint(DateTimeAxis.ToDouble(myDateTime),myValue))</code></pre>
+    <p>If you are binding <code>DataFieldX</code> or <code>DataFieldY</code> to a <code>DateTime</code>, OxyPlot will handle the conversion.</p>
+    <p>You can control the axis intervals by <code>IntervalType</code>, <code>MinorIntervalType</code> and the formatting of the axis labels by the <code>StringFormat</code> property.The following codes are accepted by StringFormat</p>
+    <table>
+      <tr>
+        <td>yyyy </td>
+        <td>year </td>
+        <td>"2011" </td>
+      </tr>
+      <tr>
+        <td>yy </td>
+        <td>year </td>
+        <td>"11" </td>
+      </tr>
+      <tr>
+        <td>MM </td>
+        <td>month </td>
+        <td>"01" </td>
+      </tr>
+      <tr>
+        <td>MMM </td>
+        <td>month </td>
+        <td>"Jan" </td>
+      </tr>
+      <tr>
+        <td>MMMM </td>
+        <td>month </td>
+        <td>"January" </td>
+      </tr>
+      <tr>
+        <td>w </td>
+        <td>week number </td>
+        <td>"4" </td>
+      </tr>
+      <tr>
+        <td>ww </td>
+        <td>week number </td>
+        <td>"04" </td>
+      </tr>
+      <tr>
+        <td>dd </td>
+        <td>day </td>
+        <td>"26" </td>
+      </tr>
+      <tr>
+        <td>hh </td>
+        <td>hour </td>
+        <td>"04" </td>
+      </tr>
+      <tr>
+        <td>HH </td>
+        <td>hour </td>
+        <td>"16" </td>
+      </tr>
+      <tr>
+        <td>mm </td>
+        <td>minute </td>
+        <td>"37" </td>
+      </tr>
+      <tr>
+        <td>ss </td>
+        <td>seconds</td>
+        <td>"23" </td>
+      </tr>
+      <tr>
+        <td>yyyy-MM-dd</td>
+        <td />
+        <td>"2011-01-26" </td>
+      </tr>
+      <tr>
+        <td>MM/dd/yyyy </td>
+        <td />
+        <td>"01/26/2011" </td>
+      </tr>
+    </table>
+    <h3>TimeSpanAxis</h3>
+    <p>This will show time span values on the axis.</p>
+    <p>If you are adding <code>DataPoint</code>s to a series, the <code>TimeSpan</code> values should be converted to numeric values by the <code>TimeSpanAxis.ToDouble</code> method.</p>
+    <pre><code>mySeries.Points.Add(<span class="keyword">new</span> DataPoint(TimeSpanAxis.ToDouble(myTimeSpan), myValue))</code></pre>
+    <p>If you are using <code>DataFieldX</code> or <code>DataFieldY</code> to bind to a <code>TimeSpan</code>, OxyPlot will handle the conversion.</p>
+    <p>The formatting of the axis labels can be controlled by the <code>StringFormat</code> property.</p>
+    <h3>Adding axes in XAML</h3>
+    <pre><code><span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Title</span><span class="value">="Linear axes"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">oxy:Plot.Axes</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:LinearAxis</span><span class="key"> Position</span><span class="value">="Bottom"</span><span class="key"> Minimum</span><span class="value">="-20"</span><span class="key"> Maximum</span><span class="value">="80"</span><span class="tag"> /&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:LinearAxis</span><span class="key"> Position</span><span class="value">="Left"</span><span class="key"> Minimum</span><span class="value">="-10"</span><span class="key"> Maximum</span><span class="value">="10"</span><span class="tag"> /&gt;</span>
+     <span class="tag">&lt;/</span><span class="name">oxy:Plot.Axes</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">oxy:Plot</span><span class="tag">&gt;</span></code></pre>
+    <h3>Adding axes to a PlotModel</h3>
+    <pre><code><span class="keyword">var</span> model = <span class="keyword">new</span> PlotModel();
+model.Axes.Add(<span class="keyword">new</span> LinearAxis(AxisPosition.Bottom, -20, 80));
+model.Axes.Add(<span class="keyword">new</span> LinearAxis(AxisPosition.Left, -10, 10));</code></pre>
+    <p>If no axes are defined, linear axes will be added to the bottom and left.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

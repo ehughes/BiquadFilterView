@@ -1,0 +1,1247 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot namespaces">
+<param name="Local" value="Index.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot Namespace">
+<param name="Local" value="OxyPlot.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AngleAxisRenderer Class">
+<param name="Local" value="OxyPlot.AngleAxisRenderer.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ArrayHelper Class">
+<param name="Local" value="OxyPlot.ArrayHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Arrays Class">
+<param name="Local" value="OxyPlot.Arrays.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AxisRendererBase Class">
+<param name="Local" value="OxyPlot.AxisRendererBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BinaryReaderExtensions Class">
+<param name="Local" value="OxyPlot.BinaryReaderExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BitReader Class">
+<param name="Local" value="OxyPlot.BitReader.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BmpDecoder Class">
+<param name="Local" value="OxyPlot.BmpDecoder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BmpEncoder Class">
+<param name="Local" value="OxyPlot.BmpEncoder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BmpEncoderOptions Class">
+<param name="Local" value="OxyPlot.BmpEncoderOptions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ByteBitReader Class">
+<param name="Local" value="OxyPlot.ByteBitReader.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CodeGenerationAttribute Class">
+<param name="Local" value="OxyPlot.CodeGenerationAttribute.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CodeGenerator Class">
+<param name="Local" value="OxyPlot.CodeGenerator.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CodeGeneratorStringExtensions Class">
+<param name="Local" value="OxyPlot.CodeGeneratorStringExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CohenSutherlandClipping Class">
+<param name="Local" value="OxyPlot.CohenSutherlandClipping.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ColorSpace Enumeration">
+<param name="Local" value="OxyPlot.ColorSpace.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ColorType Enumeration">
+<param name="Local" value="OxyPlot.ColorType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CompressionMethod Enumeration">
+<param name="Local" value="OxyPlot.CompressionMethod.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Conrec Class">
+<param name="Local" value="OxyPlot.Conrec.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CursorType Enumeration">
+<param name="Local" value="OxyPlot.CursorType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DataPoint Structure">
+<param name="Local" value="OxyPlot.DataPoint.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DataPointExtensions Class">
+<param name="Local" value="OxyPlot.DataPointExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Deflate Class">
+<param name="Local" value="OxyPlot.Deflate.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FilterMethod Enumeration">
+<param name="Local" value="OxyPlot.FilterMethod.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FontEncoding Enumeration">
+<param name="Local" value="OxyPlot.FontEncoding.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FontSubType Enumeration">
+<param name="Local" value="OxyPlot.FontSubType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FontWeights Class">
+<param name="Local" value="OxyPlot.FontWeights.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FractionHelper Class">
+<param name="Local" value="OxyPlot.FractionHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HitTestResult Class">
+<param name="Local" value="OxyPlot.HitTestResult.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HorizontalAlignment Enumeration">
+<param name="Local" value="OxyPlot.HorizontalAlignment.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HorizontalAndVerticalAxisRenderer Class">
+<param name="Local" value="OxyPlot.HorizontalAndVerticalAxisRenderer.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ICodeGenerating Interface">
+<param name="Local" value="OxyPlot.ICodeGenerating.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IDataPoint Interface">
+<param name="Local" value="OxyPlot.IDataPoint.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IDataPointProvider Interface">
+<param name="Local" value="OxyPlot.IDataPointProvider.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IImageDecoder Interface">
+<param name="Local" value="OxyPlot.IImageDecoder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IImageEncoder Interface">
+<param name="Local" value="OxyPlot.IImageEncoder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ImageEncoderOptions Class">
+<param name="Local" value="OxyPlot.ImageEncoderOptions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ImageFormat Enumeration">
+<param name="Local" value="OxyPlot.ImageFormat.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="InterlaceMethod Enumeration">
+<param name="Local" value="OxyPlot.InterlaceMethod.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IPlotControl Interface">
+<param name="Local" value="OxyPlot.IPlotControl.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IRenderContext Interface">
+<param name="Local" value="OxyPlot.IRenderContext.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LegendItemOrder Enumeration">
+<param name="Local" value="OxyPlot.LegendItemOrder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LegendOrientation Enumeration">
+<param name="Local" value="OxyPlot.LegendOrientation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LegendPlacement Enumeration">
+<param name="Local" value="OxyPlot.LegendPlacement.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LegendPosition Enumeration">
+<param name="Local" value="OxyPlot.LegendPosition.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LegendSymbolPlacement Enumeration">
+<param name="Local" value="OxyPlot.LegendSymbolPlacement.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineCap Enumeration">
+<param name="Local" value="OxyPlot.LineCap.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineJoin Enumeration">
+<param name="Local" value="OxyPlot.LineJoin.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineStyle Enumeration">
+<param name="Local" value="OxyPlot.LineStyle.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineStyleHelper Class">
+<param name="Local" value="OxyPlot.LineStyleHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ListFiller<T> Class">
+<param name="Local" value="OxyPlot.ListFiller`1.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="MagnitudeAxisRenderer Class">
+<param name="Local" value="OxyPlot.MagnitudeAxisRenderer.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ManipulationEventArgs Class">
+<param name="Local" value="OxyPlot.ManipulationEventArgs.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ManipulatorBase Class">
+<param name="Local" value="OxyPlot.ManipulatorBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="MarkerType Enumeration">
+<param name="Local" value="OxyPlot.MarkerType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="MathRenderingExtensions Class">
+<param name="Local" value="OxyPlot.MathRenderingExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyColor Structure">
+<param name="Local" value="OxyPlot.OxyColor.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyColors Class">
+<param name="Local" value="OxyPlot.OxyColors.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyImage Class">
+<param name="Local" value="OxyPlot.OxyImage.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyImageInfo Class">
+<param name="Local" value="OxyPlot.OxyImageInfo.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyInputGesture Class">
+<param name="Local" value="OxyPlot.OxyInputGesture.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyKey Enumeration">
+<param name="Local" value="OxyPlot.OxyKey.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyKeyGesture Class">
+<param name="Local" value="OxyPlot.OxyKeyGesture.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyModifierKeys Enumeration">
+<param name="Local" value="OxyPlot.OxyModifierKeys.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyMouseButton Enumeration">
+<param name="Local" value="OxyPlot.OxyMouseButton.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyMouseEventArgs Class">
+<param name="Local" value="OxyPlot.OxyMouseEventArgs.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyMouseGesture Class">
+<param name="Local" value="OxyPlot.OxyMouseGesture.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyMouseWheelGesture Class">
+<param name="Local" value="OxyPlot.OxyMouseWheelGesture.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPalette Class">
+<param name="Local" value="OxyPlot.OxyPalette.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPalettes Class">
+<param name="Local" value="OxyPlot.OxyPalettes.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPen Class">
+<param name="Local" value="OxyPlot.OxyPen.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPenLineJoin Enumeration">
+<param name="Local" value="OxyPlot.OxyPenLineJoin.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyRect Structure">
+<param name="Local" value="OxyPlot.OxyRect.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyShakeGesture Class">
+<param name="Local" value="OxyPlot.OxyShakeGesture.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxySize Structure">
+<param name="Local" value="OxyPlot.OxySize.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyThickness Structure">
+<param name="Local" value="OxyPlot.OxyThickness.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyTouchGesture Class">
+<param name="Local" value="OxyPlot.OxyTouchGesture.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PageOrientation Enumeration">
+<param name="Local" value="OxyPlot.PageOrientation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PageSize Enumeration">
+<param name="Local" value="OxyPlot.PageSize.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PanManipulator Class">
+<param name="Local" value="OxyPlot.PanManipulator.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PdfExporter Class">
+<param name="Local" value="OxyPlot.PdfExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotController Class">
+<param name="Local" value="OxyPlot.PlotController.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotElement Class">
+<param name="Local" value="OxyPlot.PlotElement.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotLength Structure">
+<param name="Local" value="OxyPlot.PlotLength.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotLengthUnit Enumeration">
+<param name="Local" value="OxyPlot.PlotLengthUnit.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotModel Class">
+<param name="Local" value="OxyPlot.PlotModel.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotType Enumeration">
+<param name="Local" value="OxyPlot.PlotType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PngDecoder Class">
+<param name="Local" value="OxyPlot.PngDecoder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PngEncoder Class">
+<param name="Local" value="OxyPlot.PngEncoder.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PngEncoderOptions Class">
+<param name="Local" value="OxyPlot.PngEncoderOptions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PortableDocument Class">
+<param name="Local" value="OxyPlot.PortableDocument.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PortableDocumentExtensions Class">
+<param name="Local" value="OxyPlot.PortableDocumentExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PortableDocumentFont Class">
+<param name="Local" value="OxyPlot.PortableDocumentFont.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PortableDocumentFontFamily Class">
+<param name="Local" value="OxyPlot.PortableDocumentFontFamily.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PortableDocumentImage Class">
+<param name="Local" value="OxyPlot.PortableDocumentImage.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PortableDocumentImageUtilities Class">
+<param name="Local" value="OxyPlot.PortableDocumentImageUtilities.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ReflectionHelper Class">
+<param name="Local" value="OxyPlot.ReflectionHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RenderContextBase Class">
+<param name="Local" value="OxyPlot.RenderContextBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RenderingExtensions Class">
+<param name="Local" value="OxyPlot.RenderingExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ResetManipulator Class">
+<param name="Local" value="OxyPlot.ResetManipulator.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ScreenPoint Structure">
+<param name="Local" value="OxyPlot.ScreenPoint.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ScreenPointHelper Class">
+<param name="Local" value="OxyPlot.ScreenPointHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ScreenVector Structure">
+<param name="Local" value="OxyPlot.ScreenVector.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SelectablePlotElement Class">
+<param name="Local" value="OxyPlot.SelectablePlotElement.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Selection Class">
+<param name="Local" value="OxyPlot.Selection.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SelectionMode Enumeration">
+<param name="Local" value="OxyPlot.SelectionMode.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="StandardFonts Class">
+<param name="Local" value="OxyPlot.StandardFonts.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="StreamExtensions Class">
+<param name="Local" value="OxyPlot.StreamExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="StringHelper Class">
+<param name="Local" value="OxyPlot.StringHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SutherlandHodgmanClipping Class">
+<param name="Local" value="OxyPlot.SutherlandHodgmanClipping.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SvgExporter Class">
+<param name="Local" value="OxyPlot.SvgExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SvgRenderContext Class">
+<param name="Local" value="OxyPlot.SvgRenderContext.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SvgWriter Class">
+<param name="Local" value="OxyPlot.SvgWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TrackerEventArgs Class">
+<param name="Local" value="OxyPlot.TrackerEventArgs.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TrackerHitResult Class">
+<param name="Local" value="OxyPlot.TrackerHitResult.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TrackerManipulator Class">
+<param name="Local" value="OxyPlot.TrackerManipulator.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="UIPlotElement Class">
+<param name="Local" value="OxyPlot.UIPlotElement.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="VerticalAlignment Enumeration">
+<param name="Local" value="OxyPlot.VerticalAlignment.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="XmlWriterBase Class">
+<param name="Local" value="OxyPlot.XmlWriterBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ZoomManipulator Class">
+<param name="Local" value="OxyPlot.ZoomManipulator.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ZoomRectangleManipulator Class">
+<param name="Local" value="OxyPlot.ZoomRectangleManipulator.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ZoomStepManipulator Class">
+<param name="Local" value="OxyPlot.ZoomStepManipulator.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Annotations Namespace">
+<param name="Local" value="OxyPlot.Annotations.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Annotation Class">
+<param name="Local" value="OxyPlot.Annotations.Annotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AnnotationLayer Enumeration">
+<param name="Local" value="OxyPlot.Annotations.AnnotationLayer.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AnnotationTextOrientation Enumeration">
+<param name="Local" value="OxyPlot.Annotations.AnnotationTextOrientation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ArrowAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.ArrowAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="EllipseAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.EllipseAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FunctionAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.FunctionAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FunctionAnnotationType Enumeration">
+<param name="Local" value="OxyPlot.Annotations.FunctionAnnotationType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ImageAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.ImageAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.LineAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineAnnotationType Enumeration">
+<param name="Local" value="OxyPlot.Annotations.LineAnnotationType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PathAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.PathAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PolygonAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.PolygonAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PolylineAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.PolylineAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RectangleAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.RectangleAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TextAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.TextAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TextualAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.TextualAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TileMapAnnotation Class">
+<param name="Local" value="OxyPlot.Annotations.TileMapAnnotation.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Axes Namespace">
+<param name="Local" value="OxyPlot.Axes.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AngleAxis Class">
+<param name="Local" value="OxyPlot.Axes.AngleAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Axis Class">
+<param name="Local" value="OxyPlot.Axes.Axis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AxisChangedEventArgs Class">
+<param name="Local" value="OxyPlot.Axes.AxisChangedEventArgs.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AxisChangeTypes Enumeration">
+<param name="Local" value="OxyPlot.Axes.AxisChangeTypes.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AxisLayer Enumeration">
+<param name="Local" value="OxyPlot.Axes.AxisLayer.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AxisPosition Enumeration">
+<param name="Local" value="OxyPlot.Axes.AxisPosition.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CategoryAxis Class">
+<param name="Local" value="OxyPlot.Axes.CategoryAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CategoryColorAxis Class">
+<param name="Local" value="OxyPlot.Axes.CategoryColorAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ColorAxisExtensions Class">
+<param name="Local" value="OxyPlot.Axes.ColorAxisExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DateTimeAxis Class">
+<param name="Local" value="OxyPlot.Axes.DateTimeAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DateTimeIntervalType Enumeration">
+<param name="Local" value="OxyPlot.Axes.DateTimeIntervalType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IColorAxis Interface">
+<param name="Local" value="OxyPlot.Axes.IColorAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LinearAxis Class">
+<param name="Local" value="OxyPlot.Axes.LinearAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LinearColorAxis Class">
+<param name="Local" value="OxyPlot.Axes.LinearColorAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LogarithmicAxis Class">
+<param name="Local" value="OxyPlot.Axes.LogarithmicAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="MagnitudeAxis Class">
+<param name="Local" value="OxyPlot.Axes.MagnitudeAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RangeColorAxis Class">
+<param name="Local" value="OxyPlot.Axes.RangeColorAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TickStyle Enumeration">
+<param name="Local" value="OxyPlot.Axes.TickStyle.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TimeSpanAxis Class">
+<param name="Local" value="OxyPlot.Axes.TimeSpanAxis.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.OpenXml Namespace">
+<param name="Local" value="OxyPlot.OpenXml.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="WordDocumentReportWriter Class">
+<param name="Local" value="OxyPlot.OpenXml.WordDocumentReportWriter.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Pdf Namespace">
+<param name="Local" value="OxyPlot.Pdf.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LatexReportWriter Class">
+<param name="Local" value="OxyPlot.Pdf.LatexReportWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PdfExporter Class">
+<param name="Local" value="OxyPlot.Pdf.PdfExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PdfReportWriter Class">
+<param name="Local" value="OxyPlot.Pdf.PdfReportWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PdfSharpExtensions Class">
+<param name="Local" value="OxyPlot.Pdf.PdfSharpExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RtfReportWriter Class">
+<param name="Local" value="OxyPlot.Pdf.RtfReportWriter.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Reporting Namespace">
+<param name="Local" value="OxyPlot.Reporting.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Alignment Enumeration">
+<param name="Local" value="OxyPlot.Reporting.Alignment.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DrawingFigure Class">
+<param name="Local" value="OxyPlot.Reporting.DrawingFigure.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Equation Class">
+<param name="Local" value="OxyPlot.Reporting.Equation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Figure Class">
+<param name="Local" value="OxyPlot.Reporting.Figure.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Header Class">
+<param name="Local" value="OxyPlot.Reporting.Header.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HeaderHelper Class">
+<param name="Local" value="OxyPlot.Reporting.HeaderHelper.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HtmlPlotElementType Enumeration">
+<param name="Local" value="OxyPlot.Reporting.HtmlPlotElementType.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HtmlReportWriter Class">
+<param name="Local" value="OxyPlot.Reporting.HtmlReportWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Image Class">
+<param name="Local" value="OxyPlot.Reporting.Image.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IReportWriter Interface">
+<param name="Local" value="OxyPlot.Reporting.IReportWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ItemsTable Class">
+<param name="Local" value="OxyPlot.Reporting.ItemsTable.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ItemsTableField Class">
+<param name="Local" value="OxyPlot.Reporting.ItemsTableField.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Paragraph Class">
+<param name="Local" value="OxyPlot.Reporting.Paragraph.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ParagraphStyle Class">
+<param name="Local" value="OxyPlot.Reporting.ParagraphStyle.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotFigure Class">
+<param name="Local" value="OxyPlot.Reporting.PlotFigure.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PropertyTable Class">
+<param name="Local" value="OxyPlot.Reporting.PropertyTable.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Report Class">
+<param name="Local" value="OxyPlot.Reporting.Report.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ReportItem Class">
+<param name="Local" value="OxyPlot.Reporting.ReportItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ReportSection Class">
+<param name="Local" value="OxyPlot.Reporting.ReportSection.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ReportStyle Class">
+<param name="Local" value="OxyPlot.Reporting.ReportStyle.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="StringExtensions Class">
+<param name="Local" value="OxyPlot.Reporting.StringExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Table Class">
+<param name="Local" value="OxyPlot.Reporting.Table.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TableCell Class">
+<param name="Local" value="OxyPlot.Reporting.TableCell.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TableColumn Class">
+<param name="Local" value="OxyPlot.Reporting.TableColumn.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TableOfContents Class">
+<param name="Local" value="OxyPlot.Reporting.TableOfContents.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TableRow Class">
+<param name="Local" value="OxyPlot.Reporting.TableRow.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TextReportWriter Class">
+<param name="Local" value="OxyPlot.Reporting.TextReportWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="WikiReportWriter Class">
+<param name="Local" value="OxyPlot.Reporting.WikiReportWriter.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Series Namespace">
+<param name="Local" value="OxyPlot.Series.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AreaSeries Class">
+<param name="Local" value="OxyPlot.Series.AreaSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarItem Class">
+<param name="Local" value="OxyPlot.Series.BarItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarItemBase Class">
+<param name="Local" value="OxyPlot.Series.BarItemBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarSeries Class">
+<param name="Local" value="OxyPlot.Series.BarSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarSeriesBase Class">
+<param name="Local" value="OxyPlot.Series.BarSeriesBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarSeriesBase<T> Class">
+<param name="Local" value="OxyPlot.Series.BarSeriesBase`1.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BoxPlotItem Structure">
+<param name="Local" value="OxyPlot.Series.BoxPlotItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BoxPlotSeries Class">
+<param name="Local" value="OxyPlot.Series.BoxPlotSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CandleStickSeries Class">
+<param name="Local" value="OxyPlot.Series.CandleStickSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CategorizedItem Class">
+<param name="Local" value="OxyPlot.Series.CategorizedItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CategorizedSeries Class">
+<param name="Local" value="OxyPlot.Series.CategorizedSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ColumnItem Class">
+<param name="Local" value="OxyPlot.Series.ColumnItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ColumnSeries Class">
+<param name="Local" value="OxyPlot.Series.ColumnSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ContourSeries Class">
+<param name="Local" value="OxyPlot.Series.ContourSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DataPointSeries Class">
+<param name="Local" value="OxyPlot.Series.DataPointSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ErrorColumnItem Class">
+<param name="Local" value="OxyPlot.Series.ErrorColumnItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ErrorColumnSeries Class">
+<param name="Local" value="OxyPlot.Series.ErrorColumnSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FunctionSeries Class">
+<param name="Local" value="OxyPlot.Series.FunctionSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HeatMapCoordinateDefinition Enumeration">
+<param name="Local" value="OxyPlot.Series.HeatMapCoordinateDefinition.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HeatMapSeries Class">
+<param name="Local" value="OxyPlot.Series.HeatMapSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HighLowItem Class">
+<param name="Local" value="OxyPlot.Series.HighLowItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="HighLowSeries Class">
+<param name="Local" value="OxyPlot.Series.HighLowSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IntervalBarItem Class">
+<param name="Local" value="OxyPlot.Series.IntervalBarItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IntervalBarSeries Class">
+<param name="Local" value="OxyPlot.Series.IntervalBarSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="IStackableSeries Interface">
+<param name="Local" value="OxyPlot.Series.IStackableSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ItemsSeries Class">
+<param name="Local" value="OxyPlot.Series.ItemsSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ITrackableSeries Interface">
+<param name="Local" value="OxyPlot.Series.ITrackableSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LabelPlacement Enumeration">
+<param name="Local" value="OxyPlot.Series.LabelPlacement.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineLegendPosition Enumeration">
+<param name="Local" value="OxyPlot.Series.LineLegendPosition.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineSeries Class">
+<param name="Local" value="OxyPlot.Series.LineSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PieSeries Class">
+<param name="Local" value="OxyPlot.Series.PieSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PieSlice Class">
+<param name="Local" value="OxyPlot.Series.PieSlice.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RectangleBarItem Class">
+<param name="Local" value="OxyPlot.Series.RectangleBarItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RectangleBarSeries Class">
+<param name="Local" value="OxyPlot.Series.RectangleBarSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ScatterPoint Class">
+<param name="Local" value="OxyPlot.Series.ScatterPoint.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ScatterSeries Class">
+<param name="Local" value="OxyPlot.Series.ScatterSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Series Class">
+<param name="Local" value="OxyPlot.Series.Series.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="StairStepSeries Class">
+<param name="Local" value="OxyPlot.Series.StairStepSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="StemSeries Class">
+<param name="Local" value="OxyPlot.Series.StemSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TornadoBarItem Class">
+<param name="Local" value="OxyPlot.Series.TornadoBarItem.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TornadoBarSeries Class">
+<param name="Local" value="OxyPlot.Series.TornadoBarSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TwoColorLineSeries Class">
+<param name="Local" value="OxyPlot.Series.TwoColorLineSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="XYAxisSeries Class">
+<param name="Local" value="OxyPlot.Series.XYAxisSeries.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.WindowsForms Namespace">
+<param name="Local" value="OxyPlot.WindowsForms.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ConverterExtensions Class">
+<param name="Local" value="OxyPlot.WindowsForms.ConverterExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="GraphicsRenderContext Class">
+<param name="Local" value="OxyPlot.WindowsForms.GraphicsRenderContext.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Plot Class">
+<param name="Local" value="OxyPlot.WindowsForms.Plot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PlotModelExtensions Class">
+<param name="Local" value="OxyPlot.WindowsForms.PlotModelExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PngExporter Class">
+<param name="Local" value="OxyPlot.WindowsForms.PngExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SvgExporter Class">
+<param name="Local" value="OxyPlot.WindowsForms.SvgExporter.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Wpf Namespace">
+<param name="Local" value="OxyPlot.Wpf.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AngleAxis Class">
+<param name="Local" value="OxyPlot.Wpf.AngleAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Annotation Class">
+<param name="Local" value="OxyPlot.Wpf.Annotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="AreaSeries Class">
+<param name="Local" value="OxyPlot.Wpf.AreaSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ArrowAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.ArrowAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Axis Class">
+<param name="Local" value="OxyPlot.Wpf.Axis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarSeries Class">
+<param name="Local" value="OxyPlot.Wpf.BarSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarSeriesBase Class">
+<param name="Local" value="OxyPlot.Wpf.BarSeriesBase.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="BarSeriesBase<T> Class">
+<param name="Local" value="OxyPlot.Wpf.BarSeriesBase`1.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CategorizedSeries Class">
+<param name="Local" value="OxyPlot.Wpf.CategorizedSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CategoryAxis Class">
+<param name="Local" value="OxyPlot.Wpf.CategoryAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ColumnSeries Class">
+<param name="Local" value="OxyPlot.Wpf.ColumnSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ConverterExtensions Class">
+<param name="Local" value="OxyPlot.Wpf.ConverterExtensions.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DataPointSeries Class">
+<param name="Local" value="OxyPlot.Wpf.DataPointSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="DateTimeAxis Class">
+<param name="Local" value="OxyPlot.Wpf.DateTimeAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="EllipseAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.EllipseAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FunctionAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.FunctionAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="InputBindingX Class">
+<param name="Local" value="OxyPlot.Wpf.InputBindingX.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ItemsSeries Class">
+<param name="Local" value="OxyPlot.Wpf.ItemsSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="KeyGestureExtension Class">
+<param name="Local" value="OxyPlot.Wpf.KeyGestureExtension.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.LineAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LinearAxis Class">
+<param name="Local" value="OxyPlot.Wpf.LinearAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LineSeries Class">
+<param name="Local" value="OxyPlot.Wpf.LineSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="LogarithmicAxis Class">
+<param name="Local" value="OxyPlot.Wpf.LogarithmicAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="MagnitudeAxis Class">
+<param name="Local" value="OxyPlot.Wpf.MagnitudeAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="MoreColors Class">
+<param name="Local" value="OxyPlot.Wpf.MoreColors.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyColorConverter Class">
+<param name="Local" value="OxyPlot.Wpf.OxyColorConverter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PathAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.PathAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Plot Class">
+<param name="Local" value="OxyPlot.Wpf.Plot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PngExporter Class">
+<param name="Local" value="OxyPlot.Wpf.PngExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PolygonAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.PolygonAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="PolylineAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.PolylineAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RectangleAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.RectangleAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RenderingControl Class">
+<param name="Local" value="OxyPlot.Wpf.RenderingControl.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RenderingEventListener Class">
+<param name="Local" value="OxyPlot.Wpf.RenderingEventListener.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RenderingEventManager Class">
+<param name="Local" value="OxyPlot.Wpf.RenderingEventManager.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ScatterSeries Class">
+<param name="Local" value="OxyPlot.Wpf.ScatterSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Series Class">
+<param name="Local" value="OxyPlot.Wpf.Series.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ShapesRenderContext Class">
+<param name="Local" value="OxyPlot.Wpf.ShapesRenderContext.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SvgExporter Class">
+<param name="Local" value="OxyPlot.Wpf.SvgExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TextAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.TextAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TextMeasurementMethod Enumeration">
+<param name="Local" value="OxyPlot.Wpf.TextMeasurementMethod.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TextualAnnotation Class">
+<param name="Local" value="OxyPlot.Wpf.TextualAnnotation.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ThicknessConverter Class">
+<param name="Local" value="OxyPlot.Wpf.ThicknessConverter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TimeSpanAxis Class">
+<param name="Local" value="OxyPlot.Wpf.TimeSpanAxis.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TrackerControl Class">
+<param name="Local" value="OxyPlot.Wpf.TrackerControl.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TrackerDefinition Class">
+<param name="Local" value="OxyPlot.Wpf.TrackerDefinition.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="TwoColorLineSeries Class">
+<param name="Local" value="OxyPlot.Wpf.TwoColorLineSeries.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="WeakEventListener<TEventManager,TEventArgs> Class">
+<param name="Local" value="OxyPlot.Wpf.WeakEventListener`2.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="WeakEventManagerBase<TManager> Class">
+<param name="Local" value="OxyPlot.Wpf.WeakEventManagerBase`1.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="XamlExporter Class">
+<param name="Local" value="OxyPlot.Wpf.XamlExporter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="XYAxisSeries Class">
+<param name="Local" value="OxyPlot.Wpf.XYAxisSeries.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="OxyPlot.Xps Namespace">
+<param name="Local" value="OxyPlot.Xps.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="FlowDocumentReportWriter Class">
+<param name="Local" value="OxyPlot.Xps.FlowDocumentReportWriter.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="XpsExporter Class">
+<param name="Local" value="OxyPlot.Xps.XpsExporter.html">
+</OBJECT>
+</UL>
+</UL>
+</UL>
+</BODY></HTML>

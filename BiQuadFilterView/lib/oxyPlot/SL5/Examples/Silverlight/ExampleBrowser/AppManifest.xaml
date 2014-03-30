@@ -1,0 +1,9 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="ExampleBrowser" EntryPointType="ExampleBrowser.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="ExampleBrowser" Source="ExampleBrowser.dll" />
+    <AssemblyPart x:Name="ExampleLibrary" Source="ExampleLibrary.dll" />
+    <AssemblyPart x:Name="OxyPlot" Source="OxyPlot.dll" />
+    <AssemblyPart x:Name="OxyPlot.Silverlight" Source="OxyPlot.Silverlight.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+  </Deployment.Parts>
+</Deployment>

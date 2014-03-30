@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>InterlaceMethod Enumeration (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.InterlaceMethod">InterlaceMethod Enumeration</h1>
+    <p>Defines interlace methods (chapter 8.2)</p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">enum</span> InterlaceMethod : Enum</code></pre>
+    <h2>Members</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Adam7</td>
+        <td>Adam7, defines seven distinct passes over the image. Each pass transmits a subset of the pixels in the reference image.
+The pass in which each pixel is transmitted (numbered from 1 to 7) is defined by replicating a 8-by-8 pattern over the
+entire image, starting at the upper left corner.</td>
+      </tr>
+      <tr>
+        <td>None</td>
+        <td>The null method, pixels are extracted sequentially from left to right, and scanlines sequentially from top to bottom.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

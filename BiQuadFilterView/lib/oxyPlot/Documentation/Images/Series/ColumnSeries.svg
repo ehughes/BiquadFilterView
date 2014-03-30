@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="400" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <polyline points="44.5854,300.895 40.5854,300.895" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,282.04 40.5854,282.04" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,263.185 40.5854,263.185" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,244.33 40.5854,244.33" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,206.6199 40.5854,206.6199" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,187.7649 40.5854,187.7649" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,168.9099 40.5854,168.9099" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,150.0549 40.5854,150.0549" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,112.3449 40.5854,112.3449" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,93.4898 40.5854,93.4898" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,74.6348 40.5854,74.6348" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,55.7798 40.5854,55.7798" style="fill:none;stroke:black;stroke-width:1" />
+  <text dominant-baseline="hanging" text-anchor="middle" transform="translate(112.5122,330.75)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">Category A</text>
+  <text dominant-baseline="hanging" text-anchor="middle" transform="translate(248.3659,330.75)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">Category B</text>
+  <text dominant-baseline="hanging" text-anchor="middle" transform="translate(384.2195,330.75)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">Category C</text>
+  <text dominant-baseline="hanging" text-anchor="middle" transform="translate(520.0732,330.75)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">Category D</text>
+  <polyline points="44.5854,319.75 44.5854,326.75" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="180.4391,319.75 180.4391,326.75" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="316.2927,319.75 316.2927,326.75" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="452.1464,319.75 452.1464,326.75" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="588,319.75 588,326.75" style="fill:none;stroke:black;stroke-width:1" />
+  <text dominant-baseline="middle" text-anchor="end" transform="translate(33.5854,319.75)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">0</text>
+  <text dominant-baseline="middle" text-anchor="end" transform="translate(33.5854,225.4749)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">50</text>
+  <text dominant-baseline="middle" text-anchor="end" transform="translate(33.5854,131.1999)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">100</text>
+  <polyline points="44.5854,319.75 37.5854,319.75" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,225.4749 37.5854,225.4749" style="fill:none;stroke:black;stroke-width:1" />
+  <polyline points="44.5854,131.1999 37.5854,131.1999" style="fill:none;stroke:black;stroke-width:1" />
+  <polygon points="78.5488,272.6125 112.5122,272.6125 112.5122,319.75 78.5488,319.75" style="fill:rgb(78,154,6);stroke:black;stroke-width:1" />
+  <polygon points="214.4025,61.4363 248.3659,61.4363 248.3659,319.75 214.4025,319.75" style="fill:rgb(78,154,6);stroke:black;stroke-width:1" />
+  <polygon points="350.2561,285.811 384.2195,285.811 384.2195,319.75 350.2561,319.75" style="fill:rgb(78,154,6);stroke:black;stroke-width:1" />
+  <polygon points="486.1098,244.33 520.0732,244.33 520.0732,319.75 486.1098,319.75" style="fill:rgb(78,154,6);stroke:black;stroke-width:1" />
+  <polygon points="112.5122,297.124 146.4756,297.124 146.4756,319.75 112.5122,319.75" style="fill:rgb(200,141,0);stroke:black;stroke-width:1" />
+  <polygon points="248.3659,293.353 282.3293,293.353 282.3293,319.75 248.3659,319.75" style="fill:rgb(200,141,0);stroke:black;stroke-width:1" />
+  <polygon points="384.2195,93.4898 418.1829,93.4898 418.1829,319.75 384.2195,319.75" style="fill:rgb(200,141,0);stroke:black;stroke-width:1" />
+  <polygon points="520.0732,270.727 554.0366,270.727 554.0366,319.75 520.0732,319.75" style="fill:rgb(200,141,0);stroke:black;stroke-width:1" />
+  <text dominant-baseline="hanging" text-anchor="middle" transform="translate(316.2927,8)" font-family="Segoe UI" font-size="18" font-weight="700" fill="black">ColumnSeries</text>
+  <polygon points="44.5854,45.9375 588,45.9375 588,319.75 44.5854,319.75" style="fill:none;stroke:black;stroke-width:1" />
+  <polygon points="227.1448,357.375 405.4406,357.375 405.4406,392 227.1448,392" style="fill:none;stroke:none;" />
+  <text dominant-baseline="hanging" text-anchor="start" transform="translate(255.1448,365.375)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">Series 1</text>
+  <polygon points="235.6948,367.2375 250.5948,367.2375 250.5948,382.1375 235.6948,382.1375" style="fill:rgb(78,154,6);stroke:black;stroke-width:1" />
+  <text dominant-baseline="hanging" text-anchor="start" transform="translate(348.2927,365.375)" font-family="Segoe UI" font-size="12" font-weight="400" fill="black">Series 2</text>
+  <polygon points="328.8427,367.2375 343.7427,367.2375 343.7427,382.1375 328.8427,382.1375" style="fill:rgb(200,141,0);stroke:black;stroke-width:1" />
+</svg>

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WPF Example</title>
+    <meta name="keywords" content="OxyPlot,WPF,Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>Tracker</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <p>The 'tracker' is shown when you press down the left mouse button over some data in the plot.By default the tracker shows the values of the current point.</p>
+    <h3>Format string</h3>
+    <p>The easiest way to modify the information shown in the tracker, is to modify the <code>TrackerFormatString</code> of the series.</p>
+    <p>The arguments are specific to each class.</p>
+    <table>
+      <tr>
+        <th>Class </th>
+        <th>{0} </th>
+        <th>{1} </th>
+        <th>Examples </th>
+      </tr>
+      <tr>
+        <td>LineSeries </td>
+        <td>X </td>
+        <td>Y </td>
+        <td>
+          <code>"{0:0.00} {1:0.00}"</code> </td>
+      </tr>
+    </table>
+    <p>The format string can also contain formatting codes for properties in the nearest item of the hit. Use the property name inside the curly braces: <code>{MyProperty:0.00}</code></p>
+    <p>The culture of the tracker format string can be set in the <code>Culture</code> property in the <code>PlotModel</code>. The default culture is the current UI culture. </p>
+    <h3>Template</h3>
+    <p>The WPF/Silverlight <code>Plot</code> controls contain a dependency property <code>DefaultTrackerTemplate</code> where a custom <code>ControlTemplate</code> can be defined.When the tracker is shown, the <code>DataContext</code> will be set to a <code>TrackerHitResult</code>. You can bind <code>Position</code> and data properties from the hit results. </p>
+    <pre><code>TODO: example template</code></pre>
+    <p>See the <code>Source\Examples\WPF\CustomTrackerDemo</code> application for examples on how to make custom trackers.</p>
+    <h3>Tracker control</h3>
+    <p>The WPF and Silverlight projects contain a <code>TrackerControl</code> that can be used in tracker templates.You should bind the <code>Position</code>, <code>LineExtents</code> and <code>Content</code> properties to data in the <code>TrackerHitResult</code>.Example</p>
+    <pre><code>TODO: template using TrackerControl</code></pre>
+    <h3>TrackerHitResult</h3>
+    <p>This class contains data about the current hit of the tracker:</p>
+    <table>
+      <tr>
+        <td>
+          <code>Position</code> </td>
+        <td>the XY screen coordinates of the tracker.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>DataPoint</code> </td>
+        <td>the data point if the tracker shows an item from a DataPointSeries.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>Series</code> </td>
+        <td>the current series.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>PlotModel</code> </td>
+        <td>the current plot model.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>LineExtents</code> </td>
+        <td>the rectangle that should be used to draw the horizontal and vertical lines.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>XAxis</code> </td>
+        <td>the current x axis.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>YAxis</code> </td>
+        <td>the current y axis.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>Item</code> </td>
+        <td>the current item if an <code>ItemsSource</code> was used to generate the data.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>Text</code> </td>
+        <td>the text to be shown in the tracker. If this property is set, the series' <code>TrackerFormatString</code> will not be used.</td>
+      </tr>
+    </table>
+    <h3>Tracker definitions</h3>
+    <p>If you want to specify different trackers for the series, you should define <code>TrackerDefinition</code>s in the <code>Plot</code> control.Set the <code>TrackerKey</code> of the series to select which <code>TrackerDefinition</code> to use.<br /></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

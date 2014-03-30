@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>PathAnnotation Class (OxyPlot.Wpf)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.Wpf.PathAnnotation">PathAnnotation Class</h1>
+    <p>This is a WPF wrapper of OxyPlot.PathAnnotation</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcherobject.aspx">DispatcherObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.dependencyobject.aspx">DependencyObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.media.visual.aspx">Visual</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.uielement.aspx">UIElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.aspx">FrameworkElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.Annotation.html">Annotation</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.TextualAnnotation.html">TextualAnnotation</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.PathAnnotation.html"><strong>PathAnnotation</strong></a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.FunctionAnnotation.html">FunctionAnnotation</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.PolylineAnnotation.html">PolylineAnnotation</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.LineAnnotation.html">LineAnnotation</a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.Wpf.html">OxyPlot.Wpf</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot.Wpf (in OxyPlot.Wpf.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> PathAnnotation : TextualAnnotation</code></pre>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ClipByXAxis</td>
+        <td>Gets or sets a value indicating whether to clip the annotation line by the X axis range.</td>
+      </tr>
+      <tr>
+        <td>ClipByYAxis</td>
+        <td>Gets or sets a value indicating whether to clip the annotation line by the Y axis range.</td>
+      </tr>
+      <tr>
+        <td>ClipText</td>
+        <td>Gets or sets a value indicating whether the text should be clipped within the plot area.</td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>Gets or sets the annotation color.</td>
+      </tr>
+      <tr>
+        <td>InternalAnnotation</td>
+        <td>Gets or sets the internal annotation object. (Inherited from <a title="Annotation Class" href="OxyPlot.Wpf.Annotation.html">Annotation</a>.)</td>
+      </tr>
+      <tr>
+        <td>Layer</td>
+        <td>Gets or sets the rendering layer of the annotation. The default value is OxyPlot.Annotations.AnnotationLayer.AboveSeries. (Inherited from <a title="Annotation Class" href="OxyPlot.Wpf.Annotation.html">Annotation</a>.)</td>
+      </tr>
+      <tr>
+        <td>LineJoin</td>
+        <td>Gets or sets the line join.</td>
+      </tr>
+      <tr>
+        <td>LineStyle</td>
+        <td>Gets or sets LineStyle.</td>
+      </tr>
+      <tr>
+        <td>StrokeThickness</td>
+        <td>Gets or sets StrokeThickness.</td>
+      </tr>
+      <tr>
+        <td>Text</td>
+        <td>Gets or sets the text. (Inherited from <a title="TextualAnnotation Class" href="OxyPlot.Wpf.TextualAnnotation.html">TextualAnnotation</a>.)</td>
+      </tr>
+      <tr>
+        <td>TextHorizontalAlignment</td>
+        <td>Gets or sets the text horizontal alignment.</td>
+      </tr>
+      <tr>
+        <td>TextMargin</td>
+        <td>Gets or sets the text margin (along the line).</td>
+      </tr>
+      <tr>
+        <td>TextOrientation</td>
+        <td>Gets or sets the text orientation.</td>
+      </tr>
+      <tr>
+        <td>TextPosition</td>
+        <td>Gets or sets the text position fraction.</td>
+      </tr>
+      <tr>
+        <td>TextVerticalAlignment</td>
+        <td>Gets or sets the vertical alignment of text (above or below the line).</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>CreateModel</td>
+        <td>Creates the internal annotation object.</td>
+      </tr>
+      <tr>
+        <td>SynchronizeProperties</td>
+        <td>Synchronizes the properties.</td>
+      </tr>
+    </table>
+    <h2>Fields</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ClipByXAxisProperty</td>
+        <td>The ClipByXAxis property.</td>
+      </tr>
+      <tr>
+        <td>ClipByYAxisProperty</td>
+        <td>The ClipByYAxis property.</td>
+      </tr>
+      <tr>
+        <td>ClipTextProperty</td>
+        <td>The ClipText property.</td>
+      </tr>
+      <tr>
+        <td>ColorProperty</td>
+        <td>The Color property.</td>
+      </tr>
+      <tr>
+        <td>LineJoinProperty</td>
+        <td>The line join property.</td>
+      </tr>
+      <tr>
+        <td>LineStyleProperty</td>
+        <td>The line style property.</td>
+      </tr>
+      <tr>
+        <td>StrokeThicknessProperty</td>
+        <td>The stroke thickness property.</td>
+      </tr>
+      <tr>
+        <td>TextHorizontalAlignmentProperty</td>
+        <td>The TextHorizontalAlignment property.</td>
+      </tr>
+      <tr>
+        <td>TextMarginProperty</td>
+        <td>The TextMargin property.</td>
+      </tr>
+      <tr>
+        <td>TextOrientationProperty</td>
+        <td>The TextOrientation property.</td>
+      </tr>
+      <tr>
+        <td>TextPositionProperty</td>
+        <td>The TextPosition property.</td>
+      </tr>
+      <tr>
+        <td>TextVerticalAlignmentProperty</td>
+        <td>The TextVerticalAlignment property.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

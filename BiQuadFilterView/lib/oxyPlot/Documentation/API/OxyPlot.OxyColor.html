@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>OxyColor Structure (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.OxyColor">OxyColor Structure</h1>
+    <p>Describes a color in terms of alpha, red, green, and blue channels.</p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">struct</span> OxyColor : ICodeGenerating</code></pre>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>Gets the alpha value.</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>Gets the blue value.</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>Gets the green value.</td>
+      </tr>
+      <tr>
+        <td>R</td>
+        <td>Gets the red value.</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ChangeAlpha</td>
+        <td>Create a new color based on the current color and the specified opacity value.</td>
+      </tr>
+      <tr>
+        <td>ChangeIntensity</td>
+        <td>Changes the intensity.</td>
+      </tr>
+      <tr>
+        <td>ColorDifference</td>
+        <td>Calculates the difference between two <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a>s</td>
+      </tr>
+      <tr>
+        <td>Complementary</td>
+        <td>Calculates the complementary OxyColor.</td>
+      </tr>
+      <tr>
+        <td>Equals(object)</td>
+        <td>Determines whether the specified <a title="object" href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a> is equal to this instance.</td>
+      </tr>
+      <tr>
+        <td>Equals(OxyColor)</td>
+        <td>Determines whether the specified <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a> is equal to this instance.</td>
+      </tr>
+      <tr>
+        <td>FromAColor</td>
+        <td>Creates a color defined by an alpha value and another color.</td>
+      </tr>
+      <tr>
+        <td>FromArgb</td>
+        <td>Creates a color from the specified ARGB values.</td>
+      </tr>
+      <tr>
+        <td>FromHsv(double, double, double)</td>
+        <td>Convert from HSV to <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a>
+http://en.wikipedia.org/wiki/HSL_Color_space</td>
+      </tr>
+      <tr>
+        <td>FromHsv(Double[])</td>
+        <td>Creates a OxyColor from the specified HSV array.</td>
+      </tr>
+      <tr>
+        <td>FromRgb</td>
+        <td>Creates a new <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a> structure from the specified RGB values.</td>
+      </tr>
+      <tr>
+        <td>FromUInt32</td>
+        <td>Convert an <a title="uint" href="http://msdn.microsoft.com/en-us/library/system.uint32.aspx">uint</a> to a <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a>.</td>
+      </tr>
+      <tr>
+        <td>GetActualColor</td>
+        <td>Gets the actual color.</td>
+      </tr>
+      <tr>
+        <td>GetColorName</td>
+        <td>Gets the color name.</td>
+      </tr>
+      <tr>
+        <td>GetHashCode</td>
+        <td>Returns a hash code for this instance.</td>
+      </tr>
+      <tr>
+        <td>HueDifference</td>
+        <td>Calculate the difference in hue between two <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a>s.</td>
+      </tr>
+      <tr>
+        <td>Interpolate</td>
+        <td>Interpolates the specified colors.</td>
+      </tr>
+      <tr>
+        <td>IsAutomatic</td>
+        <td>Determines whether this color is automatic.</td>
+      </tr>
+      <tr>
+        <td>IsInvisible</td>
+        <td>Determines whether this color is invisible.</td>
+      </tr>
+      <tr>
+        <td>IsUndefined</td>
+        <td>Determines whether this color is undefined.</td>
+      </tr>
+      <tr>
+        <td>IsVisible</td>
+        <td>Determines whether this color is visible.</td>
+      </tr>
+      <tr>
+        <td>Parse</td>
+        <td>Parse a string.</td>
+      </tr>
+      <tr>
+        <td>ToByteString</td>
+        <td>Convert OxyColor to double string.</td>
+      </tr>
+      <tr>
+        <td>ToCode</td>
+        <td>Returns C# code that generates this instance.</td>
+      </tr>
+      <tr>
+        <td>ToHsv</td>
+        <td>Converts from a <a title="OxyColor Structure" href="OxyPlot.OxyColor.html">OxyColor</a> to HSV values (double)</td>
+      </tr>
+      <tr>
+        <td>ToString</td>
+        <td>Returns a <a title="string" href="http://msdn.microsoft.com/en-us/library/system.string.aspx">string</a> that represents this instance.</td>
+      </tr>
+      <tr>
+        <td>ToUint</td>
+        <td>Converts to an unsigned integer.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\obj\Debug\BiQuadFilterView.csprojResolveAssemblyReference.cache
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.BiquadFilterView.resources
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\obj\Debug\BiQuadFilterView.csproj.GenerateResource.Cache
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\OxyPlot.dll
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\OxyPlot.pdb
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\OxyPlot.xml
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\OxyPlot.WindowsForms.pdb
+C:\Users\emh203\Desktop\Garage\WindowsFormsApplication1\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\emh203\gdrive\IIR\bin\Debug\BiQuadFilterView.exe.config
+C:\Users\emh203\gdrive\IIR\bin\Debug\BiQuadFilterView.exe
+C:\Users\emh203\gdrive\IIR\bin\Debug\BiQuadFilterView.pdb
+C:\Users\emh203\gdrive\IIR\bin\Debug\OxyPlot.dll
+C:\Users\emh203\gdrive\IIR\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\emh203\gdrive\IIR\bin\Debug\OxyPlot.pdb
+C:\Users\emh203\gdrive\IIR\bin\Debug\OxyPlot.xml
+C:\Users\emh203\gdrive\IIR\bin\Debug\OxyPlot.WindowsForms.pdb
+C:\Users\emh203\gdrive\IIR\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\emh203\gdrive\IIR\obj\Debug\BiQuadFilterView.csprojResolveAssemblyReference.cache
+C:\Users\emh203\gdrive\IIR\obj\Debug\WindowsFormsApplication1.BiquadFilterView.resources
+C:\Users\emh203\gdrive\IIR\obj\Debug\BiQuadFilterView.Properties.Resources.resources
+C:\Users\emh203\gdrive\IIR\obj\Debug\BiQuadFilterView.csproj.GenerateResource.Cache
+C:\Users\emh203\gdrive\IIR\obj\Debug\BiQuadFilterView.exe
+C:\Users\emh203\gdrive\IIR\obj\Debug\BiQuadFilterView.pdb
+C:\Users\Eli\Google Drive\IIR\bin\Debug\BiQuadFilterView.exe.config
+C:\Users\Eli\Google Drive\IIR\obj\Debug\BiQuadFilterView.exe
+C:\Users\Eli\Google Drive\IIR\obj\Debug\BiQuadFilterView.pdb
+C:\Users\Eli\Google Drive\IIR\bin\Debug\BiQuadFilterView.exe
+C:\Users\Eli\Google Drive\IIR\bin\Debug\BiQuadFilterView.pdb
+C:\Users\Eli\Google Drive\IIR\bin\Debug\OxyPlot.dll
+C:\Users\Eli\Google Drive\IIR\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\Eli\Google Drive\IIR\bin\Debug\OxyPlot.pdb
+C:\Users\Eli\Google Drive\IIR\bin\Debug\OxyPlot.xml
+C:\Users\Eli\Google Drive\IIR\bin\Debug\OxyPlot.WindowsForms.pdb
+C:\Users\Eli\Google Drive\IIR\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\Eli\Google Drive\IIR\obj\Debug\WindowsFormsApplication1.BiquadFilterView.resources
+C:\Users\Eli\Google Drive\IIR\obj\Debug\BiQuadFilterView.Properties.Resources.resources
+C:\Users\Eli\Google Drive\IIR\obj\Debug\BiQuadFilterView.csproj.GenerateResource.Cache

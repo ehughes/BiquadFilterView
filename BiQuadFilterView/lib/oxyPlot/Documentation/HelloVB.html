@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WPF Example</title>
+    <meta name="keywords" content="OxyPlot,WPF,Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>WPF Example</h2>
+    <p>This example shows how to create a WPF application in VB.NET where the content of the plot is defined in code.</p>
+    <p>Create a new VB.NET Windows/WPF project and add a reference to the OxyPlot.Wpf NuGet package. Then create a view model class:</p>
+    <pre><code>Imports OxyPlot
+Imports OxyPlot.Series
+
+Public Class MainViewModel
+
+    Private mmodel As PlotModel
+
+    Public Sub New()
+
+        Model = New PlotModel()
+
+        Model.Title = "Simple example"
+        Model.Subtitle = "using OxyPlot in VB.NET"
+
+        Dim series1 = New LineSeries("Series 1")
+        series1.MarkerType = MarkerType.Circle
+        series1.Points.Add(New DataPoint(0, 0))
+        series1.Points.Add(New DataPoint(10, 18))
+        series1.Points.Add(New DataPoint(20, 12))
+        series1.Points.Add(New DataPoint(30, 8))
+        series1.Points.Add(New DataPoint(40, 15))
+
+        Dim series2 = New LineSeries("Series 2")
+        series2.MarkerType = MarkerType.Square
+        series2.Points.Add(New DataPoint(0, 4))
+        series2.Points.Add(New DataPoint(10, 12))
+        series2.Points.Add(New DataPoint(20, 16))
+        series2.Points.Add(New DataPoint(30, 25))
+        series2.Points.Add(New DataPoint(40, 5))
+
+        Model.Series.Add(series1)
+        Model.Series.Add(series2)
+
+    End Sub
+
+    Property Model() As PlotModel
+        Get
+            Return mmodel
+        End Get
+        Set(value As PlotModel)
+            mmodel = value
+        End Set
+    End Property
+
+End Class</code></pre>
+    <p>and edit the main window XAML:</p>
+    <pre><code><span class="tag">&lt;</span><span class="name">Window</span><span class="key"> x:Class</span><span class="value">="MainWindow"</span><span class="key">
+    xmlns</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span><span class="key">
+    xmlns:x</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml"</span><span class="key">
+    xmlns:oxy</span><span class="value">="http://oxyplot.codeplex.com"</span><span class="key">
+    xmlns:local</span><span class="value">="clr-namespace:SimleDemoVB"</span><span class="key">
+    Title</span><span class="value">="OxyPlot in VB.NET"</span><span class="key"> Height</span><span class="value">="480"</span><span class="key"> Width</span><span class="value">="640"</span><span class="key"> Icon</span><span class="value">="OxyPlot.ico"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Window.DataContext</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">local:MainViewModel</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Window.DataContext</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Grid</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Model</span><span class="value">="{Binding Model}"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Grid</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">Window</span><span class="tag">&gt;</span></code></pre>
+    <p>The example is included in <code>..\Source\Examples\WPF\SimleDemoVB</code>.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

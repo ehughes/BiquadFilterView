@@ -1,0 +1,1804 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OxyPlot</title>
+    <meta name="keywords" content="OxyPlot,User's guide" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h1>Contents</h1>
+    <ul>
+      <li>
+        <a href="#0">Introduction</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#1">Introduction</a>
+        </li>
+        <li>
+          <a href="#2">Background</a>
+        </li>
+        <li>
+          <a href="#3">Features</a>
+        </li>
+        <li>
+          <a href="#4">Frequently asked questions</a>
+        </li>
+        <li>
+          <a href="#5">License</a>
+        </li>
+        <li>
+          <a href="#6">AUTHORS</a>
+        </li>
+        <li>
+          <a href="#7">CONTRIBUTORS</a>
+        </li>
+        <li>
+          <a href="#8">Building OxyPlot</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#9">Getting started</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#10">WPF Example</a>
+        </li>
+        <li>
+          <a href="#11">Silverlight Example</a>
+        </li>
+        <li>
+          <a href="#12">Windows Forms Example</a>
+        </li>
+        <li>
+          <a href="#13">Windows Store app example</a>
+        </li>
+        <li>
+          <a href="#14">GTK# Example</a>
+        </li>
+        <li>
+          <a href="#15">Xamarin.Android Example</a>
+        </li>
+        <li>
+          <a href="#16">Xamarin.iOS Example</a>
+        </li>
+        <li>
+          <a href="#17">Xamarin.Mac Example</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#18">Common tasks</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#19">How to bind data</a>
+        </li>
+        <li>
+          <a href="#20">How to refresh a plot</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#21">Export</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#22">Export to PNG</a>
+        </li>
+        <li>
+          <a href="#23">Export to PDF</a>
+        </li>
+        <li>
+          <a href="#24">Export to SVG</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#25">Plot model</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#26">Plot model</a>
+        </li>
+        <li>
+          <a href="#27">Axes</a>
+        </li>
+        <li>
+          <a href="#28">Series</a>
+        </li>
+        <li>
+          <a href="#29">Annotations</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#30">Plot controls</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#31">WPF plot control</a>
+        </li>
+        <li>
+          <a href="#32">Tracker</a>
+        </li>
+        <li>
+          <a href="#33">Mouse binding</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#34">Guidelines</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#35">Performance</a>
+        </li>
+        <li>
+          <a href="#36">Design guidelines</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#37">Extras</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#38">Creating PDF files</a>
+        </li>
+        <li>
+          <a href="#39">Report model</a>
+        </li>
+        <li>
+          <a href="#40">Drawing model</a>
+        </li>
+      </ul>
+      <li>
+        <a href="#41">Contribute</a>
+      </li>
+      <ul>
+        <li>
+          <a href="#42">Issues</a>
+        </li>
+        <li>
+          <a href="#43">Architecture</a>
+        </li>
+        <li>
+          <a href="#44">Coding style</a>
+        </li>
+        <li>
+          <a href="#45">API Documentation</a>
+        </li>
+        <li>
+          <a href="#46">User's guide</a>
+        </li>
+        <li>
+          <a href="#47">Contributions</a>
+        </li>
+      </ul>
+    </ul>
+    <h1 id="0">Introduction</h1>
+    <h2 id="1">Introduction</h2>
+    <p>OxyPlot is an open source plot generation library. OxyPlot is licensed under the MIT license, which permits use in proprietary software.</p>
+    <p>The library is based on .NET and targets multiple platforms. The core library is platform-independent, which makes it easy to re-use plotting code on different .NET based platforms.</p>
+    <p>The goal has been to provide a plotting model that is simple to use and open for extension. It should be possible to change the appearance of your plots by changing simple properties. More customization can be achieved by deriving new subclasses that have full control of both behaviour and rendering.</p>
+    <p>The features of the library can be explored in the online <a href="http://www.oxyplot.org/examplebrowser">Silverlight example browser</a> or in the native example browsers implemented on all supported platforms.</p>
+    <p>
+      <div class="figure">
+        <img src="Images/Introduction.png" alt="" />
+      </div>
+    </p>
+    <h2 id="2">Background</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <ul>
+      <li>started in 2010 as a simple WPF plotting component, focusing on simplicity, performance and visual appearance.</li>
+      <li>inspired by the books written by Edward Tufte and Stephen Few. Their principles have been imporant when designing this component.</li>
+      <li>primarily focused on two-dimensional coordinate systems</li>
+      <li>It is great to see that other developers find the library useful for both commercial and non-commercial use. Contributions to the source code are also greatly appreciated, look at the <a href="https://oxyplot.codeplex.com/workitem/list/basic">issue list</a> and the <a href="Contributions.html">contributions</a> pages if you would like to get involved</li>
+    </ul>
+    <h2 id="3">Features</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h3>Platforms</h3>
+    <p>Interactive controls are implemented on the following platforms</p>
+    <ul>
+      <li>WPF</li>
+      <li>Windows Forms</li>
+      <li>Silverlight</li>
+      <li>Windows Store App</li>
+      <li>GTK#</li>
+      <li>Xamarin.Android</li>
+      <li>Xamarin.iOS</li>
+      <li>Xamarin.Mac</li>
+    </ul>
+    <h3>Plot types</h3>
+    <ul>
+      <li>XY (horizontal and vertical axes)</li>
+      <li>Cartesian (same scale on X and Y axis)</li>
+      <li>Polar</li>
+      <li>Pie chart</li>
+    </ul>
+    <h3>Axes</h3>
+    <table>
+      <tr>
+        <td>Linear </td>
+        <td />
+      </tr>
+      <tr>
+        <td>Logarithmic </td>
+        <td />
+      </tr>
+      <tr>
+        <td>CategoryAxis </td>
+        <td>for bar and column series </td>
+      </tr>
+      <tr>
+        <td>Date/time (alpha) </td>
+        <td />
+      </tr>
+      <tr>
+        <td>Time span (alpha) </td>
+        <td />
+      </tr>
+      <tr>
+        <td>LinearColorAxis </td>
+        <td>for heat maps and scatter series</td>
+      </tr>
+      <tr>
+        <td>AngleAxis </td>
+        <td>for polar plots</td>
+      </tr>
+      <tr>
+        <td>MagnitudeAxis </td>
+        <td>for polar plots</td>
+      </tr>
+    </table>
+    <h3>Series</h3>
+    <p>The following types of series are included in the core library</p>
+    <p>
+      <em> TODO - add missing types </em>
+    </p>
+    <table>
+      <tr>
+        <th>Use </th>
+        <th>to create </th>
+      </tr>
+      <tr>
+        <td>LineSeries </td>
+        <td>line plots (graphs) </td>
+      </tr>
+      <tr>
+        <td>ScatterSeries </td>
+        <td>scatter plots (scatterplots, scattergraphs)</td>
+      </tr>
+      <tr>
+        <td>AreaSeries </td>
+        <td>area plots</td>
+      </tr>
+      <tr>
+        <td>StemSeries </td>
+        <td>stem charts</td>
+      </tr>
+      <tr>
+        <td>StairStepSeries </td>
+        <td>stairstep charts</td>
+      </tr>
+      <tr>
+        <td>HighLowSeries </td>
+        <td>open-high-low-close (OHLC) charts</td>
+      </tr>
+      <tr>
+        <td>CandlestickSeries </td>
+        <td>candlestick charts</td>
+      </tr>
+      <tr>
+        <td>BarSeries </td>
+        <td>bar charts</td>
+      </tr>
+      <tr>
+        <td>ColumnSeries </td>
+        <td>column charts</td>
+      </tr>
+      <tr>
+        <td>PieSeries </td>
+        <td>pie charts</td>
+      </tr>
+      <tr>
+        <td>HeatMapSeries </td>
+        <td>heat maps</td>
+      </tr>
+      <tr>
+        <td>ContourSeries </td>
+        <td>contour plots</td>
+      </tr>
+    </table>
+    <p>Different types of series can be added to the same plot.</p>
+    <p>It is easy to extend with custom series types.</p>
+    <h3>Annotations</h3>
+    <p>
+      <em> TODO - add missing types </em>
+    </p>
+    <table>
+      <tr>
+        <th>Annotation </th>
+        <th>Description </th>
+      </tr>
+      <tr>
+        <td>LineAnnotation </td>
+        <td />
+      </tr>
+      <tr>
+        <td>ArrowAnnotation</td>
+        <td />
+      </tr>
+    </table>
+    <h3>Output file formats</h3>
+    <p>The plots can be exported to the following raster and vector file formats:</p>
+    <ul>
+      <li>
+        <a href="ExportPng.html">PNG</a>
+      </li>
+      <li>
+        <a href="ExportSvg.html">SVG</a>
+      </li>
+      <li>
+        <a href="ExportPdf.html">PDF</a>
+      </li>
+      <li>XPS</li>
+    </ul>
+    <h3>Limitations</h3>
+    <ul>
+      <li>the plot controls are not subscribing to <code>INotifyPropertyChanged</code> and <code>INotifyCollectionChanged</code> events. You must manually refresh the plots when changing your data.</li>
+      <li>no animations</li>
+      <li>no gradient or hatch brushes</li>
+    </ul>
+    <h2 id="4">Frequently asked questions</h2>
+    <h3>Where is the source code?</h3>
+    <p>You can clone the Mercurial repository from <code>https://hg.codeplex.com/oxyplot</code>, or download a zip archive from the "Source code" tab at <a href="http://oxyplot.codeplex.com">oxyplot.codeplex.com</a>. It is recommended to use Mercurial since the source code is frequently updated.</p>
+    <h3>Where can I find examples?</h3>
+    <p>All solutions contain an "ExampleBrowser" project that can be used to render the plots in the "ExampleLibrary" project.The example library contains platform independent code and the source can be found in <code>~Source\Examples\ExampleLibrary\Examples</code>. There are also platform specific examples in the "Examples" solution folders.</p>
+    <h3>The OxyPlot core library cannot be built in VS2010</h3>
+    <p>You probably need to install <a href="http://visualstudiogallery.msdn.microsoft.com/b0e0b5e9-e138-410b-ad10-00cb3caf4981/">Portable library tools</a></p>
+    <h3>The XAML visual designer fails in VS2012</h3>
+    <p>Make sure you have updated to service pack 3 or later. If it still fails you may need to repair your installation of Visual Studio.</p>
+    <h3>Is support for 3D plots planned?</h3>
+    <p>No.</p>
+    <h2 id="5">License</h2>
+    <p>Information about the license is found in the <code>~/LICENSE</code> file. </p>
+    <p>OxyPlot is licensed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> license. This is the shortest and probably broadest of all the popular open-source licenses. Its terms are very loose and more permissive than most other licenses. It is also compatible with <a href="http://en.wikipedia.org/wiki/GPL">GPL</a>.</p>
+    <pre><code>The MIT License (MIT)
+
+Copyright (c) 2014 OxyPlot contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre>
+    <p>The license is explained in <a href="http://www.smashingmagazine.com/2010/03/24/a-short-guide-to-open-source-and-similar-licenses/">a short guide to open source licenses</a>:</p>
+    <ul>
+      <li>You can use, copy and modify the software however you want. No one can prevent you from using it on any project, from copying it however many times you want and in whatever format you like, or from changing it however you want.</li>
+      <li>You can give the software away for free or sell it. You have no restrictions on how to distribute it.</li>
+      <li>The only restriction is that it be accompanied by the license agreement.</li>
+    </ul>
+    <p>The MIT License is the least restrictive license out there. It basically says that anyone can do whatever they want with the licensed material, as long as it is accompanied by the license.</p>
+    <h2 id="6">AUTHORS</h2>
+    <p>Information about the copyright holders is found in the <code>~/AUTHORS</code> file. </p>
+    <pre><code># This is the official list of OxyPlot authors for copyright purposes.
+# This file is distinct from the CONTRIBUTORS file.
+# See the latter for an explanation.
+
+# Names should be added to this file as
+#	Name or Organization &lt;email address&gt;
+# The email address is not required for organizations.
+
+# Please keep the list sorted.
+
+Oystein Bjorke &lt;oystein.bjorke@gmail.com&gt;</code></pre>
+    <h2 id="7">CONTRIBUTORS</h2>
+    <p>Information about the contributors is found in the <code>~/CONTRIBUTORS</code> file. </p>
+    <pre><code># This is the official list of people who have contributed
+# to the OxyPlot repository.
+# The AUTHORS file lists the copyright holders; this file
+# lists people.
+
+# People submitting code should be listed in this file (by email address).
+
+# Names should be added to this file like so:
+#     Name &lt;email address&gt;
+
+# Please keep the list sorted.
+
+benjaminrupp
+Benoit Blanchon &lt;benoit.blanchon@gmail.com&gt;
+br
+brantheman
+Brannon King
+darrelbrown
+David Wong &lt;dvkwong0@gmail.com&gt;
+Don Syme &lt;donsyme@fastmail.fm&gt;
+efontana2
+elliatab
+eric
+Garrett
+Gimly
+jaykul
+Johan20D
+julien.bataille
+levi_botelho
+lsowen
+Memphisch &lt;memphis@machzwo.de&gt;
+methdotnet
+moljac
+mroth
+Oleg Tarasov &lt;oleg.v.tarasov@gmail.com&gt;
+Oystein Bjorke &lt;oystein.bjorke@gmail.com&gt;
+jezza323
+thepretender	
+tephyrnex
+tibel
+Xavier</code></pre>
+    <h2 id="8">Building OxyPlot</h2>
+    <h3>Requirements</h3>
+    <p>The OxyPlot solutions can be opened in</p>
+    <ul>
+      <li>VS 2010 (with the <a href="http://visualstudiogallery.msdn.microsoft.com/b0e0b5e9-e138-410b-ad10-00cb3caf4981">Portable Library Tools</a> extension)</li>
+      <li>VS 2012 (with the latest update)</li>
+      <li>VS 2013</li>
+      <li>MonoDevelop</li>
+      <li>Xamarin Studio (for GTK#, Android, iOS and OSX apps)</li>
+    </ul>
+    <p>VS Express does not support Portable Class Libraries, and cannot be used to build OxyPlot. But, you can use VS Express to build applications that reference the OxyPlot assemblies!</p>
+    <p>Depending on what platform you want to build, you may need to install extra SDKs or target framework profiles</p>
+    <ul>
+      <li>
+        <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">.NET 3.5</a>
+      </li>
+      <li>.NET 4.0</li>
+      <li>.NET 4.5</li>
+      <li>Silverlight 4</li>
+      <li>Silverlight 5</li>
+      <li>Windows Store App</li>
+      <li>
+        <a href="http://www.mono-project.com/GtkSharp">GTK#</a>
+      </li>
+      <li>Xamarin.iOS</li>
+      <li>Xamarin.Android</li>
+      <li>Xamarin.Mac</li>
+      <li>MonoTouch</li>
+      <li>Mono for Android</li>
+      <li>MonoMac</li>
+    </ul>
+    <h3>Obtain the source code</h3>
+    <p>OxyPlot is using Mercurial (Hg) distributed version control system (DVCS). To obtain the code, it is recommended to install one of the following Mercurial clients</p>
+    <ul>
+      <li>
+        <a href="http://tortoisehg.bitbucket.org/">TortoiseHg</a> (Windows shell extension)</li>
+      <li>
+        <a href="http://www.sourcetreeapp.com/">SourceTree</a> (for Windows and Mac, also supports Git)</li>
+      <li>
+        <a href="http://mercurial.selenic.com/">Mercurial</a> (command line)</li>
+    </ul>
+    <p>There is also a Mercurial plug-in for Visual Studio: <a href="http://visualhg.codeplex.com/">VisualHG</a></p>
+    <p>Clone the repository from <code>https://hg.codeplex.com/oxyplot</code></p>
+    <p>
+      <div class="figure">
+        <img src="Images/TortoiseHgClone.png" alt="" />
+      </div>
+    </p>
+    <p>or from the command line</p>
+    <pre><code>hg clone https://hg.codeplex.com/oxyplot</code></pre>
+    <p>If you don't want to use Mercurial, you can also obtain the complete source code from the <a href="http://oxyplot.codeplex.com">CodePlex</a> project page. Navigate to the "Source Code" tab, then click the "Download" link.</p>
+    <h3>Build</h3>
+    <p>It should be possible to open the solution and build without any additional steps.You can also build the source code by scripts in the <code>Build/</code> folder.</p>
+    <h3>Build output</h3>
+    <p>The build output of the <em>Release</em> configurations are placed in the <code>Output/</code> folder. The output of the <em>Debug</em> configurations are placed under the <code>Source/*/bin/Debug</code> folders. </p>
+    <h3>Additional information</h3>
+    <p>OxyPlot uses <a href="https://github.com/SimonCropp/Pepita">Pepita</a> to update the Nuget packages. The <code>PepitaGet.dll</code> library is placed in <code>Tools\Pepita</code> folder. The PepitaGet tasks will be executed every time the solution is built.</p>
+    <p>OxyPlot is currently being built by <a href="http://www.microsoft.com/visualstudio">Visual Studio 2013</a> on a Windows 8.1 virtual machine (running on <a href="https://www.virtualbox.org">VirtualBox</a>). The build machine is running <a href="http://www.jetbrains.com/teamcity/">TeamCity</a> and trigs the build on every code check-in. The build steps are described in the <code>Build/BuildSteps.txt</code> file. The build machine is automatically pushing <a href="http://nuget.org">NuGet</a> packages and uploading the output files to Codeplex and oxyplot.org.</p>
+    <p>
+      <div class="figure">
+        <img src="Images/BuildMachine.png" alt="" />
+      </div>
+    </p>
+    <h1 id="9">Getting started</h1>
+    <h2 id="10">WPF Example</h2>
+    <p>This example shows how to create a WPF application where the content of the plot is defined in code.</p>
+    <h3>Create project</h3>
+    <p>Start Visual Studio and select "FILE -&gt; New -&gt; Project..." to create a new WPF application:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfNewProject.png" alt="" />
+      </div>
+    </p>
+    <h3>Add references</h3>
+    <p>You need references to the OxyPlot and OxyPlot.Wpf assemblies. The easiest way to add these is to right click on the "References" item in the Solution Explorer and select "Manage NuGet Packages..." (this requires that the "NuGet Package Manager" extension is installed):</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfAddReference.png" alt="" />
+      </div>
+    </p>
+    <p>In the "Manage NuGet packages" dialog, search for "OxyPlot" and select the "OxyPlot.Wpf" package:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfInstallPackage.png" alt="" />
+      </div>
+    </p>
+    <p>You can also use the <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a> to install the package:</p>
+    <pre><code>PM&gt; Install-Package OxyPlot.Wpf</code></pre>
+    <h3>Create a view model</h3>
+    <p>Add a class that creates a <a href="API/OxyPlot.PlotModel.html">PlotModel</a> and a <a href="API/OxyPlot.FunctionSeries.html">FunctionSeries</a>.</p>
+    <pre><code><span class="keyword">namespace</span> WpfApplication1
+{
+    <span class="keyword">using</span> System;
+
+    <span class="keyword">using</span> OxyPlot;
+    <span class="keyword">using</span> OxyPlot.Series;
+
+    <span class="keyword">public</span> <span class="keyword">class</span> MainViewModel
+    {
+        <span class="keyword">public</span> MainViewModel()
+        {
+            <span class="keyword">this</span>.MyModel = <span class="keyword">new</span> PlotModel(<span class="string">"Example 1"</span>);
+            <span class="keyword">this</span>.MyModel.Series.Add(<span class="keyword">new</span> FunctionSeries(Math.Cos, 0, 10, 0.1, <span class="string">"cos(x)"</span>));
+        }
+
+        <span class="keyword">public</span> PlotModel MyModel { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }
+    }
+}</code></pre>
+    <h3>Create the view</h3>
+    <p>Define the namespace in the <code>Window</code> element, set the <code>DataContext</code> and add a <a href="API/OxyPlot.Wpf.Plot.html"><code>Plot</code></a> control:</p>
+    <pre><code><span class="tag">&lt;</span><span class="name">Window</span><span class="key"> x:Class</span><span class="value">="WpfApplication1.MainWindow"</span><span class="key">
+        xmlns</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span><span class="key">
+        xmlns:x</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml"</span><span class="key"> xmlns:oxy</span><span class="value">="http://oxyplot.codeplex.com"</span><span class="key">
+        xmlns:local</span><span class="value">="clr-namespace:WpfApplication1"</span><span class="key">
+        Title</span><span class="value">="Example 1 (WPF)"</span><span class="key"> Height</span><span class="value">="350"</span><span class="key"> Width</span><span class="value">="525"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Window.DataContext</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">local:MainViewModel</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Window.DataContext</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Grid</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Model</span><span class="value">="{Binding MyModel}"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Grid</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">Window</span><span class="tag">&gt;</span></code></pre>
+    <p>The application should now look like this:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WpfExample1.png" alt="" />
+      </div>
+    </p>
+    <p>The source code can be found in <code>Documentation\Examples\WpfApplication1</code>.</p>
+    <h2 id="11">Silverlight Example</h2>
+    <p>This example shows how to create a Silverlight application where the content of the plot is defined in code.</p>
+    <h3>Create project</h3>
+    <p>Start Visual Studio and select "FILE -&gt; New -&gt; Project..." to create a new Silverlight application:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/SilverlightNewProject.png" alt="" />
+      </div>
+    </p>
+    <h3>Add references</h3>
+    <p>You need references to the OxyPlot and OxyPlot.Silverlight assemblies. The easiest way to do this is to right click on the "References" item in the Solution Explorer and select "Manage NuGet Packages..." (this requires that the "NuGet Package Manager" extension is installed):</p>
+    <p>
+      <div class="figure">
+        <img src="Images/SilverlightAddReference.png" alt="" />
+      </div>
+    </p>
+    <p>In the "Manage NuGet packages" dialog, search for "OxyPlot" in the top-right search textbox. Select the "OxyPlot.Silverlight" package and click install:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/SilverlightInstallPackage.png" alt="" />
+      </div>
+    </p>
+    <p>You can also use the <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a> to install the package:</p>
+    <pre><code>PM&gt; Install-Package OxyPlot.Silverlight</code></pre>
+    <h3>Create a view model</h3>
+    <p>Add a class that creates a <a href="API/OxyPlot.PlotModel.html">PlotModel</a> and a <a href="API/OxyPlot.FunctionSeries.html">FunctionSeries</a>.</p>
+    <pre><code><span class="keyword">namespace</span> SilverlightApplication1
+{
+    <span class="keyword">using</span> System;
+
+    <span class="keyword">using</span> OxyPlot;
+    <span class="keyword">using</span> OxyPlot.Series;
+
+    <span class="keyword">public</span> <span class="keyword">class</span> MainViewModel
+    {
+        <span class="keyword">public</span> MainViewModel()
+        {
+            <span class="keyword">this</span>.MyModel = <span class="keyword">new</span> PlotModel(<span class="string">"Example 1"</span>);
+            <span class="keyword">this</span>.MyModel.Series.Add(<span class="keyword">new</span> FunctionSeries(Math.Cos, 0, 10, 0.1, <span class="string">"cos(x)"</span>));
+        }
+
+        <span class="keyword">public</span> PlotModel MyModel { <span class="keyword">get</span>; <span class="keyword">set</span>; }
+    }
+}</code></pre>
+    <h3>Create the view</h3>
+    <p>Define the namespace in the <code>Window</code> element, set the <code>DataContext</code> and add a <a href="API/OxyPlot.Silverlight.Plot.html">Plot</a> control:</p>
+    <pre><code><span class="tag">&lt;</span><span class="name">UserControl</span><span class="key"> x:Class</span><span class="value">="SilverlightApplication1.MainPage"</span><span class="key">
+    xmlns</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span><span class="key">
+    xmlns:x</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml"</span><span class="key">
+    xmlns:d</span><span class="value">="http://schemas.microsoft.com/expression/blend/2008"</span><span class="key">
+    xmlns:mc</span><span class="value">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span><span class="key">
+             xmlns:oxy</span><span class="value">="clr-namespace:OxyPlot.Silverlight;assembly=OxyPlot.Silverlight"</span><span class="key">
+             xmlns:local</span><span class="value">="clr-namespace:SilverlightApplication1"</span><span class="key">
+             mc:Ignorable</span><span class="value">="d"</span><span class="key">
+    d:DesignHeight</span><span class="value">="300"</span><span class="key"> d:DesignWidth</span><span class="value">="400"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">UserControl.DataContext</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">local:MainViewModel</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">UserControl.DataContext</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;</span><span class="name">Grid</span><span class="key"> x:Name</span><span class="value">="LayoutRoot"</span><span class="key"> Background</span><span class="value">="White"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Model</span><span class="value">="{Binding MyModel}"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Grid</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">UserControl</span><span class="tag">&gt;</span></code></pre>
+    <p>The application should now look like this:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/SilverlightExample1.png" alt="" />
+      </div>
+    </p>
+    <p>The source code can be found in <code>Documentation\Examples\SilverlightApplication1</code>.</p>
+    <h2 id="12">Windows Forms Example</h2>
+    <h3>Create project</h3>
+    <p>Start Visual Studio and select "FILE -&gt; New -&gt; Project..." to create a new Windows Forms application:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsFormsNewProject.png" alt="" />
+      </div>
+    </p>
+    <h3>Add references</h3>
+    <p>You need references to the OxyPlot and OxyPlot.WindowsForms assemblies. The easiest way to do this is to right click on the "References" item in the Solution Explorer and select "Manage NuGet Packages..." (this requires that the "NuGet Package Manager" extension is installed):</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsFormsAddReference.png" alt="" />
+      </div>
+    </p>
+    <p>In the "Manage NuGet packages" dialog, search for "OxyPlot" in the top-right search textbox. Select the "OxyPlot.WindowsForms" package and click install:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsFormsInstallPackage.png" alt="" />
+      </div>
+    </p>
+    <p>You can also use the <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a> to install the package:</p>
+    <pre><code>PM&gt; Install-Package OxyPlot.WindowsForms</code></pre>
+    <h3>Add a plot control</h3>
+    <p>TODO (add component to toolbox?)</p>
+    <h3>Create the plot model</h3>
+    <pre><code><span class="keyword">namespace</span> WindowsFormsApplication1
+{
+    <span class="keyword">using</span> System;
+    <span class="keyword">using</span> System.Windows.Forms;
+
+    <span class="keyword">using</span> OxyPlot;
+    <span class="keyword">using</span> OxyPlot.Series;
+
+    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> Form1 : Form
+    {
+        <span class="keyword">public</span> Form1()
+        {
+            <span class="keyword">this</span>.InitializeComponent();
+            <span class="keyword">var</span> myModel = <span class="keyword">new</span> PlotModel(<span class="string">"Example 1"</span>);
+            myModel.Series.Add(<span class="keyword">new</span> FunctionSeries(Math.Cos, 0, 10, 0.1, <span class="string">"cos(x)"</span>));
+            <span class="keyword">this</span>.plot1.Model = myModel;
+        }
+    }
+}</code></pre>
+    <p>The application should now look like this:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsFormsExample1.png" alt="" />
+      </div>
+    </p>
+    <p>The source code can be found in <code>Documentation\Examples\WindowsFormsApplication1</code>.</p>
+    <h2 id="13">Windows Store app example</h2>
+    <p>This example shows how to create a Windows Store app where the content of the plot is defined in code.</p>
+    <h3>Create project</h3>
+    <p>Start Visual Studio and select "FILE -&gt; New -&gt; Project..." to create a new Windows Store app:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsStoreAppNewProject.png" alt="" />
+      </div>
+    </p>
+    <h3>Add references</h3>
+    <p>You need references to the OxyPlot and OxyPlot.Metro assemblies. The easiest way to do this is to right click on the "References" item in the Solution Explorer and select "Manage NuGet Packages..." (this requires that the "NuGet Package Manager" extension is installed):</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsStoreAppAddReference.png" alt="" />
+      </div>
+    </p>
+    <p>In the "Manage NuGet packages" dialog, search for "OxyPlot" in the top-right search textbox. Select the "OxyPlot.Metro" package and click install:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsStoreAppInstallPackage.png" alt="" />
+      </div>
+    </p>
+    <p>You can also use the <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a> to install the package:</p>
+    <pre><code>PM&gt; Install-Package OxyPlot.Metro</code></pre>
+    <h3>Create a view model</h3>
+    <p>Add a class that creates a <a href="API/OxyPlot.PlotModel.html">PlotModel</a> and a <a href="API/OxyPlot.FunctionSeries.html">FunctionSeries</a>.</p>
+    <pre><code><span class="keyword">namespace</span> WindowsStoreApp1
+{
+    <span class="keyword">using</span> System;
+
+    <span class="keyword">using</span> OxyPlot;
+    <span class="keyword">using</span> OxyPlot.Series;
+
+    <span class="keyword">public</span> <span class="keyword">class</span> MainViewModel
+    {
+        <span class="keyword">public</span> MainViewModel()
+        {
+            <span class="keyword">this</span>.MyModel = <span class="keyword">new</span> PlotModel(<span class="string">"Example 1"</span>);
+            <span class="keyword">this</span>.MyModel.Series.Add(<span class="keyword">new</span> FunctionSeries(Math.Cos, 0, 10, 0.1, <span class="string">"cos(x)"</span>));
+        }
+
+        <span class="keyword">public</span> PlotModel MyModel { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }
+    }
+}</code></pre>
+    <h3>Create the view</h3>
+    <p>Define the namespace in the <code>Window</code> element, set the <code>DataContext</code> and add a <a href="API/OxyPlot.Metro.Plot.html">Plot</a> control:</p>
+    <pre><code><span class="tag">&lt;</span><span class="name">Page</span><span class="key">
+    x:Class</span><span class="value">="WindowsStoreApp1.MainPage"</span><span class="key">
+    xmlns</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span><span class="key">
+    xmlns:x</span><span class="value">="http://schemas.microsoft.com/winfx/2006/xaml"</span><span class="key">
+    xmlns:local</span><span class="value">="using:WindowsStoreApp1"</span><span class="key">
+    xmlns:d</span><span class="value">="http://schemas.microsoft.com/expression/blend/2008"</span><span class="key">
+    xmlns:mc</span><span class="value">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span><span class="key">
+    xmlns:oxy</span><span class="value">="using:OxyPlot.Metro"</span><span class="key">
+    mc:Ignorable</span><span class="value">="d"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">Page.DataContext</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">local:MainViewModel</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Page.DataContext</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;</span><span class="name">Grid</span><span class="key"> Background</span><span class="value">="{ThemeResource ApplicationPageBackgroundThemeBrush}"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Model</span><span class="value">="{Binding MyModel}"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/</span><span class="name">Grid</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">Page</span><span class="tag">&gt;</span></code></pre>
+    <p>The application should now look like this:</p>
+    <p>
+      <div class="figure">
+        <img src="Images/WindowsStoreAppExample1.png" alt="" />
+      </div>
+    </p>
+    <p>The source code can be found in <code>Documentation\Examples\WindowsStoreApp1</code>.</p>
+    <h2 id="14">GTK# Example</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <ul>
+      <li>Adding the "OxyPlot GTK#" NuGet package</li>
+      <li>Add a control</li>
+      <li>Bind to a <code>PlotModel</code></li>
+    </ul>
+    <h2 id="15">Xamarin.Android Example</h2>
+    <p>
+      <em> Under construction </em>
+    </p>
+    <ul>
+      <li>Download component</li>
+      <li>Add references</li>
+      <li>Add a control</li>
+      <li>Bind to a PlotModel</li>
+    </ul>
+    <h2 id="16">Xamarin.iOS Example</h2>
+    <p>
+      <em> Under construction </em>
+    </p>
+    <ul>
+      <li>Download component</li>
+      <li>Add references</li>
+      <li>Add a control</li>
+      <li>Bind to a PlotModel</li>
+    </ul>
+    <h2 id="17">Xamarin.Mac Example</h2>
+    <p>
+      <em> Under construction </em>
+    </p>
+    <ul>
+      <li>Download component</li>
+      <li>Add references</li>
+      <li>Add a control</li>
+      <li>Bind to a PlotModel</li>
+    </ul>
+    <h1 id="18">Common tasks</h1>
+    <h2 id="19">How to bind data</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <ul>
+      <li>explain different ways to bind to data </li>
+      <li>include code examples</li>
+    </ul>
+    <h3>Updating the plot after data has changed</h3>
+    <p>OxyPlot is not observing property or collection changes. This means that the client application is responsible for refreshing the plot when the content has changed. See the "<a href="RefreshPlot.html">how to refresh a plot</a>" section for information about how to do this.</p>
+    <h2 id="20">How to refresh a plot</h2>
+    <p>The OxyPlot controls do not automatically refresh when you change properties of the PlotModel (e.g. changing series, axes, annotations or general plot properties).</p>
+    <p>You have the following options to update the plot:</p>
+    <ul>
+      <li>Change the Model property of the Plot control</li>
+      <li>Call Invalidate/Refresh on the Plot control</li>
+      <li>Call Invalidate/Refresh on the PlotModel</li>
+    </ul>
+    <p>examples coming...</p>
+    <h1 id="21">Export</h1>
+    <h2 id="22">Export to PNG</h2>
+    <p>The PNG exporters are implemented in the platform specific libraries (OxyPlot.Wpf, OxyPlot.WindowsForms etc.).</p>
+    <p>Write a PNG file:</p>
+    <pre><code><span class="keyword">using</span> (<span class="keyword">var</span> stream = File.Create(fileName))
+{
+    <span class="keyword">var</span> pngExporter = <span class="keyword">new</span> PngExporter();
+    pngExporter.Export(plotModel, stream, 600, 400, Brushes.White);
+}</code></pre>
+    <p>Copy to clipboard:</p>
+    <pre><code><span class="keyword">using</span> (<span class="keyword">var</span> stream = <span class="keyword">new</span> MemoryStream())
+{
+    <span class="keyword">var</span> pngExporter = <span class="keyword">new</span> PngExporter();
+    pngExporter.Export(plotModel, stream, 600, 400, Brushes.White);
+}
+
+<span class="comment">// TODO</span></code></pre>
+    <h2 id="23">Export to PDF</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h3>Core Pdf writer</h3>
+    <ul>
+      <li>Simple PDF export is included in OxyPlot core library</li>
+      <li>Limitations (text encoding, fonts, images)</li>
+    </ul>
+    <pre><code><span class="keyword">using</span> (<span class="keyword">var</span> stream = File.Create(fileName))
+{
+    <span class="keyword">var</span> pdfExporter = <span class="keyword">new</span> PdfExporter();
+    pdfExporter.Export(plotModel, stream, 600, 400);
+}</code></pre>
+    <p>See also the section about the <a href="PortableDocument.html">PortableDocument</a> class that can be used to create general PDF files.</p>
+    <h3>OxyPlot.Pdf</h3>
+    <ul>
+      <li>based on <a href="http://www.pdfsharp.net">PdfSharp</a> / <a href="https://silverpdf.codeplex.com">SilverPdf</a> open-source projects</li>
+      <li>better handling of fonts and images</li>
+    </ul>
+    <h2 id="24">Export to SVG</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <p>The plots can be exported to SVG by the <code>SvgExporter</code> in the OxyPlot core library.</p>
+    <pre><code><span class="keyword">using</span> (<span class="keyword">var</span> stream = File.Create(fileName))
+{
+    <span class="keyword">var</span> exporter = <span class="keyword">new</span> SvgExporter() { Width = 600, Height = 400 };
+    exporter.Export(plotModel, stream);
+}</code></pre>
+    <ul>
+      <li>width/height units</li>
+      <li>document svg option</li>
+    </ul>
+    <p>Note that SVG can be exported to a standalone document (.svg file) or a HTML5 element (&lt;svg&gt;).</p>
+    <h3>Text measuring</h3>
+    <p>The SVG output requires an <code>ITextMeasurer</code> to measure string sizes (rendered width and height). If a text measurer is not specified, the text measurer of the <code>PdfRenderContext</code> will be used, which supports simple Type-1 fonts only (Helvetica/Arial, Roman, Courier) limited to WinAnsi encoding. To get better text measurements, use one of the render contexts from the platform specific libraries. </p>
+    <h1 id="25">Plot model</h1>
+    <h2 id="26">Plot model</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h3>What is the PlotModel?</h3>
+    <h3>Limitations</h3>
+    <p>Why cannot a PlotModel be used in more than one view?</p>
+    <h3>Contents</h3>
+    <ul>
+      <li>axes</li>
+      <li>series</li>
+      <li>annotations</li>
+    </ul>
+    <h3>Properties</h3>
+    <ul>
+      <li>fonts</li>
+      <li>default colors</li>
+      <li>margins</li>
+      <li>legends</li>
+    </ul>
+    <h2 id="27">Axes</h2>
+    <p>
+      <em> TODO - add more info, clean text, add examples</em>
+    </p>
+    <p>OxyPlot contains the following axis types:</p>
+    <table>
+      <tr>
+        <td>LinearAxis </td>
+        <td>Represents a numerical axis with a linear scale. </td>
+      </tr>
+      <tr>
+        <td>LogarithmicAxis </td>
+        <td>Represents a numerical axis with a logarithmic scale. </td>
+      </tr>
+      <tr>
+        <td>DateTimeAxis </td>
+        <td>Represents a date/time axis based on <code>DateTime</code> values. </td>
+      </tr>
+      <tr>
+        <td>TimeSpanAxis </td>
+        <td>Represents a time axis based on <code>TimeSpan</code> values. </td>
+      </tr>
+      <tr>
+        <td>CategoryAxis </td>
+        <td>Represents an axis that displays categories (typically used for bar/column series). </td>
+      </tr>
+      <tr>
+        <td>LinearColorAxis </td>
+        <td>Represents an axis that displays a linear color scale. </td>
+      </tr>
+      <tr>
+        <td>RangeColorAxis </td>
+        <td>Represents an axis that displays a colors for specified ranges. </td>
+      </tr>
+      <tr>
+        <td>MagnitudeAxis </td>
+        <td>Represents the radial axis in polar plots </td>
+      </tr>
+      <tr>
+        <td>AngleAxis </td>
+        <td>Represents the angular axis in polar plots </td>
+      </tr>
+    </table>
+    <h3>Position</h3>
+    <p>The most important propert of the axis is the <code>Position</code>. This property determines where the axis is drawn. A standard XY plot requires a horizontal axis (bottom or top position) and a vertical axis (left or right position).</p>
+    <h3>Title</h3>
+    <p>The title is shown next to the axis. </p>
+    <p>Rotation</p>
+    <p>Unit</p>
+    <h3>Minimum/Maximum</h3>
+    <p>These properties defines the minimum and maximum values on the axis. If any of them are not specified, they will be calculated from the data. In that case, a "padding" value will be included to make sure there is some whitespace outisde the extreme values.</p>
+    <h3>Major/minor intervals</h3>
+    <p>The major intervals define the steps between the numeric labels on the axis. The minor intervals define the sub-division between the labels. </p>
+    <p>Major and minor ticks may be drawn at each interval. The style can be defined (inside, outside, crossing or none)</p>
+    <p>Grid lines can also be drawn at each interval. These will be drawn across the whole plot area. The style can be defined by color, thickness and line style. </p>
+    <h3>StartPosition/EndPosition</h3>
+    <p>The start and end position properties are used to define the relative position of the axis. The default values <a href="0,1.html">0,1</a> will fill the available plot area. This can be </p>
+    <h3>Axis keys</h3>
+    <h3>Reverse</h3>
+    <p>To reverse the direction of an axis, set <code>StartPosition = 1</code> and <code>EndPosition = 0</code></p>
+    <h3>Shared axes</h3>
+    <ul>
+      <li>using <code>AxisKey</code></li>
+    </ul>
+    <h3>DateTimeAxis</h3>
+    <p>This will show date/time values on the axis.</p>
+    <p>If you are adding <code>DataPoint</code>s to a series, the <code>DateTime</code> values should be converted to numeric values by the <code>DateTimeAxis.ToDouble</code> method.</p>
+    <pre><code>mySeries.Points.Add(<span class="keyword">new</span> DataPoint(DateTimeAxis.ToDouble(myDateTime),myValue))</code></pre>
+    <p>If you are binding <code>DataFieldX</code> or <code>DataFieldY</code> to a <code>DateTime</code>, OxyPlot will handle the conversion.</p>
+    <p>You can control the axis intervals by <code>IntervalType</code>, <code>MinorIntervalType</code> and the formatting of the axis labels by the <code>StringFormat</code> property.The following codes are accepted by StringFormat</p>
+    <table>
+      <tr>
+        <td>yyyy </td>
+        <td>year </td>
+        <td>"2011" </td>
+      </tr>
+      <tr>
+        <td>yy </td>
+        <td>year </td>
+        <td>"11" </td>
+      </tr>
+      <tr>
+        <td>MM </td>
+        <td>month </td>
+        <td>"01" </td>
+      </tr>
+      <tr>
+        <td>MMM </td>
+        <td>month </td>
+        <td>"Jan" </td>
+      </tr>
+      <tr>
+        <td>MMMM </td>
+        <td>month </td>
+        <td>"January" </td>
+      </tr>
+      <tr>
+        <td>w </td>
+        <td>week number </td>
+        <td>"4" </td>
+      </tr>
+      <tr>
+        <td>ww </td>
+        <td>week number </td>
+        <td>"04" </td>
+      </tr>
+      <tr>
+        <td>dd </td>
+        <td>day </td>
+        <td>"26" </td>
+      </tr>
+      <tr>
+        <td>hh </td>
+        <td>hour </td>
+        <td>"04" </td>
+      </tr>
+      <tr>
+        <td>HH </td>
+        <td>hour </td>
+        <td>"16" </td>
+      </tr>
+      <tr>
+        <td>mm </td>
+        <td>minute </td>
+        <td>"37" </td>
+      </tr>
+      <tr>
+        <td>ss </td>
+        <td>seconds</td>
+        <td>"23" </td>
+      </tr>
+      <tr>
+        <td>yyyy-MM-dd</td>
+        <td />
+        <td>"2011-01-26" </td>
+      </tr>
+      <tr>
+        <td>MM/dd/yyyy </td>
+        <td />
+        <td>"01/26/2011" </td>
+      </tr>
+    </table>
+    <h3>TimeSpanAxis</h3>
+    <p>This will show time span values on the axis.</p>
+    <p>If you are adding <code>DataPoint</code>s to a series, the <code>TimeSpan</code> values should be converted to numeric values by the <code>TimeSpanAxis.ToDouble</code> method.</p>
+    <pre><code>mySeries.Points.Add(<span class="keyword">new</span> DataPoint(TimeSpanAxis.ToDouble(myTimeSpan), myValue))</code></pre>
+    <p>If you are using <code>DataFieldX</code> or <code>DataFieldY</code> to bind to a <code>TimeSpan</code>, OxyPlot will handle the conversion.</p>
+    <p>The formatting of the axis labels can be controlled by the <code>StringFormat</code> property.</p>
+    <h3>Adding axes in XAML</h3>
+    <pre><code><span class="tag">&lt;</span><span class="name">oxy:Plot</span><span class="key"> Title</span><span class="value">="Linear axes"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;</span><span class="name">oxy:Plot.Axes</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:LinearAxis</span><span class="key"> Position</span><span class="value">="Bottom"</span><span class="key"> Minimum</span><span class="value">="-20"</span><span class="key"> Maximum</span><span class="value">="80"</span><span class="tag"> /&gt;</span>
+        <span class="tag">&lt;</span><span class="name">oxy:LinearAxis</span><span class="key"> Position</span><span class="value">="Left"</span><span class="key"> Minimum</span><span class="value">="-10"</span><span class="key"> Maximum</span><span class="value">="10"</span><span class="tag"> /&gt;</span>
+     <span class="tag">&lt;/</span><span class="name">oxy:Plot.Axes</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/</span><span class="name">oxy:Plot</span><span class="tag">&gt;</span></code></pre>
+    <h3>Adding axes to a PlotModel</h3>
+    <pre><code><span class="keyword">var</span> model = <span class="keyword">new</span> PlotModel();
+model.Axes.Add(<span class="keyword">new</span> LinearAxis(AxisPosition.Bottom, -20, 80));
+model.Axes.Add(<span class="keyword">new</span> LinearAxis(AxisPosition.Left, -10, 10));</code></pre>
+    <p>If no axes are defined, linear axes will be added to the bottom and left.</p>
+    <h2 id="28">Series</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h3>Title</h3>
+    <p>The title of the series is shown in the legend box. If you don't want the series to show up in the legend box, keep the default value <code>null</code>.</p>
+    <h3>Tracker format string</h3>
+    <p>A format string for the tracker (trackers are only implemented for WPF/Silverlight)</p>
+    <h3>LineSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/LineSeries.png" alt="" />
+      </div>
+    </p>
+    <pre><code><span class="keyword">var</span> model = <span class="keyword">new</span> PlotModel { Title = <span class="string">"LineSeries"</span> };
+<span class="keyword">var</span> lineSeries = <span class="keyword">new</span> LineSeries();
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(0, 0));
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(10, 4));
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(30, 2));
+lineSeries.Points.Add(<span class="keyword">new</span> DataPoint(40, 8));
+model.Series.Add(lineSeries);</code></pre>
+    <p>Set the <code>Smooth</code> property to render a canonical spline:</p>
+    <pre><code>lineSeries.Smooth = <span class="keyword">true</span>;</code></pre>
+    <p>
+      <div class="figure">
+        <img src="Images/LineSeriesSmoothed.png" alt="" />
+      </div>
+    </p>
+    <h3>TwoColorLineSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/TwoColorLineSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ScatterSeries</h3>
+    <p>ScatterSeries shows a set of points. The points can also have a size and color value.</p>
+    <p>
+      <div class="figure">
+        <img src="Images/ScatterSeries.png" alt="" />
+      </div>
+    </p>
+    <pre><code><span class="keyword">var</span> model = <span class="keyword">new</span> PlotModel { Title = <span class="string">"ScatterSeries"</span> };
+<span class="keyword">var</span> scatterSeries = <span class="keyword">new</span> ScatterSeries { MarkerType = MarkerType.Circle };
+<span class="keyword">var</span> r = <span class="keyword">new</span> Random(314);
+<span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; 100; i++)
+{
+    <span class="keyword">var</span> x = r.NextDouble();
+    <span class="keyword">var</span> y = r.NextDouble();
+    <span class="keyword">var</span> size = r.Next(5, 15);
+    <span class="keyword">var</span> colorValue = r.Next(100, 1000);
+    scatterSeries.Points.Add(<span class="keyword">new</span> ScatterPoint(x, y, size, colorValue));
+}
+
+model.Series.Add(scatterSeries);
+model.Axes.Add(<span class="keyword">new</span> LinearColorAxis { Position = AxisPosition.Right, Palette = OxyPalettes.Jet(200) });</code></pre>
+    <h3>AreaSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/AreaSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ContourSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/ContourSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>HeatMapSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/HeatMapSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>BoxPlotSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/BoxPlotSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>StemSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/StemSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>StairStepSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/StairStepSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>HighLowSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/HighLowSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>CandleStickSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/CandleStickSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>BarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/BarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ColumnSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/ColumnSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>ErrorColumnSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/ErrorColumnSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>IntervalBarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/IntervalBarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>RectangleBarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/RectangleBarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>TornadoBarSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/TornadoBarSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>PieSeries</h3>
+    <p>
+      <div class="figure">
+        <img src="Images/PieSeries.png" alt="" />
+      </div>
+    </p>
+    <h3>Custom series</h3>
+    <p>You can create your own custom series by implementing the ISeries interface, or by deriving from one of the existing Series classes.To make the series available for the tracker, you should also implement the ITrackableSeries interface.</p>
+    <h3>Base classes</h3>
+    <ul>
+      <li>XYAxisSeries - base class for series that use X and Y axes.</li>
+      <li>DataPointSeries - base class for series that contain a collection of DataPoints.</li>
+    </ul>
+    <h2 id="29">Annotations</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <p>Annotations are elements of the plot that shows information that is not part of the series collection (this also means the annotations will not show up in the series legends). Arrows, text labels, lines and areas are examples of annotations.</p>
+    <h3>Lines</h3>
+    <h3>Arrows</h3>
+    <h3>Rectangles</h3>
+    <h3>Polygons</h3>
+    <h3>Text</h3>
+    <h1 id="30">Plot controls</h1>
+    <h2 id="31">WPF plot control</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h2 id="32">Tracker</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <p>The 'tracker' is shown when you press down the left mouse button over some data in the plot.By default the tracker shows the values of the current point.</p>
+    <h3>Format string</h3>
+    <p>The easiest way to modify the information shown in the tracker, is to modify the <code>TrackerFormatString</code> of the series.</p>
+    <p>The arguments are specific to each class.</p>
+    <table>
+      <tr>
+        <th>Class </th>
+        <th>{0} </th>
+        <th>{1} </th>
+        <th>Examples </th>
+      </tr>
+      <tr>
+        <td>LineSeries </td>
+        <td>X </td>
+        <td>Y </td>
+        <td>
+          <code>"{0:0.00} {1:0.00}"</code> </td>
+      </tr>
+    </table>
+    <p>The format string can also contain formatting codes for properties in the nearest item of the hit. Use the property name inside the curly braces: <code>{MyProperty:0.00}</code></p>
+    <p>The culture of the tracker format string can be set in the <code>Culture</code> property in the <code>PlotModel</code>. The default culture is the current UI culture. </p>
+    <h3>Template</h3>
+    <p>The WPF/Silverlight <code>Plot</code> controls contain a dependency property <code>DefaultTrackerTemplate</code> where a custom <code>ControlTemplate</code> can be defined.When the tracker is shown, the <code>DataContext</code> will be set to a <code>TrackerHitResult</code>. You can bind <code>Position</code> and data properties from the hit results. </p>
+    <pre><code>TODO: example template</code></pre>
+    <p>See the <code>Source\Examples\WPF\CustomTrackerDemo</code> application for examples on how to make custom trackers.</p>
+    <h3>Tracker control</h3>
+    <p>The WPF and Silverlight projects contain a <code>TrackerControl</code> that can be used in tracker templates.You should bind the <code>Position</code>, <code>LineExtents</code> and <code>Content</code> properties to data in the <code>TrackerHitResult</code>.Example</p>
+    <pre><code>TODO: template using TrackerControl</code></pre>
+    <h3>TrackerHitResult</h3>
+    <p>This class contains data about the current hit of the tracker:</p>
+    <table>
+      <tr>
+        <td>
+          <code>Position</code> </td>
+        <td>the XY screen coordinates of the tracker.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>DataPoint</code> </td>
+        <td>the data point if the tracker shows an item from a DataPointSeries.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>Series</code> </td>
+        <td>the current series.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>PlotModel</code> </td>
+        <td>the current plot model.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>LineExtents</code> </td>
+        <td>the rectangle that should be used to draw the horizontal and vertical lines.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>XAxis</code> </td>
+        <td>the current x axis.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>YAxis</code> </td>
+        <td>the current y axis.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>Item</code> </td>
+        <td>the current item if an <code>ItemsSource</code> was used to generate the data.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>Text</code> </td>
+        <td>the text to be shown in the tracker. If this property is set, the series' <code>TrackerFormatString</code> will not be used.</td>
+      </tr>
+    </table>
+    <h3>Tracker definitions</h3>
+    <p>If you want to specify different trackers for the series, you should define <code>TrackerDefinition</code>s in the <code>Plot</code> control.Set the <code>TrackerKey</code> of the series to select which <code>TrackerDefinition</code> to use.<br /></p>
+    <h2 id="33">Mouse binding</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <h3>Default mouse bindings</h3>
+    <table>
+      <tr>
+        <th>Action </th>
+        <th>WPF </th>
+        <th>Silverlight </th>
+        <th>Winforms </th>
+        <th>Windows store app </th>
+      </tr>
+      <tr>
+        <td>Pan* </td>
+        <td>RMB </td>
+        <td>Alt+LMB </td>
+        <td>RMB </td>
+        <td>RMB </td>
+      </tr>
+      <tr>
+        <td>Zoom* </td>
+        <td>Mouse wheel </td>
+        <td>Mouse wheel </td>
+        <td>Mouse wheel </td>
+        <td>Mouse wheel </td>
+      </tr>
+      <tr>
+        <td>Zoom by rectangle </td>
+        <td>Ctrl+RMB </td>
+        <td>Ctrl+Alt+LMB </td>
+        <td>Ctrl+RMB </td>
+        <td>Ctrl+RMB </td>
+      </tr>
+      <tr>
+        <td>Reset* </td>
+        <td>RMB double-click </td>
+        <td>Alt+LMB double-click </td>
+        <td>RMB double-click </td>
+        <td>RMB double-click </td>
+      </tr>
+      <tr>
+        <td>Show 'tracker' </td>
+        <td>LMB </td>
+        <td>LMB </td>
+        <td>LMB </td>
+        <td>LMB </td>
+      </tr>
+      <tr>
+        <td>Reset axes </td>
+        <td>'A' </td>
+        <td>'A' </td>
+        <td>'A' </td>
+        <td>'A' </td>
+      </tr>
+      <tr>
+        <td>Copy bitmap </td>
+        <td>Ctrl+C </td>
+        <td />
+        <td>Ctrl+C </td>
+        <td />
+      </tr>
+      <tr>
+        <td>Copy code </td>
+        <td>Ctrl+Alt+C </td>
+        <td>Ctrl+Alt+C </td>
+        <td>Ctrl+Alt+C </td>
+        <td>Ctrl+Alt+C </td>
+      </tr>
+      <tr>
+        <td>Copy properties </td>
+        <td>Ctrl+Alt+R </td>
+        <td>Ctrl+Alt+R </td>
+        <td>Ctrl+Alt+R </td>
+        <td />
+      </tr>
+    </table>
+    <p>You can zoom/pan/reset a single axis by positioning the mouse cursor over the axis before starting the zoom/pan.</p>
+    <p>(LMB = Left mouse button, RMB = Right mouse button)</p>
+    <h3>How to customize</h3>
+    <ul>
+      <li>this is a planned new feature</li>
+    </ul>
+    <h1 id="34">Guidelines</h1>
+    <h2 id="35">Performance</h2>
+    <h3>Data binding</h3>
+    <p>How you add data to your model is important for the performance. For series based on the DataPointSeries you have the following options, from fast to slow:</p>
+    <ol>
+      <li>Add instances based on <a href="API\OxyPlot.IDataPoint.html">IDataPoint</a> directly to the Points collection</li>
+      <li>Set ItemsSource to a collection of IDataPoints</li>
+      <li>Set ItemsSource and use the <code>Mapping</code> delegate</li>
+      <li>Set ItemsSource and use the data field properties (this uses reflection - slow!)</li>
+    </ol>
+    <h3>Style</h3>
+    <p>The following style properties are important for the performance of the rendering:</p>
+    <ul>
+      <li>Solid lines are much faster than dashed/dotted lines</li>
+      <li>Grid lines are slow to draw (be careful not creating too many of them)</li>
+      <li>Unfilled markers (Plus, Cross, Star) are faster than the filled markers (Circle, Square, Diamond, Triangle)</li>
+      <li>Square markers are faster than circles</li>
+    </ul>
+    <h2 id="36">Design guidelines</h2>
+    <p>The following guidelines are picked up mostly from the books by Edward Tufte and Stephen Few.</p>
+    <h3>General</h3>
+    <ul>
+      <li>3D projection is not recommended (particularly for bar series, ribbons, pie charts)</li>
+      <li>Pie charts are not recommended (difficult to compare values, bar charts are usually better)</li>
+      <li>Minimize the ratio ink/data</li>
+      <li>Don't use a border around legends</li>
+      <li>Use only one font</li>
+      <li>Don't use a border (box) around the plot</li>
+    </ul>
+    <h3>Grid lines</h3>
+    <ul>
+      <li>Avoid dark/heavy grid lines</li>
+    </ul>
+    <h3>Ticks</h3>
+    <ul>
+      <li>Use TickStyle = Outside</li>
+      <li>Don't use minor tick marks</li>
+    </ul>
+    <h3>Category axes</h3>
+    <ul>
+      <li>Don't use tick marks</li>
+      <li>Don't use axis line on vertical category axes</li>
+      <li>Limit the number of subdivisions (not more than 5-6 bar series)</li>
+    </ul>
+    <h3>Bar series</h3>
+    <ul>
+      <li>Use a bar width around 50%</li>
+      <li>For histograms you could use a bar width of 100%</li>
+    </ul>
+    <h3>Recommended reading</h3>
+    <ul>
+      <li>
+        <a href="http://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a> (Edward Tufte) <a href="http://books.google.com/books/about/The_visual_display_of_quantitative_infor.html?id=BHazAAAAIAAJ">google</a> <a href="http://www.amazon.com/Visual-Display-Quantitative-Information/dp/096139210X">amazon</a> <a href="https://sheffield.ac.uk/content/1/c6/06/59/35/Scope%20Tutorial%201.pdf">tutorial</a></li>
+      <li>
+        <a href="http://www.perceptualedge.com/examples.php">Perceptual edge</a> (Stephen Few)</li>
+      <li>
+        <a href="http://www.perceptualedge.com/library.php#Books">Show me the numbers</a> (Stephen Few) <a href="http://www.amazon.com/Show-Me-Numbers-Designing-Enlighten/dp/0970601999">amazon</a> <a href="http://books.google.com/books/about/Show_me_the_numbers.html?id=kaOFQgAACAAJ">google</a></li>
+    </ul>
+    <h1 id="37">Extras</h1>
+    <h2 id="38">Creating PDF files</h2>
+    <p>The OxyPlot core library contains a class <code>PortableDocument</code> that can be used to create PDF files:</p>
+    <pre><code><span class="keyword">var</span> doc = <span class="keyword">new</span> PortableDocument();
+doc.Title = <span class="string">"Hello world"</span>;
+doc.Author = <span class="string">"objo"</span>;
+doc.AddPage(PageSize.A4);
+doc.SetFont(<span class="string">"Arial"</span>, 96);
+doc.DrawText(50, 400, <span class="string">"Hello world!"</span>);
+doc.Save(<span class="string">"HelloWorld.pdf"</span>);</code></pre>
+    <p>Note that the coordinate system origin is at the bottom left corner of the page and the unit is point (1/72 inch).</p>
+    <p>The <code>PortableDocument</code> class supports</p>
+    <ul>
+      <li>document properties (title, author, subject etc.)</li>
+      <li>multiple pages (specify size and orientation)</li>
+      <li>text drawing</li>
+      <li>Type 1 fonts (Helvetica, Roman, Courier) in WinAnsi encoding</li>
+      <li>text size measuring</li>
+      <li>circles</li>
+      <li>ellipses</li>
+      <li>lines</li>
+      <li>polygons</li>
+      <li>rectangles</li>
+      <li>images</li>
+      <li>clipping rectangle</li>
+      <li>transforms</li>
+      <li>transparency</li>
+    </ul>
+    <p>More examples can be found in the unit tests in <code>Source\OxyPlot.Tests\Pdf\PortableDocumentTests.cs</code></p>
+    <h2 id="39">Report model</h2>
+    <p>The report model can be used to generate simple reports. The objective is to create a very simple object model that can be used for basic reports containing headers, paragraphs, simple tables and figures.</p>
+    <p>The supported output formats are HTML, Latex and plain text. Support for Word (OpenXML) and PDF is under consideration, but this will add dependencies to other libraries.</p>
+    <table>
+      <tr>
+        <th>Item      </th>
+        <th>Description      </th>
+        <th>HTML </th>
+        <th>Latex </th>
+        <th>Plain text </th>
+        <th>Word </th>
+        <th>PDF </th>
+      </tr>
+      <tr>
+        <td>Header     </td>
+        <td>Headers            </td>
+        <td>Yes   </td>
+        <td>Yes    </td>
+        <td>Yes    </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>Paragraph  </td>
+        <td>Text               </td>
+        <td>Yes   </td>
+        <td>Yes    </td>
+        <td>Yes    </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>Table      </td>
+        <td>Tables             </td>
+        <td>Yes   </td>
+        <td>Yes    </td>
+        <td>Yes    </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>Image      </td>
+        <td>Bitmap graphics    </td>
+        <td>Yes   </td>
+        <td>Yes    </td>
+        <td>No     </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>Plot       </td>
+        <td>Plot model         </td>
+        <td>Yes   </td>
+        <td>Yes    </td>
+        <td>No     </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>Drawing    </td>
+        <td>Vector graphics    </td>
+        <td />
+        <td />
+        <td>No     </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>Equation   </td>
+        <td>Using Tex syntax   </td>
+        <td />
+        <td />
+        <td>No     </td>
+        <td />
+        <td />
+      </tr>
+    </table>
+    <h3>Example</h3>
+    <pre><code>TODO = <span class="keyword">new</span> Report();</code></pre>
+    <h2 id="40">Drawing model</h2>
+    <p>
+      <em> Under construction </em>
+    </p>
+    <p>The drawing model can be used to generate simple drawings that can be included in plots and reports.</p>
+    <ul>
+      <li>a simple model for generating drawings (lines, ellipses, rectangles, text etc)</li>
+      <li>reuse render contexts and exporters</li>
+      <li>provide custom controls (will try to share code with the plot controls)</li>
+      <li>drawings can be included in the <a href="ReportModel.html">report models</a></li>
+    </ul>
+    <h1 id="41">Contribute</h1>
+    <h2 id="42">Issues</h2>
+    <ul>
+      <li>Please use the discussion forums if you are unsure whether it is a bug in the library or a problem in your code. </li>
+      <li>When you are sure, please add defects in the issue tracker.</li>
+      <li>It is very helpful to get the code (use CTRL+ALT+C in the plot control) and report (CTRL+ALT+R) of the bug plot</li>
+      <li>You could use services like <a href="http://snipt.org">snipt.org</a> or <a href="https://gist.github.com">gist.github.com</a> to share code snippets. </li>
+    </ul>
+    <h2 id="43">Architecture</h2>
+    <p>
+      <em> TODO </em>
+    </p>
+    <ul>
+      <li>some diagrams?</li>
+      <li>something about the components and dependencies?</li>
+      <li>plot model vs. wpf decorators</li>
+      <li>plot model dependent on view</li>
+      <li>plot model not observable</li>
+      <li>architecture issues?</li>
+    </ul>
+    <h2 id="44">Coding style</h2>
+    <ul>
+      <li>follow StyleCop rules as much as possible</li>
+      <li>include XML comments for all methods, properties and fields</li>
+      <li>do not use #regions</li>
+      <li>use linq method syntax (not query syntax)</li>
+    </ul>
+    <h2 id="45">API Documentation</h2>
+    <p>The API documentation is the reference to all namespaces and types of the library. The documentation is provided <a href="http://oxyplot.org/doc">online</a> (html) and as a <a href="http://oxyplot.org/doc/oxyplot.chm">compiled help file</a> (chm).</p>
+    <p>The API documentation is generated from XML comments in the code. All methods and properties should be documented in compliance with the StyleCop rules. </p>
+    <p>Namespaces are documented in <code>NamespaceDoc.cs</code> files.</p>
+    <p>The library as a whole is documented in the <code>LibraryDoc.cs</code> file. The content of this file is shown on the index page of the API documentation.</p>
+    <p>Currently, include files are not used in the XML comments, but this should be considered if documentation gets longer...</p>
+    <p>The API Documentation is generated by the <code>XmlDocT</code>. This tool converts the .dll and .xml files to .html and also create a help contents file (.hhc) for the help compiler.  XmlDocT is a part of the <a href="http://lynx.codeplex.com">Lynx toolkit</a> and can be found in the <code>Tools\Lynx</code> folder</p>
+    <p>The Microsoft Help Compiler is used to build the .chm file.</p>
+    <p>The script can be found at <code>Build\GenerateAPIDocumentation.cmd</code></p>
+    <h2 id="46">User's guide</h2>
+    <p>The user's guide contains "hand-written" information about how to use the library. The user's guide is provided online (html) and as a compiled help file (chm). There will also be a printable version (pdf).</p>
+    <h3>Syntax</h3>
+    <p>The syntax is based on Markdown, Confluence and Creole. </p>
+    <p>The reasons for making a new syntax was:</p>
+    <ul>
+      <li>make it very easy (and fast) to parse</li>
+      <li>strict (no alternative syntax)</li>
+      <li>a little more intuitive (hopefully)</li>
+      <li>new features</li>
+    </ul>
+    <table>
+      <tr>
+        <th>Element </th>
+        <th>Syntax </th>
+        <th>Description </th>
+      </tr>
+      <tr>
+        <td>Header </td>
+        <td>= header </td>
+        <td>As in Creole, but only on the left side </td>
+      </tr>
+      <tr>
+        <td>Bold </td>
+        <td>**bold** </td>
+        <td>As in Creole, no escape needed to write a single * </td>
+      </tr>
+      <tr>
+        <td>Italic </td>
+        <td>//italic// </td>
+        <td>As in Creole </td>
+      </tr>
+      <tr>
+        <td>Escape character </td>
+        <td>~ </td>
+        <td>As in Creole (backslash is used a lot) </td>
+      </tr>
+      <tr>
+        <td>Line breaks </td>
+        <td>Two spaces</td>
+        <td>Two spaces at the end of line, as in Markdown</td>
+      </tr>
+      <tr>
+        <td>Links </td>
+        <td>[url|text] </td>
+        <td>Url is required, text is optional</td>
+      </tr>
+      <tr>
+        <td>Images </td>
+        <td>{source|alt} </td>
+        <td>Source is required, alt text is optional</td>
+      </tr>
+      <tr>
+        <td>Source code (inline)</td>
+        <td>`code` </td>
+        <td>As in Markdown </td>
+      </tr>
+      <tr>
+        <td>Source code (block)</td>
+        <td>```cs<br />c# code<br />``` </td>
+        <td>As in Markdown, syntax highlighting is supported for cs and xml</td>
+      </tr>
+      <tr>
+        <td>Include source from file </td>
+        <td>@include </td>
+        <td>Include the specified document (good for source code) </td>
+      </tr>
+      <tr>
+        <td>Import and parse a document </td>
+        <td>@import </td>
+        <td>Import the specified document (paths will be relative to document location)</td>
+      </tr>
+      <tr>
+        <td>Variables </td>
+        <td>$version </td>
+        <td>Replace by variable, e.g. version number</td>
+      </tr>
+      <tr>
+        <td>Ordered list </td>
+        <td># item</td>
+        <td>Nested lists are not supported </td>
+      </tr>
+      <tr>
+        <td>Unordered list </td>
+        <td>- item</td>
+        <td>Nested lists are not supported </td>
+      </tr>
+    </table>
+    <h3>Images</h3>
+    <p>The plots included in the documentation and web pages are generated by a tool in the <code>Source\Examples\DocumentationExamples\ExampleGenerator</code> folder.</p>
+    <p>The example plots will be updated before the documentation is generated at every build.</p>
+    <h3>Build</h3>
+    <p>The user's guide is built by the following steps:</p>
+    <ol>
+      <li>convert all .wiki files to .html files in the <code>Output</code> folder by the "WikiT" tool*</li>
+      <li>create a .hhc help contents file from the .hhcgen file by the "HhcGen.exe" tool* </li>
+      <li>compile the .hhp help project to .chm file by the Microsoft Help Compiler hhc.exe</li>
+      <li>upload to oxyplot.org server by the "FtpUpload" tool*</li>
+    </ol>
+    <p>See the scripts <code>Build\GenerateDocumentation.cmd</code> and <code>Build\UploadDocumentation.cmd</code>.</p>
+    <p>* the <a href="http://lynx.codeplex.com">Lynx</a> tools are provided in the <code>Tools\Lynx</code> folder</p>
+    <h3>Contributions</h3>
+    <p>Contributions to the documentation should be done the same way as code. Create a <a href="https://oxyplot.codeplex.com/SourceControl/network/create/fork">new fork</a> and submit a <a href="https://oxyplot.codeplex.com/SourceControl/send/contribution">pull request</a> when the changes are ready.</p>
+    <p>To edit the user's guide, it is recommended to use the <code>Tools\WikiPad.exe</code> application with the <code>Documentation\Index.wikiproj</code> project file. You can launch this application from the <code>Documentation\EditDocumentation</code> shortcut.</p>
+    <h2 id="47">Contributions</h2>
+    <p>Contributions to the project are greatly appreciated. But please read the requirements below before submitting a pull request.</p>
+    <p>Bug fixes and new features are great, but there are also many other ways to contribute. The documentation can always be improved, examples can be added, icons and web style can be made nicer.</p>
+    <p>New features and bugs should always be added in the <a href="https://oxyplot.codeplex.com/workitem/list/basic">issues</a> list. It might be a good idea to discuss in the <a href="https://oxyplot.codeplex.com/discussions">discussion forum</a> first if you are not sure if it is a bug.</p>
+    <p>Then create a <a href="https://oxyplot.codeplex.com/SourceControl/network/create/fork">new fork</a> and submit the changes. Remember to include the issue number prefixed with a # sign in the submit descriptions. Create a <a href="https://oxyplot.codeplex.com/SourceControl/send/contribution">pull request</a> when the contribution is ready.</p>
+    <h3>Requirements for pull requests</h3>
+    <ul>
+      <li>Include examples or unit tests for the change / new feature</li>
+      <li>Make sure the code builds on all platforms</li>
+      <li>Make sure all unit tests are passing</li>
+      <li>The new code should be StyleCop compliant (see <a href="CodingStyle.html">coding style</a>)</li>
+    </ul>
+    <p>And please:</p>
+    <ul>
+      <li>commit clean change lists, make it easy to review</li>
+      <li>define full name and e-mail address in the change list user information (to be used in the AUTHORS and CONTRIBUTORS files)</li>
+      <li>include the issue number in the description, e.g. "#9945"</li>
+      <li>do not mix multiple issues in the same change list</li>
+      <li>do not clean code in the same change list as fixing an issue, do it in a separate change list</li>
+    </ul>
+    <h3>Set user information in SourceTree</h3>
+    <p>Tools | Options | General | Default user information</p>
+    <p>
+      <div class="figure">
+        <img src="Images/SourceTree_UserInformation.png" alt="" />
+      </div>
+    </p>
+    <h3>Set user information in TortoiseHg</h3>
+    <p>Settings | Commit | Username: "First Last &lt;email@address.com&gt;"</p>
+    <p>
+      <div class="figure">
+        <img src="Images/TortoiseHg_UserInformation.png" alt="" />
+      </div>
+    </p>
+    <h3>User information in Tortoise</h3>
+    <p>In your <code>~/.hgrc</code> (*nix) or <code>mercurial.ini</code> (Windows) file:</p>
+    <pre><code>[ui]
+username = First Last &lt;email@address.com&gt;</code></pre>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

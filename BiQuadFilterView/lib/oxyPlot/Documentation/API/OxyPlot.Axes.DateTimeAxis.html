@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>DateTimeAxis Class (OxyPlot.Axes)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.Axes.DateTimeAxis">DateTimeAxis Class</h1>
+    <p>Represents an axis presenting <a title="DateTime" href="http://msdn.microsoft.com/en-us/library/system.datetime.aspx">DateTime</a> values.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="OxyPlot.PlotElement.html">PlotElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Axes.Axis.html">Axis</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Axes.LinearAxis.html">LinearAxis</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Axes.DateTimeAxis.html"><strong>DateTimeAxis</strong></a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.Axes.html">OxyPlot.Axes</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">class</span> DateTimeAxis : LinearAxis</code></pre>
+    <h2>Constructors</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>DateTimeAxis()</td>
+        <td>Initializes a new instance of the <a title="DateTimeAxis Class" href="OxyPlot.Axes.DateTimeAxis.html">DateTimeAxis</a> class.</td>
+      </tr>
+      <tr>
+        <td>DateTimeAxis(AxisPosition, DateTime, DateTime, string, string, DateTimeIntervalType)</td>
+        <td>Initializes a new instance of the <a title="DateTimeAxis Class" href="OxyPlot.Axes.DateTimeAxis.html">DateTimeAxis</a> class.</td>
+      </tr>
+      <tr>
+        <td>DateTimeAxis(AxisPosition, string, string, DateTimeIntervalType)</td>
+        <td>Initializes a new instance of the <a title="DateTimeAxis Class" href="OxyPlot.Axes.DateTimeAxis.html">DateTimeAxis</a> class.</td>
+      </tr>
+      <tr>
+        <td>DateTimeAxis(DateTime, DateTime, AxisPosition, string, string, DateTimeIntervalType)</td>
+        <td>Initializes a new instance of the <a title="DateTimeAxis Class" href="OxyPlot.Axes.DateTimeAxis.html">DateTimeAxis</a> class.</td>
+      </tr>
+    </table>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AbsoluteMaximum</td>
+        <td>Gets or sets the absolute maximum. This is only used for the UI control. It will not be possible to zoom/pan beyond this limit. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AbsoluteMinimum</td>
+        <td>Gets or sets the absolute minimum. This is only used for the UI control. It will not be possible to zoom/pan beyond this limit. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ActualMajorStep</td>
+        <td>Gets or sets the actual major step. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ActualMaximum</td>
+        <td>Gets or sets the actual maximum value of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ActualMinimum</td>
+        <td>Gets or sets the actual minimum value of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ActualMinorStep</td>
+        <td>Gets or sets the actual minor step. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ActualStringFormat</td>
+        <td>Gets or sets the actual string format being used. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ActualTitle</td>
+        <td>Gets the actual title (including Unit if Unit is set). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Angle</td>
+        <td>Gets or sets the angle for the axis values. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AxisDistance</td>
+        <td>Gets or sets the distance between the plot area and the axis (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AxislineColor</td>
+        <td>Gets or sets the color of the axis line. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AxislineStyle</td>
+        <td>Gets or sets the axis line. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AxislineThickness</td>
+        <td>Gets or sets the axis line. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AxisTickToLabelDistance</td>
+        <td>Gets or sets the distance from axis tick to number label. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>AxisTitleDistance</td>
+        <td>Gets or sets the distance from axis number to axis title. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>CalendarWeekRule</td>
+        <td>Gets or sets CalendarWeekRule.</td>
+      </tr>
+      <tr>
+        <td>ClipTitle</td>
+        <td>Gets or sets a value indicating whether to clip the axis title. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>DataMaximum</td>
+        <td>Gets or sets the maximum value of the data displayed on this axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>DataMinimum</td>
+        <td>Gets or sets the minimum value of the data displayed on this axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>EndPosition</td>
+        <td>Gets or sets the end position of the axis on the plot area. This is a fraction from 0(bottom/left) to 1(top/right). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineColor</td>
+        <td>Gets or sets the color of the extra gridlines. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlines</td>
+        <td>Gets or sets the values for extra gridlines. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineStyle</td>
+        <td>Gets or sets the extra gridlines line style. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineThickness</td>
+        <td>Gets or sets the extra gridline thickness. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>FilterFunction</td>
+        <td>Gets or sets the filter function. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>FilterMaxValue</td>
+        <td>Gets or sets the maximum value that can be shown using this axis. Values greater or equal to this value will not be shown. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>FilterMinValue</td>
+        <td>Gets or sets the minimum value that can be shown using this axis. Values smaller or equal to this value will not be shown. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>FirstDayOfWeek</td>
+        <td>Gets or sets FirstDayOfWeek.</td>
+      </tr>
+      <tr>
+        <td>Font</td>
+        <td>Gets or sets the font. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>FontSize</td>
+        <td>Gets or sets the size of the font. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>FontWeight</td>
+        <td>Gets or sets the font weight. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>FormatAsFractions</td>
+        <td>Gets or sets a value indicating whether to format numbers as fractions. (Inherited from <a title="LinearAxis Class" href="OxyPlot.Axes.LinearAxis.html">LinearAxis</a>.)</td>
+      </tr>
+      <tr>
+        <td>FractionUnit</td>
+        <td>Gets or sets the fraction unit. Remember to set FormatAsFractions to true. (Inherited from <a title="LinearAxis Class" href="OxyPlot.Axes.LinearAxis.html">LinearAxis</a>.)</td>
+      </tr>
+      <tr>
+        <td>FractionUnitSymbol</td>
+        <td>Gets or sets the fraction unit symbol. Use FractionUnit = Math.PI and FractionUnitSymbol = "π" if you want the axis to show "π/2,π,3π/2,2π" etc. Use FractionUnit = 1 and FractionUnitSymbol = "L" if you want the axis to show "0,L/2,L" etc. Remember to set FormatAsFractions to true. (Inherited from <a title="LinearAxis Class" href="OxyPlot.Axes.LinearAxis.html">LinearAxis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IntervalLength</td>
+        <td>Gets or sets the length of the interval (screen length). The available length of the axis will be divided by this length to get the approximate number of major intervals on the axis. The default value is 60. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IntervalType</td>
+        <td>Gets or sets IntervalType.</td>
+      </tr>
+      <tr>
+        <td>IsAxisVisible</td>
+        <td>Gets or sets a value indicating whether this axis is visible. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsPanEnabled</td>
+        <td>Gets or sets a value indicating whether pan is enabled. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsReversed</td>
+        <td>Gets a value indicating whether this axis is reversed. It is reversed if StartPosition&amp;gt;EndPosition. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsZoomEnabled</td>
+        <td>Gets or sets a value indicating whether zoom is enabled. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Key</td>
+        <td>Gets or sets the key of the axis. This can be used to find an axis if you have defined multiple axes in a plot. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Layer</td>
+        <td>Gets or sets the layer. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineColor</td>
+        <td>Gets or sets the color of the major gridline. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineStyle</td>
+        <td>Gets or sets the major gridline style. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineThickness</td>
+        <td>Gets or sets the major gridline thickness. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MajorStep</td>
+        <td>Gets or sets the major step. (the interval between large ticks with numbers). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MajorTickSize</td>
+        <td>Gets or sets the size of the major tick. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Maximum</td>
+        <td>Gets or sets the maximum value of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MaximumPadding</td>
+        <td>Gets or sets the 'padding' fraction of the maximum value. A value of 0.01 gives 1% more space on the maximum end of the axis. This property is not used if the Maximum property is set. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Minimum</td>
+        <td>Gets or sets the minimum value of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinimumPadding</td>
+        <td>Gets or sets the 'padding' fraction of the minimum value. A value of 0.01 gives 1% more space on the minimum end of the axis. This property is not used if the Minimum property is set. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinimumRange</td>
+        <td>Gets or sets the minimum range of the axis. Setting this property ensures that ActualMaximum-ActualMinimum &amp;gt; MinimumRange. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineColor</td>
+        <td>Gets or sets the color of the minor gridline. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineStyle</td>
+        <td>Gets or sets the minor gridline style. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineThickness</td>
+        <td>Gets or sets the minor gridline thickness. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinorIntervalType</td>
+        <td>Gets or sets MinorIntervalType.</td>
+      </tr>
+      <tr>
+        <td>MinorStep</td>
+        <td>Gets or sets the minor step (the interval between small ticks without number). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>MinorTickSize</td>
+        <td>Gets or sets the size of the minor tick. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Offset</td>
+        <td>Gets or sets the offset. This is used to transform between data and screen coordinates. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>PlotModel</td>
+        <td>Gets the parent plot model. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>Position</td>
+        <td>Gets or sets the position of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>PositionAtZeroCrossing</td>
+        <td>Gets or sets a value indicating whether the axis should be positioned on the zero-crossing of the related axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>PositionTier</td>
+        <td>Gets or sets the position tier which defines in which tier the axis is displayed. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>RelatedAxis</td>
+        <td>Gets or sets the related axis. This is used for polar coordinate systems where the angle and magnitude axes are related. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Scale</td>
+        <td>Gets or sets the scaling factor of the axis. This is used to transform between data and screen coordinates. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ScreenMax</td>
+        <td>Gets or sets the screen coordinate of the Maximum point on the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ScreenMin</td>
+        <td>Gets or sets the screen coordinate of the Minimum point on the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ShowMinorTicks</td>
+        <td>Gets or sets a value indicating whether minor ticks should be shown. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>StartPosition</td>
+        <td>Gets or sets the start position of the axis on the plot area. This is a fraction from 0(bottom/left) to 1(top/right). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>StringFormat</td>
+        <td>Gets or sets the string format used for formatting the axis values. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Tag</td>
+        <td>Gets or sets an arbitrary object value that can be used to store custom information about this plot element. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>TextColor</td>
+        <td>Gets or sets the color of the text. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>TicklineColor</td>
+        <td>Gets or sets the color of the ticks (both major and minor ticks). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TickStyle</td>
+        <td>Gets or sets the tick style (both for major and minor ticks). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TimeZone</td>
+        <td>Gets or sets the time zone (used when formatting date/time values).</td>
+      </tr>
+      <tr>
+        <td>Title</td>
+        <td>Gets or sets the title of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitleClippingLength</td>
+        <td>Gets or sets the length of the title clipping rectangle (fraction of the available length of the axis). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitleColor</td>
+        <td>Gets or sets the color of the title. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitleFont</td>
+        <td>Gets or sets the title font. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitleFontSize</td>
+        <td>Gets or sets the size of the title font. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitleFontWeight</td>
+        <td>Gets or sets the title font weight. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitleFormatString</td>
+        <td>Gets or sets the format string used for formatting the title and unit when unit is defined. If unit is null, only Title is used. The default value is "{0} [{1}]", where {0} uses the Title and {1} uses the Unit. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TitlePosition</td>
+        <td>Gets or sets the position of the title (0.5 is in the middle). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ToolTip</td>
+        <td>Gets or sets the tool tip. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Unit</td>
+        <td>Gets or sets the unit of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>UseSuperExponentialFormat</td>
+        <td>Gets or sets a value indicating whether to use superscript exponential format. This format will convert 1.5E+03 to 1.5·10^{3} and render the superscript properly If StringFormat is null, 1.0E+03 will be converted to 10^{3} (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>CoerceActualMaxMin</td>
+        <td>Coerces the actual maximum and minimum values. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>CreateDataPoint(DateTime, DateTime)</td>
+        <td>Creates a data point.</td>
+      </tr>
+      <tr>
+        <td>CreateDataPoint(DateTime, double)</td>
+        <td>Creates a data point.</td>
+      </tr>
+      <tr>
+        <td>CreateDataPoint(double, DateTime)</td>
+        <td>Creates a data point.</td>
+      </tr>
+      <tr>
+        <td>Format</td>
+        <td>Formats the specified item and arguments with the specified format string. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>FormatValue</td>
+        <td>Formats the specified value by the axis' ActualStringFormat.</td>
+      </tr>
+      <tr>
+        <td>GetHashCode</td>
+        <td>Returns a hash code for this instance by reflection (!) on all public properties. (Inherited from <a title="PlotElement Class" href="OxyPlot.PlotElement.html">PlotElement</a>.)</td>
+      </tr>
+      <tr>
+        <td>GetTickValues</td>
+        <td>Gets the tick values.</td>
+      </tr>
+      <tr>
+        <td>GetValue</td>
+        <td>Gets the value from an axis coordinate, converts from double to the correct data type if necessary.
+e.g. DateTimeAxis returns the DateTime and CategoryAxis returns category strings.</td>
+      </tr>
+      <tr>
+        <td>Include</td>
+        <td>Modifies the data range of the axis [DataMinimum,DataMaximum] to includes the specified value. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>InverseTransform(double)</td>
+        <td>Inverse transforms the specified screen coordinate. This method can only be used with non-polar coordinate systems. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>InverseTransform(double, double, Axis)</td>
+        <td>Inverse transform the specified screen point. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsHorizontal</td>
+        <td>Determines whether the axis is horizontal. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsValidValue</td>
+        <td>Determines whether the specified value is valid. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsVertical</td>
+        <td>Determines whether the axis is vertical. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>IsXyAxis</td>
+        <td>Determines whether the axis is used for X/Y values. (Inherited from <a title="LinearAxis Class" href="OxyPlot.Axes.LinearAxis.html">LinearAxis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Measure</td>
+        <td>Measures the size of the axis (maximum axis label width/height). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Pan(double)</td>
+        <td>Pans the specified axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Pan(ScreenPoint, ScreenPoint)</td>
+        <td>Pans the specified axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Render</td>
+        <td>Renders the axis on the specified render context. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Reset</td>
+        <td>Resets the user's modification (zooming/panning) to minimum and maximum of this axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ToDateTime</td>
+        <td>Converts a numeric representation of the date (number of days after the time origin) to a DateTime structure.</td>
+      </tr>
+      <tr>
+        <td>ToDouble</td>
+        <td>Converts a DateTime to days after the time origin.</td>
+      </tr>
+      <tr>
+        <td>ToString</td>
+        <td>Returns a <a title="string" href="http://msdn.microsoft.com/en-us/library/system.string.aspx">string</a> that represents this instance. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Transform(double)</td>
+        <td>Transforms the specified coordinate to screen coordinates. This method can only be used with non-polar coordinate systems. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Transform(double, double, Axis)</td>
+        <td>Transforms the specified point to screen coordinates. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Zoom(double)</td>
+        <td>Zoom to the specified scale. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>Zoom(double, double)</td>
+        <td>Zooms the axis to the range [x0,x1]. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ZoomAt</td>
+        <td>Zooms the axis at the specified coordinate. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>ZoomAtCenter</td>
+        <td>Zooms the axis with the specified zoom factor at the center of the axis. (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+    </table>
+    <h2>Events</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AxisChanged</td>
+        <td>Occurs when the axis has been changed (by zooming, panning or resetting). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+      <tr>
+        <td>TransformChanged</td>
+        <td>Occurs when the transform changed (size or axis range was changed). (Inherited from <a title="Axis Class" href="OxyPlot.Axes.Axis.html">Axis</a>.)</td>
+      </tr>
+    </table>
+    <h2>Remarks</h2>
+    <p>The actual numeric values on the axis are days since 1900/01/01.
+Use the static ToDouble and ToDateTime to convert numeric values to and from DateTimes.
+The StringFormat value can be used to force formatting of the axis values
+&lt;code&gt;"yyyy-MM-dd"&lt;/code&gt; shows date
+&lt;code&gt;"w"&lt;/code&gt; or &lt;code&gt;"ww"&lt;/code&gt; shows week number
+&lt;code&gt;"h:mm"&lt;/code&gt; shows hours and minutes</p>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

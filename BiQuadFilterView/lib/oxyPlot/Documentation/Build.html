@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Building OxyPlot</title>
+    <meta name="keywords" content="OxyPlot,Build" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\">OxyPlot</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Index</a></li>
+                    <li><a href="API/Index.html" target="_blank">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            
+    <h2>Building OxyPlot</h2>
+    <h3>Requirements</h3>
+    <p>The OxyPlot solutions can be opened in</p>
+    <ul>
+      <li>VS 2010 (with the <a href="http://visualstudiogallery.msdn.microsoft.com/b0e0b5e9-e138-410b-ad10-00cb3caf4981">Portable Library Tools</a> extension)</li>
+      <li>VS 2012 (with the latest update)</li>
+      <li>VS 2013</li>
+      <li>MonoDevelop</li>
+      <li>Xamarin Studio (for GTK#, Android, iOS and OSX apps)</li>
+    </ul>
+    <p>VS Express does not support Portable Class Libraries, and cannot be used to build OxyPlot. But, you can use VS Express to build applications that reference the OxyPlot assemblies!</p>
+    <p>Depending on what platform you want to build, you may need to install extra SDKs or target framework profiles</p>
+    <ul>
+      <li>
+        <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">.NET 3.5</a>
+      </li>
+      <li>.NET 4.0</li>
+      <li>.NET 4.5</li>
+      <li>Silverlight 4</li>
+      <li>Silverlight 5</li>
+      <li>Windows Store App</li>
+      <li>
+        <a href="http://www.mono-project.com/GtkSharp">GTK#</a>
+      </li>
+      <li>Xamarin.iOS</li>
+      <li>Xamarin.Android</li>
+      <li>Xamarin.Mac</li>
+      <li>MonoTouch</li>
+      <li>Mono for Android</li>
+      <li>MonoMac</li>
+    </ul>
+    <h3>Obtain the source code</h3>
+    <p>OxyPlot is using Mercurial (Hg) distributed version control system (DVCS). To obtain the code, it is recommended to install one of the following Mercurial clients</p>
+    <ul>
+      <li>
+        <a href="http://tortoisehg.bitbucket.org/">TortoiseHg</a> (Windows shell extension)</li>
+      <li>
+        <a href="http://www.sourcetreeapp.com/">SourceTree</a> (for Windows and Mac, also supports Git)</li>
+      <li>
+        <a href="http://mercurial.selenic.com/">Mercurial</a> (command line)</li>
+    </ul>
+    <p>There is also a Mercurial plug-in for Visual Studio: <a href="http://visualhg.codeplex.com/">VisualHG</a></p>
+    <p>Clone the repository from <code>https://hg.codeplex.com/oxyplot</code></p>
+    <p>
+      <div class="figure">
+        <img src="Images/TortoiseHgClone.png" alt="" />
+      </div>
+    </p>
+    <p>or from the command line</p>
+    <pre><code>hg clone https://hg.codeplex.com/oxyplot</code></pre>
+    <p>If you don't want to use Mercurial, you can also obtain the complete source code from the <a href="http://oxyplot.codeplex.com">CodePlex</a> project page. Navigate to the "Source Code" tab, then click the "Download" link.</p>
+    <h3>Build</h3>
+    <p>It should be possible to open the solution and build without any additional steps.You can also build the source code by scripts in the <code>Build/</code> folder.</p>
+    <h3>Build output</h3>
+    <p>The build output of the <em>Release</em> configurations are placed in the <code>Output/</code> folder. The output of the <em>Debug</em> configurations are placed under the <code>Source/*/bin/Debug</code> folders. </p>
+    <h3>Additional information</h3>
+    <p>OxyPlot uses <a href="https://github.com/SimonCropp/Pepita">Pepita</a> to update the Nuget packages. The <code>PepitaGet.dll</code> library is placed in <code>Tools\Pepita</code> folder. The PepitaGet tasks will be executed every time the solution is built.</p>
+    <p>OxyPlot is currently being built by <a href="http://www.microsoft.com/visualstudio">Visual Studio 2013</a> on a Windows 8.1 virtual machine (running on <a href="https://www.virtualbox.org">VirtualBox</a>). The build machine is running <a href="http://www.jetbrains.com/teamcity/">TeamCity</a> and trigs the build on every code check-in. The build steps are described in the <code>Build/BuildSteps.txt</code> file. The build machine is automatically pushing <a href="http://nuget.org">NuGet</a> packages and uploading the output files to Codeplex and oxyplot.org.</p>
+    <p>
+      <div class="figure">
+        <img src="Images/BuildMachine.png" alt="" />
+      </div>
+    </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="featurette-divider" />
+        <footer><p>OxyPlot version 2014.1.240.1 &middot; <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a> &middot;  <a href="http://validator.w3.org/check/referer">html</a></p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43517378-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

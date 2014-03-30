@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>LineJoin Enumeration (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.LineJoin">LineJoin Enumeration</h1>
+    <p>Specifies the shape that joins two lines or segments.</p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">enum</span> LineJoin : Enum</code></pre>
+    <h2>Members</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Bevel</td>
+        <td>Bevel join. The two segments are finished with butt caps (see “Line Cap Style” on page 216) and the resulting notch beyond the ends of the segments is filled with a triangle.</td>
+      </tr>
+      <tr>
+        <td>Miter</td>
+        <td>Miter join. The outer edges of the strokes for the two segments are extended until they meet at an angle, as in a picture frame. If the segments meet at too sharp an angle (as defined by the miter limit parameter—see “Miter Limit,” above), a bevel join is used instead.</td>
+      </tr>
+      <tr>
+        <td>Round</td>
+        <td>Round join. An arc of a circle with a diameter equal to the line width is drawn around the point where the two segments meet, connecting the outer edges of the strokes for the two segments. This pieslice-shaped figure is filled in, producing a rounded corner.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

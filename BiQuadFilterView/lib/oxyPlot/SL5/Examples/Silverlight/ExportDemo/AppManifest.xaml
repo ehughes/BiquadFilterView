@@ -1,0 +1,13 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="ExportDemo" EntryPointType="ExportDemo.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="ExportDemo" Source="ExportDemo.dll" />
+    <AssemblyPart x:Name="ImageTools" Source="ImageTools.dll" />
+    <AssemblyPart x:Name="ImageTools.Utils" Source="ImageTools.Utils.dll" />
+    <AssemblyPart x:Name="OxyPlot" Source="OxyPlot.dll" />
+    <AssemblyPart x:Name="OxyPlot.Pdf" Source="OxyPlot.Pdf.dll" />
+    <AssemblyPart x:Name="OxyPlot.Silverlight" Source="OxyPlot.Silverlight.dll" />
+    <AssemblyPart x:Name="silverPDF" Source="silverPDF.dll" />
+    <AssemblyPart x:Name="ImageTools.IO.Png" Source="ImageTools.IO.Png.dll" />
+    <AssemblyPart x:Name="ICSharpCode.SharpZLib.Silverlight" Source="ICSharpCode.SharpZLib.Silverlight.dll" />
+  </Deployment.Parts>
+</Deployment>

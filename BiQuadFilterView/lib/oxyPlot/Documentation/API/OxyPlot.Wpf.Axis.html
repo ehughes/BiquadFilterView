@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Axis Class (OxyPlot.Wpf)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.Wpf.Axis">Axis Class</h1>
+    <p>The axis base.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcherobject.aspx">DispatcherObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.dependencyobject.aspx">DependencyObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.media.visual.aspx">Visual</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.uielement.aspx">UIElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.aspx">FrameworkElement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.Axis.html"><strong>Axis</strong></a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.LinearAxis.html">LinearAxis</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.DateTimeAxis.html">DateTimeAxis</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.TimeSpanAxis.html">TimeSpanAxis</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.Wpf.LogarithmicAxis.html">LogarithmicAxis</a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.Wpf.html">OxyPlot.Wpf</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot.Wpf (in OxyPlot.Wpf.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> Axis : FrameworkElement</code></pre>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AbsoluteMaximum</td>
+        <td>Gets or sets AbsoluteMaximum.</td>
+      </tr>
+      <tr>
+        <td>AbsoluteMinimum</td>
+        <td>Gets or sets AbsoluteMinimum.</td>
+      </tr>
+      <tr>
+        <td>Angle</td>
+        <td>Gets or sets Angle.</td>
+      </tr>
+      <tr>
+        <td>AxisDistance</td>
+        <td>Gets or sets AxisDistance.</td>
+      </tr>
+      <tr>
+        <td>AxislineColor</td>
+        <td>Gets or sets the color of the axis line.</td>
+      </tr>
+      <tr>
+        <td>AxislineStyle</td>
+        <td>Gets or sets the axis line style.</td>
+      </tr>
+      <tr>
+        <td>AxislineThickness</td>
+        <td>Gets or sets the axis line thickness.</td>
+      </tr>
+      <tr>
+        <td>AxisTickToLabelDistance</td>
+        <td>Gets or sets AxisTickToLabelDistance.</td>
+      </tr>
+      <tr>
+        <td>AxisTitleDistance</td>
+        <td>Gets or sets AxisTitleDistance.</td>
+      </tr>
+      <tr>
+        <td>ClipTitle</td>
+        <td>Gets or sets a value indicating whether [clip title].</td>
+      </tr>
+      <tr>
+        <td>EndPosition</td>
+        <td>Gets or sets EndPosition.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineColor</td>
+        <td>Gets or sets ExtraGridlineColor.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlines</td>
+        <td>Gets or sets ExtraGridLines.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineStyle</td>
+        <td>Gets or sets ExtraGridlineStyle.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineThickness</td>
+        <td>Gets or sets ExtraGridlineThickness.</td>
+      </tr>
+      <tr>
+        <td>FilterFunction</td>
+        <td>Gets or sets the filter function.</td>
+      </tr>
+      <tr>
+        <td>FilterMaxValue</td>
+        <td>Gets or sets FilterMaxValue.</td>
+      </tr>
+      <tr>
+        <td>FilterMinValue</td>
+        <td>Gets or sets FilterMinValue.</td>
+      </tr>
+      <tr>
+        <td>Font</td>
+        <td>Gets or sets Font.</td>
+      </tr>
+      <tr>
+        <td>FontSize</td>
+        <td>Gets or sets FontSize.</td>
+      </tr>
+      <tr>
+        <td>FontWeight</td>
+        <td>Gets or sets FontWeight.</td>
+      </tr>
+      <tr>
+        <td>InternalAxis</td>
+        <td>Gets or sets the internal axis.</td>
+      </tr>
+      <tr>
+        <td>IntervalLength</td>
+        <td>Gets or sets IntervalLength.</td>
+      </tr>
+      <tr>
+        <td>IsAxisVisible</td>
+        <td>Gets or sets a value indicating whether IsAxisVisible.</td>
+      </tr>
+      <tr>
+        <td>IsPanEnabled</td>
+        <td>Gets or sets a value indicating whether IsPanEnabled.</td>
+      </tr>
+      <tr>
+        <td>IsZoomEnabled</td>
+        <td>Gets or sets a value indicating whether IsZoomEnabled.</td>
+      </tr>
+      <tr>
+        <td>Key</td>
+        <td>Gets or sets Key.</td>
+      </tr>
+      <tr>
+        <td>Layer</td>
+        <td>Gets or sets Layer.</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineColor</td>
+        <td>Gets or sets MajorGridlineColor.</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineStyle</td>
+        <td>Gets or sets MajorGridlineStyle.</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineThickness</td>
+        <td>Gets or sets MajorGridlineThickness.</td>
+      </tr>
+      <tr>
+        <td>MajorStep</td>
+        <td>Gets or sets MajorStep.</td>
+      </tr>
+      <tr>
+        <td>MajorTickSize</td>
+        <td>Gets or sets MajorTickSize.</td>
+      </tr>
+      <tr>
+        <td>Maximum</td>
+        <td>Gets or sets Maximum.</td>
+      </tr>
+      <tr>
+        <td>MaximumPadding</td>
+        <td>Gets or sets MaximumPadding.</td>
+      </tr>
+      <tr>
+        <td>Minimum</td>
+        <td>Gets or sets Minimum.</td>
+      </tr>
+      <tr>
+        <td>MinimumPadding</td>
+        <td>Gets or sets MinimumPadding.</td>
+      </tr>
+      <tr>
+        <td>MinimumRange</td>
+        <td>Gets or sets MinimumRange.</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineColor</td>
+        <td>Gets or sets MinorGridlineColor.</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineStyle</td>
+        <td>Gets or sets MinorGridlineStyle.</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineThickness</td>
+        <td>Gets or sets MinorGridlineThickness.</td>
+      </tr>
+      <tr>
+        <td>MinorStep</td>
+        <td>Gets or sets MinorStep.</td>
+      </tr>
+      <tr>
+        <td>MinorTickSize</td>
+        <td>Gets or sets MinorTickSize.</td>
+      </tr>
+      <tr>
+        <td>Position</td>
+        <td>Gets or sets Position.</td>
+      </tr>
+      <tr>
+        <td>PositionAtZeroCrossing</td>
+        <td>Gets or sets a value indicating whether PositionAtZeroCrossing.</td>
+      </tr>
+      <tr>
+        <td>PositionTier</td>
+        <td>Gets or sets the position tier which defines in which tier the axis is displayed.</td>
+      </tr>
+      <tr>
+        <td>ShowMinorTicks</td>
+        <td>Gets or sets a value indicating whether to show minor ticks.</td>
+      </tr>
+      <tr>
+        <td>StartPosition</td>
+        <td>Gets or sets the start position.</td>
+      </tr>
+      <tr>
+        <td>StringFormat</td>
+        <td>Gets or sets the string format.</td>
+      </tr>
+      <tr>
+        <td>TicklineColor</td>
+        <td>Gets or sets the tick line color.</td>
+      </tr>
+      <tr>
+        <td>TickStyle</td>
+        <td>Gets or sets the tick style.</td>
+      </tr>
+      <tr>
+        <td>Title</td>
+        <td>Gets or sets the title.</td>
+      </tr>
+      <tr>
+        <td>TitleClippingLength</td>
+        <td>Gets or sets the length of the title clipping.</td>
+      </tr>
+      <tr>
+        <td>TitleColor</td>
+        <td>Gets or sets the color of the title.</td>
+      </tr>
+      <tr>
+        <td>TitleFont</td>
+        <td>Gets or sets the title font.</td>
+      </tr>
+      <tr>
+        <td>TitleFontSize</td>
+        <td>Gets or sets the size of the title font.</td>
+      </tr>
+      <tr>
+        <td>TitleFontWeight</td>
+        <td>Gets or sets the title font weight.</td>
+      </tr>
+      <tr>
+        <td>TitleFormatString</td>
+        <td>Gets or sets TitleFormatString.</td>
+      </tr>
+      <tr>
+        <td>TitlePosition</td>
+        <td>Gets or sets TitlePosition.</td>
+      </tr>
+      <tr>
+        <td>Unit</td>
+        <td>Gets or sets Unit.</td>
+      </tr>
+      <tr>
+        <td>UseSuperExponentialFormat</td>
+        <td>Gets or sets a value indicating whether UseSuperExponentialFormat.</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>CreateModel</td>
+        <td>Creates the model.</td>
+      </tr>
+    </table>
+    <h2>Fields</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AbsoluteMaximumProperty</td>
+        <td>The absolute maximum property.</td>
+      </tr>
+      <tr>
+        <td>AbsoluteMinimumProperty</td>
+        <td>The absolute minimum property.</td>
+      </tr>
+      <tr>
+        <td>AngleProperty</td>
+        <td>The angle property.</td>
+      </tr>
+      <tr>
+        <td>AxisDistanceProperty</td>
+        <td>The axis distance property.</td>
+      </tr>
+      <tr>
+        <td>AxislineColorProperty</td>
+        <td>The axis line color property.</td>
+      </tr>
+      <tr>
+        <td>AxislineStyleProperty</td>
+        <td>The axis line style property.</td>
+      </tr>
+      <tr>
+        <td>AxislineThicknessProperty</td>
+        <td>The axis line thickness property.</td>
+      </tr>
+      <tr>
+        <td>AxisTickToLabelDistanceProperty</td>
+        <td>The axis tick to label distance property.</td>
+      </tr>
+      <tr>
+        <td>AxisTitleDistanceProperty</td>
+        <td>The axis title distance property.</td>
+      </tr>
+      <tr>
+        <td>ClipTitleProperty</td>
+        <td>The clip title property.</td>
+      </tr>
+      <tr>
+        <td>EndPositionProperty</td>
+        <td>The end position property.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineColorProperty</td>
+        <td>The extra gridline color property.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlinesProperty</td>
+        <td>The extra gridlines property.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineStyleProperty</td>
+        <td>The extra gridline style property.</td>
+      </tr>
+      <tr>
+        <td>ExtraGridlineThicknessProperty</td>
+        <td>The extra gridline thickness property.</td>
+      </tr>
+      <tr>
+        <td>FilterFunctionProperty</td>
+        <td>The filter function property.</td>
+      </tr>
+      <tr>
+        <td>FilterMaxValueProperty</td>
+        <td>The filter max value property.</td>
+      </tr>
+      <tr>
+        <td>FilterMinValueProperty</td>
+        <td>The filter min value property.</td>
+      </tr>
+      <tr>
+        <td>FontProperty</td>
+        <td>The font property.</td>
+      </tr>
+      <tr>
+        <td>FontSizeProperty</td>
+        <td>The font size property.</td>
+      </tr>
+      <tr>
+        <td>FontWeightProperty</td>
+        <td>The font weight property.</td>
+      </tr>
+      <tr>
+        <td>IntervalLengthProperty</td>
+        <td>The interval length property.</td>
+      </tr>
+      <tr>
+        <td>IsAxisVisibleProperty</td>
+        <td>The is axis visible property.</td>
+      </tr>
+      <tr>
+        <td>IsPanEnabledProperty</td>
+        <td>The is pan enabled property.</td>
+      </tr>
+      <tr>
+        <td>IsZoomEnabledProperty</td>
+        <td>The is zoom enabled property.</td>
+      </tr>
+      <tr>
+        <td>KeyProperty</td>
+        <td>The key property.</td>
+      </tr>
+      <tr>
+        <td>LayerProperty</td>
+        <td>The layer property.</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineColorProperty</td>
+        <td>The major gridline color property.</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineStyleProperty</td>
+        <td>The major gridline style property.</td>
+      </tr>
+      <tr>
+        <td>MajorGridlineThicknessProperty</td>
+        <td>The major gridline thickness property.</td>
+      </tr>
+      <tr>
+        <td>MajorStepProperty</td>
+        <td>The major step property.</td>
+      </tr>
+      <tr>
+        <td>MajorTickSizeProperty</td>
+        <td>The major tick size property.</td>
+      </tr>
+      <tr>
+        <td>MaximumPaddingProperty</td>
+        <td>The maximum padding property.</td>
+      </tr>
+      <tr>
+        <td>MaximumProperty</td>
+        <td>The maximum property.</td>
+      </tr>
+      <tr>
+        <td>MinimumPaddingProperty</td>
+        <td>The minimum padding property.</td>
+      </tr>
+      <tr>
+        <td>MinimumProperty</td>
+        <td>The minimum property.</td>
+      </tr>
+      <tr>
+        <td>MinimumRangeProperty</td>
+        <td>The minimum range property.</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineColorProperty</td>
+        <td>The minor gridline color property.</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineStyleProperty</td>
+        <td>The minor gridline style property.</td>
+      </tr>
+      <tr>
+        <td>MinorGridlineThicknessProperty</td>
+        <td>The minor gridline thickness property.</td>
+      </tr>
+      <tr>
+        <td>MinorStepProperty</td>
+        <td>The minor step property.</td>
+      </tr>
+      <tr>
+        <td>MinorTickSizeProperty</td>
+        <td>The minor tick size property.</td>
+      </tr>
+      <tr>
+        <td>PositionAtZeroCrossingProperty</td>
+        <td>The position at zero crossing property.</td>
+      </tr>
+      <tr>
+        <td>PositionProperty</td>
+        <td>The position property.</td>
+      </tr>
+      <tr>
+        <td>PositionTierProperty</td>
+        <td>The positionTier property</td>
+      </tr>
+      <tr>
+        <td>ShowMinorTicksProperty</td>
+        <td>The show minor ticks property.</td>
+      </tr>
+      <tr>
+        <td>StartPositionProperty</td>
+        <td>The start position property.</td>
+      </tr>
+      <tr>
+        <td>StringFormatProperty</td>
+        <td>The string format property.</td>
+      </tr>
+      <tr>
+        <td>TicklineColorProperty</td>
+        <td>The tick line color property.</td>
+      </tr>
+      <tr>
+        <td>TickStyleProperty</td>
+        <td>The tick style property.</td>
+      </tr>
+      <tr>
+        <td>TitleClippingLengthProperty</td>
+        <td>The title clipping length property.</td>
+      </tr>
+      <tr>
+        <td>TitleColorProperty</td>
+        <td>The title color property.</td>
+      </tr>
+      <tr>
+        <td>TitleFontProperty</td>
+        <td>The title font property.</td>
+      </tr>
+      <tr>
+        <td>TitleFontSizeProperty</td>
+        <td>The title font size property.</td>
+      </tr>
+      <tr>
+        <td>TitleFontWeightProperty</td>
+        <td>The title font weight property.</td>
+      </tr>
+      <tr>
+        <td>TitleFormatStringProperty</td>
+        <td>The title format string property.</td>
+      </tr>
+      <tr>
+        <td>TitlePositionProperty</td>
+        <td>The title position property.</td>
+      </tr>
+      <tr>
+        <td>TitleProperty</td>
+        <td>The title property.</td>
+      </tr>
+      <tr>
+        <td>UnitProperty</td>
+        <td>The unit property.</td>
+      </tr>
+      <tr>
+        <td>UseSuperExponentialFormatProperty</td>
+        <td>The use super exponential format property.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

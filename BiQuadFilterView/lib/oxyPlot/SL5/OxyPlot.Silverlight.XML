@@ -1,0 +1,1507 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OxyPlot.Silverlight</name>
+    </assembly>
+    <members>
+        <member name="T:OxyPlot.Silverlight.OxyColorConverter">
+            <summary>
+            The oxy color converter.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.OxyColorConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The convert.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.OxyColorConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The convert back.
+            </returns>
+        </member>
+        <member name="T:OxyPlot.Silverlight.ThicknessConverter">
+            <summary>
+            Converts Thickness to double.
+            This is used to convert BorderThickness properties to Path.StrokeThickness (double).
+            The maximum thickness value is used.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ThicknessConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The convert.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The convert back.
+            </returns>
+        </member>
+        <member name="T:OxyPlot.Silverlight.NamespaceDoc">
+            <summary>
+            The OxyPlot.Silverlight namespace contains controls for Silverlight.
+            </summary>
+        </member>
+        <member name="T:OxyPlot.Silverlight.Plot">
+            <summary>
+            The Silverlight Plot control.
+            </summary>
+            <summary>
+            The Silverlight Plot control.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.PartGrid">
+            <summary>
+            The Grid PART constant.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.DataContextWatcherProperty">
+            <summary>
+            The data context watcher property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.DefaultTrackerTemplateProperty">
+            <summary>
+            The default tracker property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.HandleRightClicksProperty">
+            <summary>
+            The handle right clicks property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.IsMouseWheelEnabledProperty">
+            <summary>
+            The is mouse wheel enabled property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.KeyboardPanHorizontalStepProperty">
+            <summary>
+            The keyboard pan horizontal step property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.KeyboardPanVerticalStepProperty">
+            <summary>
+            The keyboard pan vertical step property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.ModelProperty">
+            <summary>
+            The model property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.PanCursorProperty">
+            <summary>
+            The pan cursor property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.ZoomHorizontalCursorProperty">
+            <summary>
+            The zoom horizontal cursor property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.ZoomRectangleCursorProperty">
+            <summary>
+            The zoom rectangle cursor property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.ZoomRectangleTemplateProperty">
+            <summary>
+            The zoom rectangle template property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.ZoomVerticalCursorProperty">
+            <summary>
+            The zoom vertical cursor property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.modelLock">
+            <summary>
+            The model lock.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.updateModelAndVisualsLock">
+            <summary>
+            The update model and visuals lock.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.trackerDefinitions">
+            <summary>
+            The tracker definitions.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.renderContext">
+            <summary>
+            The render context
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.canvas">
+            <summary>
+            The canvas.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.currentModel">
+            <summary>
+            The current model.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.currentTracker">
+            <summary>
+            The current tracker.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.grid">
+            <summary>
+            The grid.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.internalModel">
+            <summary>
+            The internal model.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.isPlotInvalidated">
+            <summary>
+            Invalidation flag (0: no update, 1: update visual elements only, 2:update data).
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.mouseManipulator">
+            <summary>
+            The mouse manipulator.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.overlays">
+            <summary>
+            The overlays.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.touchDownPoint">
+            <summary>
+            The touch down point.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.touchPan">
+            <summary>
+            The touch pan manipulator.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.touchZoom">
+            <summary>
+            The touch zoom manipulator.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.Plot.zoomControl">
+            <summary>
+            The zoom control.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OxyPlot.Silverlight.Plot"/> class.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.HideTracker">
+            <summary>
+            Hides the tracker.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.HideZoomRectangle">
+            <summary>
+            Hides the zoom rectangle.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.InvalidatePlot(System.Boolean)">
+            <summary>
+            Invalidate the plot (not blocking the UI thread)
+            </summary>
+            <param name="updateData">
+            The update Data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) call <see cref="M:System.Windows.Controls.Control.ApplyTemplate"/> . In simplest terms, this means the method is called just before a UI element displays in an application. For more information, see Remarks.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.Pan(OxyPlot.Axes.Axis,OxyPlot.ScreenPoint,OxyPlot.ScreenPoint)">
+            <summary>
+            Pans the specified axis.
+            </summary>
+            <param name="axis">
+            The axis.
+            </param>
+            <param name="ppt">
+            The previous point (screen coordinates).
+            </param>
+            <param name="cpt">
+            The current point (screen coordinates).
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.RefreshPlot(System.Boolean)">
+            <summary>
+            Refresh the plot immediately (not blocking UI thread)
+            </summary>
+            <param name="updateData">
+            if set to <c>true</c> , the data collections will be updated.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.Reset(OxyPlot.Axes.Axis)">
+            <summary>
+            Resets the specified axis.
+            </summary>
+            <param name="axis">
+            The axis.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.SaveBitmap(System.String)">
+            <summary>
+            Saves the plot as a bitmap.
+            </summary>
+            <param name="fileName">
+            Name of the file.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.SetCursorType(OxyPlot.CursorType)">
+            <summary>
+            Sets the cursor type.
+            </summary>
+            <param name="cursorType">
+            The cursor type.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ShowTracker(OxyPlot.TrackerHitResult)">
+            <summary>
+            Shows the tracker.
+            </summary>
+            <param name="trackerHitResult">
+            The tracker data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ShowZoomRectangle(OxyPlot.OxyRect)">
+            <summary>
+            Shows the zoom rectangle.
+            </summary>
+            <param name="r">
+            The rectangle.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ToBitmap">
+            <summary>
+            Renders the plot to a bitmap.
+            </summary>
+            <returns>
+            A bitmap.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ToXaml">
+            <summary>
+            Renders the plot to xaml.
+            </summary>
+            <returns>
+            The to xaml.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ZoomAllAxes(System.Double)">
+            <summary>
+            Zooms all axes.
+            </summary>
+            <param name="factor">
+            The zoom factor.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ResetAllAxes">
+            <summary>
+            Resets all axes.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.KeyDown"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>
+            Called when the <see cref="E:System.Windows.UIElement.ManipulationCompleted"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>
+            Called when the <see cref="E:System.Windows.UIElement.ManipulationDelta"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnManipulationStarted(System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>
+            Called when the <see cref="E:System.Windows.UIElement.ManipulationStarted"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseButtonUp(OxyPlot.OxyMouseButton,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Raises the MouseButtonUp event.
+            </summary>
+            <param name="button">The button.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.MouseMove"/> event occurs.
+            </summary>
+            <param name="e">
+            The data for the event.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.UIElement.MouseRightButtonDown"/> event.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> that contains the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.UIElement.MouseRightButtonUp"/> event.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> that contains the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.MouseWheel"/> event occurs to provide handling for the event in a derived class without attaching a delegate.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Windows.Input.MouseWheelEventArgs"/> that contains the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Provides the behavior for the Arrange pass of Silverlight layout. Classes can override this method to define their own Arrange pass behavior.
+            </summary>
+            <param name="finalSize">The final area within the parent that this object should use to arrange itself and its children.</param>
+            <returns>
+            The actual size that is used after the element is arranged in layout.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnDataContextChanged(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the DataContext is changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.IsAltDown">
+            <summary>
+            Determines whether the alt key is down.
+            </summary>
+            <returns>
+            <c>true</c> if alt is down; otherwise, <c>false</c> .
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.IsControlDown">
+            <summary>
+            Determines whether the control key is down.
+            </summary>
+            <returns>
+            <c>true</c> if control is down; otherwise, <c>false</c> .
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.IsShiftDown">
+            <summary>
+            Determines whether the shift key is down.
+            </summary>
+            <returns>
+            <c>true</c> if shift is down; otherwise, <c>false</c> .
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.ModelChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Model is changed.
+            </summary>
+            <param name="d">
+            The d.
+            </param>
+            <param name="e">
+            The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.TrySetClipboardText(System.String)">
+            <summary>
+            Sets the clipboard text.
+            </summary>
+            <param name="text">
+            The text.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.CreateMouseEventArgs(OxyPlot.OxyMouseButton,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Creates the mouse event arguments.
+            </summary>
+            <param name="button">The button.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseEventArgs"/> instance containing the event data.</param>
+            <returns>
+            Mouse event arguments.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.Add(System.Windows.Point,System.Windows.Point)">
+            <summary>
+            Adds the coordinates of two points.
+            </summary>
+            <param name="p1">
+            The first point.
+            </param>
+            <param name="p2">
+            The second point.
+            </param>
+            <returns>
+            The sum point.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.CreateManipulationEventArgs(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Creates the manipulation event args.
+            </summary>
+            <param name="e">
+            The <see cref="T:System.Windows.Input.MouseEventArgs"/> instance containing the event data.
+            </param>
+            <returns>
+            A manipulation event args object.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.GetManipulator(OxyPlot.OxyMouseButton,System.Int32)">
+            <summary>
+            Gets the manipulator for the current mouse button and modifier keys.
+            </summary>
+            <param name="button">The button.</param>
+            <param name="clickCount">The click count.</param>
+            <returns>
+            A manipulator or null if no gesture was recognized.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnDataContextChanged">
+            <summary>
+            Called when data context is changed.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the control is loaded.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnModelChanged">
+            <summary>
+            Called when the model is changed.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnMouseButtonDown(OxyPlot.OxyMouseButton,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Called when a mouse button is pressed down.
+            </summary>
+            <param name="button">
+            The button.
+            </param>
+            <param name="e">
+            The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.OnSizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            Called when the size of the control is changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The <see cref="T:System.Windows.SizeChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.PanAll(System.Double,System.Double)">
+            <summary>
+            Pans all axes.
+            </summary>
+            <param name="dx">
+            The horizontal translation.
+            </param>
+            <param name="dy">
+            The vertical translation.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.SynchronizeProperties">
+            <summary>
+            Synchronize properties between the Silverlight control and the internal PlotModel (only if Model is undefined).
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.UpdateModel(System.Boolean)">
+            <summary>
+            Updates the model.
+            </summary>
+            <param name="updateData">
+            The update Data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.UpdateModelAndVisuals(System.Boolean)">
+            <summary>
+            Updates the model. If Model==null, an internal model will be created. The ActualModel.UpdateModel will be called (updates all series data).
+            </summary>
+            <param name="updateData">
+            if set to <c>true</c> , all data collections will be updated.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.UpdateVisuals">
+            <summary>
+            Updates the visuals.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.Plot.Invoke(System.Action)">
+            <summary>
+            Invokes the specified action on the dispatcher, if necessary.
+            </summary>
+            <param name="action">The action.</param>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.DefaultTrackerTemplate">
+            <summary>
+            Gets or sets the default tracker template.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.HandleRightClicks">
+            <summary>
+            Gets or sets a value indicating whether to handle right clicks.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.IsMouseWheelEnabled">
+            <summary>
+            Gets or sets a value indicating whether IsMouseWheelEnabled.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.KeyboardPanHorizontalStep">
+            <summary>
+            Gets or sets the keyboard pan horizontal step (fraction of plot area width).
+            </summary>
+            <value> The keyboard pan horizontal step. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.KeyboardPanVerticalStep">
+            <summary>
+            Gets or sets the keyboard pan vertical step size (fraction of plot area height).
+            </summary>
+            <value> The keyboard pan vertical step. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value> The model. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.PanCursor">
+            <summary>
+            Gets or sets the pan cursor.
+            </summary>
+            <value> The pan cursor. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.ZoomHorizontalCursor">
+            <summary>
+            Gets or sets the horizontal zoom cursor.
+            </summary>
+            <value> The zoom horizontal cursor. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.ZoomRectangleCursor">
+            <summary>
+            Gets or sets the rectangle zoom cursor.
+            </summary>
+            <value> The zoom rectangle cursor. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.ZoomRectangleTemplate">
+            <summary>
+            Gets or sets the zoom rectangle template.
+            </summary>
+            <value> The zoom rectangle template. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.ZoomVerticalCursor">
+            <summary>
+            Gets or sets the vertical zoom cursor.
+            </summary>
+            <value> The zoom vertical cursor. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.ActualModel">
+            <summary>
+            Gets the actual model.
+            </summary>
+            <value> The actual model. </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.Plot.TrackerDefinitions">
+            <summary>
+            Gets the tracker definitions.
+            </summary>
+            <value> The tracker definitions. </value>
+        </member>
+        <member name="T:OxyPlot.Silverlight.ConverterExtensions">
+            <summary>
+            Extension method used to convert to/from Windows/Windows.Media classes.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.DistanceTo(System.Windows.Point,System.Windows.Point)">
+            <summary>
+            Calculate the distance between two points.
+            </summary>
+            <param name="p1">
+            The first point.
+            </param>
+            <param name="p2">
+            The second point.
+            </param>
+            <returns>
+            The distance.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToBrush(OxyPlot.OxyColor)">
+            <summary>
+            Converts a color to a Brush.
+            </summary>
+            <param name="c">
+            The color.
+            </param>
+            <returns>
+            A SolidColorBrush.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToColor(OxyPlot.OxyColor)">
+            <summary>
+            Converts an OxyColor to a Color.
+            </summary>
+            <param name="c">
+            The color.
+            </param>
+            <returns>
+            A Color.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToHorizontalTextAlign(System.Windows.HorizontalAlignment)">
+            <summary>
+            Converts a HorizontalAlignment to a HorizontalTextAlign.
+            </summary>
+            <param name="alignment">
+            The alignment.
+            </param>
+            <returns>
+            A HorizontalTextAlign.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToOxyColor(System.Windows.Media.Color)">
+            <summary>
+            Converts a Color to an OxyColor.
+            </summary>
+            <param name="color">
+            The color.
+            </param>
+            <returns>
+            An OxyColor.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToOxyColor(System.Windows.Media.Brush)">
+            <summary>
+            Converts a Brush to an OxyColor.
+            </summary>
+            <param name="brush">
+            The brush.
+            </param>
+            <returns>
+            An oxycolor.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToOxyThickness(System.Windows.Thickness)">
+            <summary>
+            Converts a Thickness to an OxyThickness.
+            </summary>
+            <param name="t">
+            The thickness.
+            </param>
+            <returns>
+            An OxyPlot thickness.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToPoint(OxyPlot.ScreenPoint,System.Boolean)">
+            <summary>
+            Converts a ScreenPoint to a Point.
+            </summary>
+            <param name="pt">
+            The screen point.
+            </param>
+            <param name="aliased">
+            use pixel alignment conversion if set to <c>true</c>.
+            </param>
+            <returns>
+            A point.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToRect(OxyPlot.OxyRect,System.Boolean)">
+            <summary>
+            Converts an OxyRect to a Rect.
+            </summary>
+            <param name="r">
+            The rectangle.
+            </param>
+            <param name="aliased">
+            use pixel alignment if set to <c>true</c>.
+            </param>
+            <returns>
+            A rect.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToScreenPoint(System.Windows.Point)">
+            <summary>
+            Converts a point to a ScreenPoint.
+            </summary>
+            <param name="pt">
+            The point.
+            </param>
+            <returns>
+            A screen point.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.ConverterExtensions.ToScreenPointArray(System.Windows.Point[])">
+            <summary>
+            Converts a Point array to a ScreenPoint array.
+            </summary>
+            <param name="points">
+            The points.
+            </param>
+            <returns>
+            A ScreenPoint array.
+            </returns>
+        </member>
+        <member name="T:OxyPlot.Silverlight.MouseButtonHelper">
+            <summary>
+            Mouse button helper
+            from http://yinyangme.com/blog/post/The-simplest-way-to-detect-DoubleClick-in-Silverlight.aspx
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.MouseButtonHelper.k_DoubleClickSpeed">
+            <summary>
+            The k_ double click speed.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.MouseButtonHelper.k_MaxMoveDistance">
+            <summary>
+            The k_ max move distance.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.MouseButtonHelper._LastClickTicks">
+            <summary>
+            The _ last click ticks.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.MouseButtonHelper._LastPosition">
+            <summary>
+            The _ last position.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.MouseButtonHelper._LastSender">
+            <summary>
+            The _ last sender.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.MouseButtonHelper.IsDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The is double click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+            <returns>
+            The is double click.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.MouseButtonHelper.Distance(System.Windows.Point,System.Windows.Point)">
+            <summary>
+            The distance.
+            </summary>
+            <param name="pointA">
+            The point a.
+            </param>
+            <param name="pointB">
+            The point b.
+            </param>
+            <returns>
+            The distance.
+            </returns>
+        </member>
+        <member name="T:OxyPlot.Silverlight.SilverlightRenderContext">
+            <summary>
+            Rendering Silverlight shapes to a Canvas
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.brushCache">
+            <summary>
+            The brush cache.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.canvas">
+            <summary>
+            The canvas.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.imagesInUse">
+            <summary>
+            The images in use
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.imageCache">
+            <summary>
+            The image cache
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.currentToolTip">
+            <summary>
+            The current tool tip
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.clipRect">
+            <summary>
+            The clip rectangle.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.SilverlightRenderContext.clip">
+            <summary>
+            The clip flag.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.#ctor(System.Windows.Controls.Canvas)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OxyPlot.Silverlight.SilverlightRenderContext"/> class.
+            </summary>
+            <param name="canvas">
+            The canvas.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawEllipse(OxyPlot.OxyRect,OxyPlot.OxyColor,OxyPlot.OxyColor,System.Double)">
+            <summary>
+            Draws an ellipse.
+            </summary>
+            <param name="rect">The rectangle.</param>
+            <param name="fill">The fill color.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The thickness.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawEllipses(System.Collections.Generic.IList{OxyPlot.OxyRect},OxyPlot.OxyColor,OxyPlot.OxyColor,System.Double)">
+            <summary>
+            Draws the collection of ellipses, where all have the same stroke and fill.
+            This performs better than calling DrawEllipse multiple times.
+            </summary>
+            <param name="rectangles">The rectangles.</param>
+            <param name="fill">The fill color.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawLine(System.Collections.Generic.IList{OxyPlot.ScreenPoint},OxyPlot.OxyColor,System.Double,System.Double[],OxyPlot.OxyPenLineJoin,System.Boolean)">
+            <summary>
+            Draws the polyline from the specified points.
+            </summary>
+            <param name="points">The points.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+            <param name="dashArray">The dash array.</param>
+            <param name="lineJoin">The line join type.</param>
+            <param name="aliased">if set to <c>true</c> the shape will be aliased.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawLineSegments(System.Collections.Generic.IList{OxyPlot.ScreenPoint},OxyPlot.OxyColor,System.Double,System.Double[],OxyPlot.OxyPenLineJoin,System.Boolean)">
+            <summary>
+            Draws the multiple line segments defined by points (0,1) (2,3) (4,5) etc.
+            This should have better performance than calling DrawLine for each segment.
+            </summary>
+            <param name="points">The points.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+            <param name="dashArray">The dash array.</param>
+            <param name="lineJoin">The line join type.</param>
+            <param name="aliased">if set to <c>true</c> the shape will be aliased.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawPolygon(System.Collections.Generic.IList{OxyPlot.ScreenPoint},OxyPlot.OxyColor,OxyPlot.OxyColor,System.Double,System.Double[],OxyPlot.OxyPenLineJoin,System.Boolean)">
+            <summary>
+            Draws the polygon from the specified points. The polygon can have stroke and/or fill.
+            </summary>
+            <param name="points">The points.</param>
+            <param name="fill">The fill color.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+            <param name="dashArray">The dash array.</param>
+            <param name="lineJoin">The line join type.</param>
+            <param name="aliased">if set to <c>true</c> the shape will be aliased.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawPolygons(System.Collections.Generic.IList{System.Collections.Generic.IList{OxyPlot.ScreenPoint}},OxyPlot.OxyColor,OxyPlot.OxyColor,System.Double,System.Double[],OxyPlot.OxyPenLineJoin,System.Boolean)">
+            <summary>
+            Draws a collection of polygons, where all polygons have the same stroke and fill.
+            This performs better than calling DrawPolygon multiple times.
+            </summary>
+            <param name="polygons">The polygons.</param>
+            <param name="fill">The fill color.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+            <param name="dashArray">The dash array.</param>
+            <param name="lineJoin">The line join type.</param>
+            <param name="aliased">if set to <c>true</c> the shape will be aliased.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawRectangle(OxyPlot.OxyRect,OxyPlot.OxyColor,OxyPlot.OxyColor,System.Double)">
+            <summary>
+            Draws the rectangle.
+            </summary>
+            <param name="rect">The rectangle.</param>
+            <param name="fill">The fill color.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawRectangles(System.Collections.Generic.IList{OxyPlot.OxyRect},OxyPlot.OxyColor,OxyPlot.OxyColor,System.Double)">
+            <summary>
+            Draws a collection of rectangles, where all have the same stroke and fill.
+            This performs better than calling DrawRectangle multiple times.
+            </summary>
+            <param name="rectangles">The rectangles.</param>
+            <param name="fill">The fill color.</param>
+            <param name="stroke">The stroke color.</param>
+            <param name="thickness">The stroke thickness.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawText(OxyPlot.ScreenPoint,System.String,OxyPlot.OxyColor,System.String,System.Double,System.Double,System.Double,OxyPlot.HorizontalAlignment,OxyPlot.VerticalAlignment,System.Nullable{OxyPlot.OxySize})">
+            <summary>
+            Draws the text.
+            </summary>
+            <param name="p">The position.</param>
+            <param name="text">The text.</param>
+            <param name="fill">The fill color.</param>
+            <param name="fontFamily">The font family.</param>
+            <param name="fontSize">Size of the font.</param>
+            <param name="fontWeight">The font weight.</param>
+            <param name="rotate">The rotation angle.</param>
+            <param name="halign">The horizontal alignment.</param>
+            <param name="valign">The vertical alignment.</param>
+            <param name="maxSize">The maximum size of the text.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.MeasureText(System.String,System.String,System.Double,System.Double)">
+            <summary>
+            Measures the text.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="fontFamily">The font family.</param>
+            <param name="fontSize">Size of the font.</param>
+            <param name="fontWeight">The font weight.</param>
+            <returns>
+            The text size.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.SetToolTip(System.String)">
+            <summary>
+            Sets the tool tip for the following items.
+            </summary>
+            <param name="text">
+            The text in the tooltip.
+            </param>
+            <params>
+            This is only used in the plot controls.
+            </params>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.DrawImage(OxyPlot.OxyImage,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Draws the specified portion of the specified <see cref="T:OxyPlot.OxyImage"/> at the specified location and with the specified size.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="srcX">The x-coordinate of the upper-left corner of the portion of the source image to draw.</param>
+            <param name="srcY">The y-coordinate of the upper-left corner of the portion of the source image to draw.</param>
+            <param name="srcWidth">Width of the portion of the source image to draw.</param>
+            <param name="srcHeight">Height of the portion of the source image to draw.</param>
+            <param name="destX">The x-coordinate of the upper-left corner of drawn image.</param>
+            <param name="destY">The y-coordinate of the upper-left corner of drawn image.</param>
+            <param name="destWidth">The width of the drawn image.</param>
+            <param name="destHeight">The height of the drawn image.</param>
+            <param name="opacity">The opacity.</param>
+            <param name="interpolate">interpolate if set to <c>true</c>.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.SetClip(OxyPlot.OxyRect)">
+            <summary>
+            Sets the clipping rectangle.
+            </summary>
+            <param name="clippingRect">The clipping rectangle.</param>
+            <returns>True if the clipping rectangle was set.</returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.ResetClip">
+            <summary>
+            Resets the clipping rectangle.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.CleanUp">
+            <summary>
+            Cleans up resources not in use.
+            </summary>
+            <remarks>
+            This method is called at the end of each rendering.
+            </remarks>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.CreateDashArrayCollection(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Creates the dash array collection.
+            </summary>
+            <param name="dashArray">The dash array.</param>
+            <returns>A DoubleCollection.</returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.GetFontWeight(System.Double)">
+            <summary>
+            Gets the font weight.
+            </summary>
+            <param name="fontWeight">The font weight.</param>
+            <returns>A <see cref="T:System.Windows.FontWeight"/></returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.Add(System.Windows.UIElement,System.Double,System.Double)">
+            <summary>
+            Adds the specified element to the canvas.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="clipOffsetX">The clip offset X.</param>
+            <param name="clipOffsetY">The clip offset Y.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.ApplyTooltip(System.Windows.DependencyObject)">
+            <summary>
+            Applies the tooltip to the specified element.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.GetCachedBrush(OxyPlot.OxyColor)">
+            <summary>
+            Gets the cached brush.
+            </summary>
+            <param name="stroke">
+            The stroke.
+            </param>
+            <returns>
+            The brush.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.SetStroke(System.Windows.Shapes.Shape,OxyPlot.OxyColor,System.Double,OxyPlot.OxyPenLineJoin,System.Collections.Generic.IEnumerable{System.Double},System.Boolean)">
+            <summary>
+            Sets the stroke of the specified shape.
+            </summary>
+            <param name="shape">The shape.</param>
+            <param name="stroke">The stroke.</param>
+            <param name="thickness">The thickness.</param>
+            <param name="lineJoin">The line join.</param>
+            <param name="dashArray">The dash array.</param>
+            <param name="aliased">aliased if set to <c>true</c>.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.ApplyClip(System.Windows.UIElement,System.Double,System.Double)">
+            <summary>
+            Applies the clip rectangle.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="x">The x offset of the element.</param>
+            <param name="y">The y offset of the element.</param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.SilverlightRenderContext.GetImageSource(OxyPlot.OxyImage)">
+            <summary>
+            Gets the bitmap source.
+            </summary>
+            <param name="image">The image.</param>
+            <returns>The bitmap source.</returns>
+        </member>
+        <member name="P:OxyPlot.Silverlight.SilverlightRenderContext.Height">
+            <summary>
+            Gets the height.
+            </summary>
+            <value>The height.</value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.SilverlightRenderContext.PaintBackground">
+            <summary>
+            Gets a value indicating whether to paint the background.
+            </summary>
+            <value>
+             <c>true</c> if the background should be painted; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.SilverlightRenderContext.Width">
+            <summary>
+            Gets the width.
+            </summary>
+            <value>The width.</value>
+        </member>
+        <member name="P:OxyPlot.Silverlight.SilverlightRenderContext.RendersToScreen">
+            <summary>
+            Gets or sets a value indicating whether the context renders to screen.
+            </summary>
+            <value>
+            <c>true</c> if the context renders to screen; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:OxyPlot.Silverlight.TrackerControl">
+            <summary>
+            The tracker control.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.PartPath">
+            <summary>
+            The path part string.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.PartContent">
+            <summary>
+            The content part string.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.PartContentcontainer">
+            <summary>
+            The content container part string.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.PartHorizontalline">
+            <summary>
+            The horizontal line part string.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.PartVerticalline">
+            <summary>
+            The vertical line part string.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.HorizontalLineVisibilityProperty">
+            <summary>
+            The horizontal line visibility property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.VerticalLineVisibilityProperty">
+            <summary>
+            The vertical line visibility property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.LineStrokeProperty">
+            <summary>
+            The line stroke property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.LineExtentsProperty">
+            <summary>
+            The line extents property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.LineDashArrayProperty">
+            <summary>
+            The line dash array property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.ShowPointerProperty">
+            <summary>
+            The show arrow property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.CornerRadiusProperty">
+            <summary>
+            The corner radius property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.DistanceProperty">
+            <summary>
+            The distance property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.CanCenterHorizontallyProperty">
+            <summary>
+            The can center horizontally property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.CanCenterVerticallyProperty">
+            <summary>
+            The can center vertically property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.PositionProperty">
+            <summary>
+            The position property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.content">
+            <summary>
+            The content.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.horizontalLine">
+            <summary>
+            The horizontal line.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.path">
+            <summary>
+            The path.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.contentContainer">
+            <summary>
+            The content container.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerControl.verticalLine">
+            <summary>
+            The vertical line.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OxyPlot.Silverlight.TrackerControl"/> class.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.PositionChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the position is changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.OnPositionChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the position is changed.
+            </summary>
+            <param name="dependencyPropertyChangedEventArgs">
+            The dependency property changed event args.
+            </param>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.UpdatePositionAndBorder">
+            <summary>
+            Update the position and border of the tracker.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.CreateBorderGeometry(System.Windows.HorizontalAlignment,System.Windows.VerticalAlignment,System.Double,System.Double,System.Windows.Thickness@)">
+            <summary>
+            Create the border geometry.
+            </summary>
+            <param name="ha">
+            The horizontal alignment.
+            </param>
+            <param name="va">
+            The vertical alignment.
+            </param>
+            <param name="width">
+            The width.
+            </param>
+            <param name="height">
+            The height.
+            </param>
+            <param name="margin">
+            The margin.
+            </param>
+            <returns>
+            The border geometry.
+            </returns>
+        </member>
+        <member name="M:OxyPlot.Silverlight.TrackerControl.CreatePointerBorderGeometry(System.Windows.HorizontalAlignment,System.Windows.VerticalAlignment,System.Double,System.Double,System.Windows.Thickness@)">
+            <summary>
+            Create a border geometry with a 'pointer'.
+            </summary>
+            <param name="ha">
+            The horizontal alignment.
+            </param>
+            <param name="va">
+            The vertical alignment.
+            </param>
+            <param name="width">
+            The width.
+            </param>
+            <param name="height">
+            The height.
+            </param>
+            <param name="margin">
+            The margin.
+            </param>
+            <returns>
+            The border geometry.
+            </returns>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.HorizontalLineVisibility">
+            <summary>
+            Gets or sets HorizontalLineVisibility.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.VerticalLineVisibility">
+            <summary>
+            Gets or sets VerticalLineVisibility.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.LineStroke">
+            <summary>
+            Gets or sets LineStroke.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.LineExtents">
+            <summary>
+            Gets or sets LineExtents.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.LineDashArray">
+            <summary>
+            Gets or sets LineDashArray.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.ShowPointer">
+            <summary>
+            Gets or sets a value indicating whether to show a 'pointer' on the border.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.CornerRadius">
+            <summary>
+            Gets or sets the corner radius (only used when ShowPoint=false).
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.Distance">
+            <summary>
+            Gets or sets the distance of the content container from the trackers Position.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.CanCenterHorizontally">
+            <summary>
+            Gets or sets a value indicating whether the tracker can center its content box horizontally.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.CanCenterVertically">
+            <summary>
+            Gets or sets a value indicating whether the tracker can center its content box vertically.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerControl.Position">
+            <summary>
+            Gets or sets Position of the tracker.
+            </summary>
+        </member>
+        <member name="T:OxyPlot.Silverlight.TrackerDefinition">
+            <summary>
+            The tracker definition.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerDefinition.TrackerKeyProperty">
+            <summary>
+            The tracker key property.
+            </summary>
+        </member>
+        <member name="F:OxyPlot.Silverlight.TrackerDefinition.TrackerTemplateProperty">
+            <summary>
+            The tracker template property.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerDefinition.TrackerKey">
+            <summary>
+            Gets or sets the tracker key.
+            </summary>
+            <remarks>
+            The Plot will use this property to find the TrackerDefinition that matches the TrackerKey of the current series.
+            </remarks>
+        </member>
+        <member name="P:OxyPlot.Silverlight.TrackerDefinition.TrackerTemplate">
+            <summary>
+            Gets or sets the tracker template.
+            </summary>
+            <remarks>
+            The tracker control will be added/removed from the Tracker overlay as neccessary.
+            The DataContext of the tracker will be set to a TrackerHitResult with the current tracker data.
+            </remarks>
+        </member>
+    </members>
+</doc>

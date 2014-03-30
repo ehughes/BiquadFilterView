@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>PlotModel Class (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.PlotModel">PlotModel Class</h1>
+    <p>Partial PlotModel class - this file contains mouse events and handlers.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="OxyPlot.PlotModel.html"><strong>PlotModel</strong></a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">class</span> PlotModel</code></pre>
+    <h2>Constructors</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>PlotModel()</td>
+        <td>Initializes a new instance of the <a title="PlotModel Class" href="OxyPlot.PlotModel.html">PlotModel</a> class.</td>
+      </tr>
+      <tr>
+        <td>PlotModel(string, string)</td>
+        <td>Initializes a new instance of the <a title="PlotModel Class" href="OxyPlot.PlotModel.html">PlotModel</a> class.</td>
+      </tr>
+    </table>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ActualCulture</td>
+        <td>Gets the actual culture.</td>
+      </tr>
+      <tr>
+        <td>ActualPlotMargins</td>
+        <td>Gets the actual plot margins.</td>
+      </tr>
+      <tr>
+        <td>Annotations</td>
+        <td>Gets or sets the annotations.</td>
+      </tr>
+      <tr>
+        <td>AutoAdjustPlotMargins</td>
+        <td>Gets or sets a value indicating whether to auto adjust plot margins.</td>
+      </tr>
+      <tr>
+        <td>Axes</td>
+        <td>Gets or sets the axes.</td>
+      </tr>
+      <tr>
+        <td>AxisTierDistance</td>
+        <td>Gets or sets the distance between two neighborhood tiers of the same AxisPosition.</td>
+      </tr>
+      <tr>
+        <td>Background</td>
+        <td>Gets or sets the color of the background of the plot.</td>
+      </tr>
+      <tr>
+        <td>Culture</td>
+        <td>Gets or sets the culture.</td>
+      </tr>
+      <tr>
+        <td>DefaultAngleAxis</td>
+        <td>Gets the default angle axis.</td>
+      </tr>
+      <tr>
+        <td>DefaultColorAxis</td>
+        <td>Gets the default color axis.</td>
+      </tr>
+      <tr>
+        <td>DefaultColors</td>
+        <td>Gets or sets the default colors.</td>
+      </tr>
+      <tr>
+        <td>DefaultFont</td>
+        <td>Gets or sets the default font.</td>
+      </tr>
+      <tr>
+        <td>DefaultFontSize</td>
+        <td>Gets or sets the default size of the fonts.</td>
+      </tr>
+      <tr>
+        <td>DefaultMagnitudeAxis</td>
+        <td>Gets the default magnitude axis.</td>
+      </tr>
+      <tr>
+        <td>DefaultXAxis</td>
+        <td>Gets the default X axis.</td>
+      </tr>
+      <tr>
+        <td>DefaultYAxis</td>
+        <td>Gets the default Y axis.</td>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td>Gets the total height of the plot (in device units).</td>
+      </tr>
+      <tr>
+        <td>IsLegendVisible</td>
+        <td>Gets or sets a value indicating whether the legend is visible. The titles of the series must be set to use the legend.</td>
+      </tr>
+      <tr>
+        <td>LegendArea</td>
+        <td>Gets the legend area.</td>
+      </tr>
+      <tr>
+        <td>LegendBackground</td>
+        <td>Gets or sets the background color of the legend. Use null for no background.</td>
+      </tr>
+      <tr>
+        <td>LegendBorder</td>
+        <td>Gets or sets the border color of the legend.</td>
+      </tr>
+      <tr>
+        <td>LegendBorderThickness</td>
+        <td>Gets or sets the thickness of the legend border. Use 0 for no border.</td>
+      </tr>
+      <tr>
+        <td>LegendColumnSpacing</td>
+        <td>Gets or sets the legend column spacing.</td>
+      </tr>
+      <tr>
+        <td>LegendFont</td>
+        <td>Gets or sets the legend font.</td>
+      </tr>
+      <tr>
+        <td>LegendFontSize</td>
+        <td>Gets or sets the size of the legend font.</td>
+      </tr>
+      <tr>
+        <td>LegendFontWeight</td>
+        <td>Gets or sets the legend font weight.</td>
+      </tr>
+      <tr>
+        <td>LegendItemAlignment</td>
+        <td>Gets or sets the legend item alignment.</td>
+      </tr>
+      <tr>
+        <td>LegendItemOrder</td>
+        <td>Gets or sets the legend item order.</td>
+      </tr>
+      <tr>
+        <td>LegendItemSpacing</td>
+        <td>Gets or sets the legend spacing.</td>
+      </tr>
+      <tr>
+        <td>LegendMargin</td>
+        <td>Gets or sets the legend margin.</td>
+      </tr>
+      <tr>
+        <td>LegendMaxWidth</td>
+        <td>Gets or sets the max width of the legend.</td>
+      </tr>
+      <tr>
+        <td>LegendOrientation</td>
+        <td>Gets or sets the legend orientation.</td>
+      </tr>
+      <tr>
+        <td>LegendPadding</td>
+        <td>Gets or sets the legend padding.</td>
+      </tr>
+      <tr>
+        <td>LegendPlacement</td>
+        <td>Gets or sets the legend placement.</td>
+      </tr>
+      <tr>
+        <td>LegendPosition</td>
+        <td>Gets or sets the legend position.</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolLength</td>
+        <td>Gets or sets the length of the legend symbols (the default value is 16).</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolMargin</td>
+        <td>Gets or sets the legend symbol margins (distance between the symbol and the text).</td>
+      </tr>
+      <tr>
+        <td>LegendSymbolPlacement</td>
+        <td>Gets or sets the legend symbol placement.</td>
+      </tr>
+      <tr>
+        <td>LegendTextColor</td>
+        <td>Gets or sets the color of the legend text.</td>
+      </tr>
+      <tr>
+        <td>LegendTitle</td>
+        <td>Gets or sets the legend title.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleColor</td>
+        <td>Gets or sets the color of the legend title.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFont</td>
+        <td>Gets or sets the legend title font.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontSize</td>
+        <td>Gets or sets the size of the legend title font.</td>
+      </tr>
+      <tr>
+        <td>LegendTitleFontWeight</td>
+        <td>Gets or sets the legend title font weight.</td>
+      </tr>
+      <tr>
+        <td>Padding</td>
+        <td>Gets or sets the padding around the plot.</td>
+      </tr>
+      <tr>
+        <td>PlotAndAxisArea</td>
+        <td>Gets the area including both the plot and the axes. Outside legends are rendered outside this rectangle.</td>
+      </tr>
+      <tr>
+        <td>PlotArea</td>
+        <td>Gets the plot area. This area is used to draw the series (not including axes or legends).</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBackground</td>
+        <td>Gets or sets the color of the background of the plot area.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBorderColor</td>
+        <td>Gets or sets the color of the border around the plot area.</td>
+      </tr>
+      <tr>
+        <td>PlotAreaBorderThickness</td>
+        <td>Gets or sets the thickness of the border around the plot area.</td>
+      </tr>
+      <tr>
+        <td>PlotControl</td>
+        <td>Gets the plot control that renders this plot.</td>
+      </tr>
+      <tr>
+        <td>PlotMargins</td>
+        <td>Gets or sets the minimum margins around the plot (this should be large enough to fit the axes). The default value is (60, 4, 4, 40). Set AutoAdjustPlotMargins if you want the margins to be adjusted when the axes require more space.</td>
+      </tr>
+      <tr>
+        <td>PlotType</td>
+        <td>Gets or sets the type of the coordinate system.</td>
+      </tr>
+      <tr>
+        <td>SelectionColor</td>
+        <td>Gets or sets the color of the selection.</td>
+      </tr>
+      <tr>
+        <td>Series</td>
+        <td>Gets or sets the series.</td>
+      </tr>
+      <tr>
+        <td>Subtitle</td>
+        <td>Gets or sets the subtitle.</td>
+      </tr>
+      <tr>
+        <td>SubtitleColor</td>
+        <td>Gets or sets the color of the subtitle.</td>
+      </tr>
+      <tr>
+        <td>SubtitleFont</td>
+        <td>Gets or sets the subtitle font. If this property is null, the Title font will be used.</td>
+      </tr>
+      <tr>
+        <td>SubtitleFontSize</td>
+        <td>Gets or sets the size of the subtitle font.</td>
+      </tr>
+      <tr>
+        <td>SubtitleFontWeight</td>
+        <td>Gets or sets the subtitle font weight.</td>
+      </tr>
+      <tr>
+        <td>SyncRoot</td>
+        <td>Gets an object that can be used to synchronize access to the PlotModel.</td>
+      </tr>
+      <tr>
+        <td>TextColor</td>
+        <td>Gets or sets the default color of the text in the plot (titles, legends, annotations, axes).</td>
+      </tr>
+      <tr>
+        <td>Title</td>
+        <td>Gets or sets the title.</td>
+      </tr>
+      <tr>
+        <td>TitleArea</td>
+        <td>Gets the title area.</td>
+      </tr>
+      <tr>
+        <td>TitleColor</td>
+        <td>Gets or sets the color of the title.</td>
+      </tr>
+      <tr>
+        <td>TitleFont</td>
+        <td>Gets or sets the title font.</td>
+      </tr>
+      <tr>
+        <td>TitleFontSize</td>
+        <td>Gets or sets the size of the title font.</td>
+      </tr>
+      <tr>
+        <td>TitleFontWeight</td>
+        <td>Gets or sets the title font weight.</td>
+      </tr>
+      <tr>
+        <td>TitlePadding</td>
+        <td>Gets or sets the padding around the title.</td>
+      </tr>
+      <tr>
+        <td>Width</td>
+        <td>Gets the total width of the plot (in device units).</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AttachPlotControl</td>
+        <td>Attaches this model to the specified plot control.</td>
+      </tr>
+      <tr>
+        <td>CreateReport</td>
+        <td>Creates a report for the plot.</td>
+      </tr>
+      <tr>
+        <td>CreateTextReport</td>
+        <td>Creates a text report for the plot.</td>
+      </tr>
+      <tr>
+        <td>GetAxesFromPoint</td>
+        <td>Gets the first axes that covers the area of the specified point.</td>
+      </tr>
+      <tr>
+        <td>GetAxisOrDefault</td>
+        <td>Gets the axis for the specified key.</td>
+      </tr>
+      <tr>
+        <td>GetDefaultColor</td>
+        <td>Gets the default color from the DefaultColors palette.</td>
+      </tr>
+      <tr>
+        <td>GetDefaultLineStyle</td>
+        <td>Gets the default line style.</td>
+      </tr>
+      <tr>
+        <td>GetElements</td>
+        <td>Gets all elements of the plot model, sorted by rendering priority.</td>
+      </tr>
+      <tr>
+        <td>GetSeriesFromPoint</td>
+        <td>Gets a series from the specified point.</td>
+      </tr>
+      <tr>
+        <td>HandleMouseDown</td>
+        <td>Handles the mouse down event.</td>
+      </tr>
+      <tr>
+        <td>HandleMouseMove</td>
+        <td>Handles the mouse move event.</td>
+      </tr>
+      <tr>
+        <td>HandleMouseUp</td>
+        <td>Handles the mouse up event.</td>
+      </tr>
+      <tr>
+        <td>InvalidatePlot</td>
+        <td>Invalidates the plot.</td>
+      </tr>
+      <tr>
+        <td>PanAllAxes</td>
+        <td>Pans all axes.</td>
+      </tr>
+      <tr>
+        <td>RefreshPlot</td>
+        <td>Refreshes the plot.</td>
+      </tr>
+      <tr>
+        <td>Render</td>
+        <td>Renders the plot with the specified rendering context.</td>
+      </tr>
+      <tr>
+        <td>ResetAllAxes</td>
+        <td>Resets all axes in the model.</td>
+      </tr>
+      <tr>
+        <td>ToCode</td>
+        <td>Generates C# code of the model.</td>
+      </tr>
+      <tr>
+        <td>ToString</td>
+        <td>Returns a <a title="string" href="http://msdn.microsoft.com/en-us/library/system.string.aspx">string</a> that represents this instance.</td>
+      </tr>
+      <tr>
+        <td>ToSvg</td>
+        <td>Creates an svg model and return it as a string.</td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Updates all axes and series.
+0. Updates the owner PlotModel of all plot items (axes, series and annotations)
+1. Updates the data of each Series (only if updateData==true).
+2. Ensure that all series have axes assigned.
+3. Updates the max and min of the axes.</td>
+      </tr>
+      <tr>
+        <td>ZoomAllAxes</td>
+        <td>Zooms all axes.</td>
+      </tr>
+    </table>
+    <h2>Events</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>MouseDown</td>
+        <td>Occurs when a mouse button is pressed down on the model.</td>
+      </tr>
+      <tr>
+        <td>MouseMove</td>
+        <td>Occurs when the mouse is moved on the plot element (only occurs after MouseDown).</td>
+      </tr>
+      <tr>
+        <td>MouseUp</td>
+        <td>Occurs when the mouse button is released on the plot element.</td>
+      </tr>
+      <tr>
+        <td>TrackerChanged</td>
+        <td>Occurs when the tracker has been changed.</td>
+      </tr>
+      <tr>
+        <td>Updated</td>
+        <td>Occurs when the plot has been updated.</td>
+      </tr>
+      <tr>
+        <td>Updating</td>
+        <td>Occurs when the plot is about to be updated.</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>SvgRenderContext Class (OxyPlot)</title>
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <h1 id="OxyPlot.SvgRenderContext">SvgRenderContext Class</h1>
+    <p>Provides a render context for scalable vector graphics output.</p>
+    <h2>Inheritance hierarchy</h2>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/system.object.aspx">object</a>
+      <br />&nbsp;&nbsp;<a href="OxyPlot.RenderContextBase.html">RenderContextBase</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="OxyPlot.SvgRenderContext.html"><strong>SvgRenderContext</strong></a></p>
+    <p>
+      <strong>Namespace:</strong>
+      <a href="OxyPlot.html">OxyPlot</a>
+      <br />
+      <strong>Assembly: </strong>OxyPlot (in OxyPlot.dll)</p>
+    <h2>Syntax</h2>
+    <pre><code><span class="keyword">public</span> <span class="keyword">class</span> SvgRenderContext : RenderContextBase, IDisposable</code></pre>
+    <h2>Constructors</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>SvgRenderContext(Stream, double, double, Boolean, IRenderContext, OxyColor)</td>
+        <td>Initializes a new instance of the <a title="SvgRenderContext Class" href="OxyPlot.SvgRenderContext.html">SvgRenderContext</a> class.</td>
+      </tr>
+    </table>
+    <h2>Properties</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>RendersToScreen</td>
+        <td>Gets or sets a value indicating whether the context renders to screen. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>TextMeasurer</td>
+        <td>Gets or sets the text measurer.</td>
+      </tr>
+    </table>
+    <h2>Methods</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>CleanUp</td>
+        <td>Cleans up resources not in use. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>Close</td>
+        <td>Closes the svg writer.</td>
+      </tr>
+      <tr>
+        <td>Complete</td>
+        <td>Completes the svg element.</td>
+      </tr>
+      <tr>
+        <td>Dispose</td>
+        <td>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</td>
+      </tr>
+      <tr>
+        <td>DrawEllipse</td>
+        <td>Draws an ellipse.</td>
+      </tr>
+      <tr>
+        <td>DrawEllipses</td>
+        <td>Draws the collection of ellipses, where all have the same stroke and fill.
+This performs better than calling DrawEllipse multiple times. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>DrawImage</td>
+        <td>Draws the specified portion of the specified <a title="OxyImage Class" href="OxyPlot.OxyImage.html">OxyImage</a> at the specified location and with the specified size.</td>
+      </tr>
+      <tr>
+        <td>DrawLine</td>
+        <td>Draws the polyline from the specified points.</td>
+      </tr>
+      <tr>
+        <td>DrawLineSegments</td>
+        <td>Draws multiple line segments defined by points (0,1) (2,3) (4,5) etc.
+This should have better performance than calling DrawLine for each segment. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>DrawPolygon</td>
+        <td>Draws the polygon from the specified points. The polygon can have stroke and/or fill.</td>
+      </tr>
+      <tr>
+        <td>DrawPolygons</td>
+        <td>Draws a collection of polygons, where all polygons have the same stroke and fill.
+This performs better than calling DrawPolygon multiple times. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>DrawRectangle</td>
+        <td>Draws the rectangle.</td>
+      </tr>
+      <tr>
+        <td>DrawRectangles</td>
+        <td>Draws a collection of rectangles, where all have the same stroke and fill.
+This performs better than calling DrawRectangle multiple times. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>DrawText</td>
+        <td>Draws the text.</td>
+      </tr>
+      <tr>
+        <td>Flush</td>
+        <td>Flushes this instance.</td>
+      </tr>
+      <tr>
+        <td>MeasureText</td>
+        <td>Measures the text.</td>
+      </tr>
+      <tr>
+        <td>ResetClip</td>
+        <td>Resets the clip rectangle. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>SetClip</td>
+        <td>Sets the clip rectangle. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+      <tr>
+        <td>SetToolTip</td>
+        <td>Sets the tool tip for the following items. (Inherited from <a title="RenderContextBase Class" href="OxyPlot.RenderContextBase.html">RenderContextBase</a>.)</td>
+      </tr>
+    </table>
+    <footer><div class="footer">OxyPlot version 2014.1.240.1 | <a href="http://oxyplot.org">oxyplot.org</a> | <a href="index.html">Index</a></div></footer>
+  </body>
+</html>
